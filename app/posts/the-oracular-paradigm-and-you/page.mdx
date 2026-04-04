@@ -1,0 +1,118 @@
+---
+title: "The Oracular Paradigm and You"
+date: "2026-04-03"
+summary: "a summary"
+---
+# The Oracular Paradigm and You
+
+## Introduction
+
+<Summary note="Hmm, are LLMs bad for our brains? I think they might be.">
+A few months ago, I started getting this hunch that LLMs might be bad for our brains long-term. I can think of a couple things that might have triggered it. I started using Claude Code Max and never opened Sublime Text again. I took a lot of meetings in a row where my meeting partner was using an AI notetaker. I had increasing conversations with people about the tasks they no longer do themselves, ranging from the gleeful ("I'll never make my own .bib again!") to the confessional ("Honestly, I don't even check its output anymore.") Well, sure. This is what the future feels like. They probably felt like this about TV.
+
+A conversation with a friend distilled this hunch into a more specific and interrogable form. I was worried, in the healthy anti-surveillance paranoia way, that people who use notetakers are opening themselves up to being gaslit by their AI agents. Like, suppose everything you've said and written for the last five years is on record, and you're having a dialogue with your personal agent, and it starts shaking its digital head about something you *know* you thought about three years ago but never wrote down; or you *did* write it down but you can't search for it, and against the gentle insistence of your all-knowing machine, all you have to wield is your squishy brain and your chicken scratch notes. What do you do? Give up, probably.
+
+There are three anxieties that fall out of this scenario, two of which I'll toss immediately:
+1. We are at a disadvantage in terms of the information we can store and sort through compared to a machine. (But, this has always been true. It's actually *better* now, because we can direct machines with natural language, even if they don't always act as we wish.)
+2. We are providing more and more information about ourselves to machines that can manipulate us. Beyond nefarious examples<Reference id="anthropic_blackmailing"/>, think about all the cases of AI psychosis in people who had never been diagnosed with mental health issues<Reference id="dupre_2026_psychosis"/><Reference id="pierre_2025_psychosis"/><Reference id="bansal_2026_psychosis"/>. Our sense of identity is much more fragile than we imagine. (I'm not going to tackle this one because blackmailing and delusions of grandeur are neither caused nor solved by technology, but please file it away as something to worry about as you read.)
+3. There's something about LLMs that could degrade our memories and higher-order thinking to the point that we are no longer confident in our own minds.
+
+The more I noodled on it, the more this last point didn't seem to have an easy brush-off. Because I am both thorough and anxious, I went hunting. This is a record of what I found.
+</Summary>
+
+## Housekeeping
+<Summary note="This piece focuses on knowledge workers who need to develop command over new information as part of their jobs.">
+First a little housekeeping. This is a three-part series documenting what I learn as I explore how LLMs affect knowledge work. I'm not claiming much originality here, but I figured, "If I'm worried about this stuff, other people might be too." To that point, this isn't a doomsday piece. This part of the series lays out why I'm worried; the next two explore how we can leverage the power of AI agents while preserving and rejoicing in our own cognitive abilities.
+
+Second, I say "we" quite often in this series, but I'm really talking about **people who need to develop command over new information**, either independently or in teams. Think of graduate students doing literature reviews; intelligence analysts building new cases; lawyers learning precedent in new areas of law; VPs getting crash courses in new company departments; consultants coming in on new accounts; philanthropic funders exploring new funding areas; and so on. Actually, it's quite a long list when you think about it, isn't it?
+</Summary>
+
+## Parlez-vous...uh, hold on, I just had it.
+Let's start with the obvious: It's silly and probably wrong to argue that we shouldn't use LLMs. They're amazing. I and everyone I know can list a myriad tasks that LLMs have handled just in the last month<Footnote>Just for this project, Claude helped me find anchor points for literature reviews in unfamiliar fields, made lists of people I should talk to, pulled together meta-review tables from review papers in overlapping fields, wrote the code for the knowledge curation tool I used to keep track of everything, and helped me set this website up. It also occasionally helped me read dense papers, although I did catch it exaggerating or misinterpreting from time to time. Claude did not synthesize information or help me write this piece. I used em-dashes before LLMs >:-(</Footnote>. And yes, they come with problems (bias, energy cost, context windows, etc.) but just for this moment, let's be optimistic that those problems can be solved.
+
+So I'm not worried about LLMs specifically. I'm worried about what I'll call the *oracular paradigm*. This is the single-serving interaction you have with Claude or ChatGPT, where you ask a question and it provides an answer. My hunch is that this paradigm will degrade our ability and incentives to develop command over new information across time.
+
+To explain why this might be true, you need to know what we know about learning.
+
+<Summary note="Our brains build up knowledge over time, and having command over this knowledge makes it easier to think creatively and solve problems. But offloading the effort of learning means that we don't develop deep familiarity with knowledge. We remain in 'novice mode,' flustered by complexity and unable to flag errors.">
+How do you learn things? It's possible you don't think very much about it, but you know that you do it. Consider the first and last day in a year of French class. On the first day, you're working hard to remember basic phrases like "Je m'appelle." On the last day, you can introduce yourself effortlessly and have moved on to struggling with the various past tenses. The same goes for learning a new route: On your first day walking to work, you have to think about the turns you take. A week later and you might not even remember the details of your walk because you were thinking about something else. 
+
+This journey by which knowledge goes from effortful (declarative) to intuitive (procedural) involves many brain parts and processes. Memories are encoded, then consolidated, details pruned away to leave the "elegant gist"<Reference id = "oakley_2025_memory"/>. Some of this process is under our control; we can choose to strengthen certain memories by retrieving them more often, especially within the space of a few hours. Much more is subconscious. For example, during the day our brains "tag" experiences to revisit and strengthen while we sleep. We don't get to decide whether our walk around the block or our hour scrolling TikTok makes the cut<Reference id = "oakley_2025_memory"/>.
+
+Over a period of days to years, our brains deepen and expand the connections of important memories, building up knowledge *schema* that eventually feel more intuitive than explicit. By internalizing knowledge, we free up our *working memory* for higher-order cognition. For example, we can solve a calculus problem more easily if we already know how to do algebra. If we approach every piece of a problem as a novice, our brains are too busy with each piece to think about the whole puzzle. But if we have deep familiarity with the basics, that frees our minds up to make more insightful and creative connections.<Footnote>We can actually see the difference between shallow and deep knowledge in the brains of experts and amateurs! A study compared expert and amateur shogi players and found that experts making quick decisions had activity in an area of the brain more associated with procedural knowledge and pattern recognition, while amateurs did not. On top of that, the knowledge the experts were drawing on was so deeply internalized that they struggled to explicitly articulate it; so it wasn't cluttering up their conscious mind, but they were still using it. (<a href = "https://www.science.org/doi/abs/10.1126/science.1194732">Wan et al. "The Neural Basis of Intuitive Best Next-Move Generation in Board Game Experts." Science, 21 Jan 2011.</a>)</Footnote>
+
+A good knowledge foundation has a couple of other benefits, too. First, we learn new information much better if it's tied to previously internalized knowledge. It's also easier to make sense of new information if we can connect it to what we already know<Reference id="oakley_2025_memory"/>. Second, learning something well means that we are better at detecting errors. If we have strong internal expectations, we can more easily flag when something doesn't seem right, like a faulty calculation or an exaggeration from Claude.
+</Summary>
+
+When we try to *offload* some of the cognitive effort of learning onto external resources, we can weaken or bypass the learning process completely. One famous paper from 2011 showed the "Google effect": When people know they will have access to information later, they encode where the information can be found, not the information itself<Reference id="sparrow_2011_google"/>. In the Google search era, we were still forced to learn critical information simply by virtue of the fact that we needed to use it in higher-order tasks like analysis. But today we can offload those tasks to LLMs, too.
+
+And we do! In a recent report, Anthropic said that 75.5% of student conversations resulted in Claude performing critical thinking tasks like problem-solving and analysis<Reference id="anthropic_2025_student"/>. What if it turns out that these higher-order abilities are also "use it or lose it," even for people with robust knowledge schema who ought to have the information they need to think creatively? And what about the incoming generations who may not be building up the knowledge schema they need in the first place?
+
+Whoa, slow down, you might be thinking. Can't we simply choose to stay sharp?
+
+To answer that, I want to introduce you to the concept of the *hollowed mind*.
+
+## The Hollowed Mind
+
+<Summary note="LLMs may disrupt the processes we use to learn. If we don't learn stuff, we're more likely to ask for easy answers from LLMs, which will make it harder to think for ourselves, which will incline us further towards easy answers, which will make it harder...">
+In their 2025 paper on the "extended hollowed mind," Klein and Klein lay out a set of arguments for why it might not be so simple to keep thinking for yourself in the age of AI.<Reference id="klein_2025_hollowed"/> They call it the "Sovereignty Trap", a reference to their term "cognitive sovereignty."<Footnote>Basically, "can we choose to think at the level of effort we want?"</Footnote> The points that make up the Trap are:
+1. Easy answers from LLMs undermine the processes our brains use to form strong knowledge bases, like retrieving information often and connecting new information to old. 
+2. Moreover, we prefer this, because cognitive effort is unpleasant.<Reference id="david_2024_unpleasant"/> On top of that, everything about chat-based LLM interactions is designed to be frictionless. Answers are friendly, confident and polished<Footnote>In Kahneman's terms, this appeases our System 1 thinking (fast, instinctual) while sneaking by our System 2 (deliberate, effortful.) (Daniel Kahneman, *Thinking Fast and Slow*. 2011.)</Footnote>.
+3. Reduced effort around information actually changes how well we encode it. This means we either think we know something better than we do ("illusory knowledge"), or we're aware of our reduced command of information and no longer feel motivated to keep learning.
+
+Klein and Klein call the result of this Trap the *hollowed mind*: "A state of dependency where the frictionless availability of AI-generated answers enables users to systematically bypass the effortful cognitive processes essential for deep learning." In the Trap, not only do you fail to form robust knowledge schema, you're also disincentivized to interrogate an LLM's answers.  This lack of effort further undermines your memory systems, and the next time you need to think for yourself, you are less competent and confident in doing so.
+</Summary>
+
+## Pickles
+<Summary note="Becoming dependent on easy answers from LLMs makes us easy to fool and difficult to talk to. Those who want to maintain their cognitive skills may find that they don't have a choice, because professional environments often prioritize speed over long-term cognitive ability.">
+To be clear, we don't yet know if the oracular paradigm is going to be bad for us all of the time. We don't have longitudinal studies of our brains on LLMs, and the studies that investigate their short-term effects are not sufficient.<Footnote><a href="https://arxiv.org/abs/2506.08872">Kosmyna et al.'s 2025 paper, "Your Brain on ChatGPT", found significant differences in brain connectivity across conditions, but it relied on EEGs, which can't reliably see the deep brain structures most associated with procedural knowledge.</a></Footnote><Footnote><a href="https://www.sciencedirect.com/science/article/pii/S0747563224002541">A 2024 paper by Stadler et al. compared students who used LLMs to research a topic to students in control and search engine conditions. The LLM students experienced lower cognitive load but gave lower-quality reasoning when making their recommendations. I think that result is compelling, but it doesn't show us what happens across weeks or years of LLM use.</a></Footnote> Still, it's worth imagining the pickles we will be in if the oracular paradigm is generally bad a lot of the time.
+
+**Pickle 1:** We are vulnerable if we don't have robust internal knowledge schema. Imagine that you build AI agents for a company. A competitor comes to you and says, "Hey, we're moving in on this innovative idea. We'll pay you a lot if you prevent others from getting there first." If you know the first company just fired a bunch of people, and you think the remaining employees probably don't have the knowledge they need to innovate independently, wouldn't it be lucrative to ensure the AI agents you've provided don't help?
+
+**Pickle 2:** If we spend all of our time in the oracular paradigm, we might lose the ability to talk to each other. So much of productive knowledge work comes from describing problems to others and iterating collaboratively on their solutions. If we each have our own agents that present solutions effortlessly, we're not only less incentivized to work with one another, we might also forget how to communicate complicated problems. We lose our ability to tolerate, explain and work through uncertainty in real time.
+
+**Pickle 3:** Capitalism results in mass cognitive decay. I actually don't think I'm being dramatic here. In a 2025 paper<Reference id="ferdman_2025_deskilling"/>, Ferdman lays out her concerns around AI and deskilling, which go like this:
+1. AI can lead to deskilling, not only in profession-specific skills but in life skills like organizing and planning.
+2. Deskilling diminishes our abilities in the "arts of personhood," including our epistemic, moral, social and creative capacities.
+3. Deskilling is **structural**, not an individual responsibility. 
+
+This is a similar argument to the Trap, but situated in the realities of capitalism. Remember how big corporations made an entire generation feel that solving the plastic crisis was our personal responsibility? Well, that was bunk, and so is the idea that we will be able to avoid the Sovereignty Trap through sheer willpower. If workplaces prioritize short-term profits over long-term cognitive ability, then individuals don't have much of a choice about whether to do things the brain-friendly way. Ferdman's term for these environments is "capacity-hostile": the idea that environments don't just fail to encourage our capacities but actively discourage their cultivation and practice<Footnote>I'm sticking here to professional environments, but Ferdman explores what capacity-hostile environments might look like in our personal lives, too. She investigates whether Sam Altman's vision of a "personal AI team for everyone" might be good or bad for our judgment, "cognitive musculature", ability to make versus follow plans, moral wisdom, and social abilities.</Footnote>.
+</Summary>
+
+This last point leads me to a soapbox I feel justified in clambering up on. **I, personally, have not made the choice to sign away my epistemic agency.** I don't think any of us have. For many it is an aesthetic choice to think for ourselves; for many it is a normative choice. I think it should be a human right, regardless of how good machines are. But when all's said and done, it should be our choice. And the oracular paradigm may have made it for us already.
+
+## Out of the pickle pot, into the ??
+
+<Summary note="LLMs aren't the problem, easy answers are. What other options do we have? Tune in next time!">
+Okay, well, that last bit is great for dramatic effect but it's not quite true. LLMs are still new and the opportunity for a paradigm shift -- or, rather, a friendly proliferation of options -- still exists. Moreover, a lot of people are up on this soapbox with me. I was flipping through Anthropic's 81,000 conversations about AI and came across this quote: "Our generation might be [the last] to live in a world where human agency and ingenuity will have a place. I don’t want that for my daughter and unborn child."<Reference id = "anthropic_2026_AI"/>
+
+Yikes, me neither. 
+
+Fortunately, it's not all doom and gloom in the brain pan. We actually know a lot about how to design tools that support our cognitive abilities. In the education technology literature, people have identified design patterns that work with our brains, not against them. And there's a growing community of practice around employing these patterns in creative ways.
+
+Two examples that may already have come to mind are LearnLM and StudyGPT. In the next part of this series, I'll touch on "study mode" and explain why I don't think it avoids the Sovereignty Trap completely. I'll talk about how innovative interface design could help shift the burden of cognitive sovereignty from the shoulders of the individual. I will coin another term that probably no one else will use but that I need for my own mental clarity. And I will make, I suspect, one too many puns. 
+</Summary>
+
+Well, I don't know about that last part. See what you think.
+
+### Acknowledgements
+Thanks to Daniel Hart, Paul Cohen, Zac Hill, Joel Chan, Michael Hsu, Eileen Nakahata, Jessica Alfoldi, Daniel Aziz, Ben Reinhardt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
