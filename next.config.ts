@@ -9,8 +9,6 @@ const withMDX = createMDX({
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/seewhatyouthink",
-  assetPrefix: "/seewhatyouthink",
   images: { unoptimized: true },
   pageExtensions: ["ts","tsx","md","mdx"],
 };
