@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { HoverBlob } from "./HoverBlob";
+import { img } from "@/lib/imageLoader";
 
 // All units in vw. Bottom values converted from vh% assuming 1440×900 reference:
 // bottom_vw = bottom_pct × (900/1440) = bottom_pct × 0.625
@@ -22,27 +22,26 @@ export function BackgroundDrawings() {
   return (
     <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 0 }}>
       {DRAWINGS.map(({ src, size, left, bottom, blob, href }) => {
-        const img = (
-          <Image
-            src={src}
+        const image = (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={img(src)}
             alt=""
-            width={300}
-            height={300}
             className="w-full h-full object-contain opacity-50"
           />
         );
 
         const interactive = blob || href;
 
-        let content = img;
+        let content = image;
         if (blob) {
           content = (
             <HoverBlob color={blob.color} blobIndex={blob.index} label={blob.label}>
-              {href ? <Link href={href} className="block w-full h-full">{img}</Link> : img}
+              {href ? <Link href={href} className="block w-full h-full">{image}</Link> : image}
             </HoverBlob>
           );
         } else if (href) {
-          content = <Link href={href} className="block w-full h-full">{img}</Link>;
+          content = <Link href={href} className="block w-full h-full">{image}</Link>;
         }
 
         return (
