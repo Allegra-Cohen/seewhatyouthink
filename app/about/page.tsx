@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div style={{ height: "10vw" }} />
         </main>
         <div className="px-6 pb-8 lg:py-8 lg:pr-2 pointer-events-auto">
-          <div className="lg:mt-24 lg:-ml-60">
+          <div className="flex justify-center lg:block lg:mt-24 lg:-ml-60">
             <Headshot />
           </div>
         </div>
