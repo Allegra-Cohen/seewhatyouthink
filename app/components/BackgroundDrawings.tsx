@@ -20,7 +20,7 @@ const DRAWINGS = [
 
 export function BackgroundDrawings() {
   return (
-    <div className="fixed inset-0 pointer-events-none opacity-30 lg:opacity-100" style={{ zIndex: 0 }}>
+    <div className="fixed inset-0 pointer-events-none hidden lg:block" style={{ zIndex: 0 }}>
       {DRAWINGS.map(({ src, size, left, bottom, blob, href }) => {
         const image = (
           // eslint-disable-next-line @next/next/no-img-element

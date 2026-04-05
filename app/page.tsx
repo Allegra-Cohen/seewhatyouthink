@@ -47,7 +47,7 @@ export default function Home() {
             ))}
           </ul>
         </main>
-          <div className="lg:ml-40 lg:mt-32 mt-8 pointer-events-auto">
+          <div className="lg:ml-40 lg:mt-32 mt-8 mx-auto lg:mx-0 w-1/2 lg:w-auto pointer-events-auto">
           <HoverBlob color="#a53f2a" blobIndex={2} blobStyle={{ top: "-20%", left: "-10%", width: "90%", height: "80%" }}>
           <EmailSignup />
           </HoverBlob>
