@@ -14,11 +14,11 @@ export default function Home() {
     <SummaryLensProvider>
       <BackgroundDrawings />
       <div
-        className="relative grid grid-cols-[1fr_2fr_1fr] min-h-screen pointer-events-none"
+        className="relative grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] min-h-screen pointer-events-none"
         style={{ zIndex: 1 }}
       >
         <LeftMargin />
-        <main className="py-16 px-6 pointer-events-auto">
+        <main className="py-8 px-6 lg:py-16 pointer-events-auto">
           <h1
             style={{
               fontFamily: "var(--font-lato)",
@@ -47,7 +47,7 @@ export default function Home() {
             ))}
           </ul>
         </main>
-          <div style={{marginTop: "8rem", marginLeft: "10rem", pointerEvents: "auto"}}>
+          <div className="lg:ml-40 lg:mt-32 mt-8 pointer-events-auto">
           <HoverBlob color="#a53f2a" blobIndex={2} blobStyle={{ top: "-20%", left: "-10%", width: "90%", height: "80%" }}>
           <EmailSignup />
           </HoverBlob>

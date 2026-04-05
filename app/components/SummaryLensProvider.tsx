@@ -142,6 +142,7 @@ function TLDRButton() {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="hidden lg:block"
       style={{
         position: "fixed",
         bottom: "2rem",

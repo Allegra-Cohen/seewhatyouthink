@@ -7,11 +7,11 @@ export default function AboutPage() {
     <>
       <BackgroundDrawings />
       <div
-        className="relative grid grid-cols-[1fr_2fr_1fr] min-h-screen pointer-events-none"
+        className="relative grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] min-h-screen pointer-events-none"
         style={{ zIndex: 1 }}
       >
         <LeftMargin />
-        <main className="py-16 px-6 pointer-events-auto" style={{ paddingRight: "10rem" }}>
+        <main className="py-8 px-6 lg:py-16 pointer-events-auto lg:pr-40">
           <h1
             style={{
               fontFamily: "var(--font-lato)",
@@ -34,8 +34,8 @@ export default function AboutPage() {
           </div>
           <div style={{ height: "10vw" }} />
         </main>
-        <div className="py-8 pr-2 pointer-events-auto">
-          <div style={{ marginTop: "clamp(5rem, 7vw, 9rem)", marginLeft:"-15rem" }}>
+        <div className="px-6 pb-8 lg:py-8 lg:pr-2 pointer-events-auto">
+          <div className="lg:mt-24 lg:-ml-60">
             <Headshot />
           </div>
         </div>
