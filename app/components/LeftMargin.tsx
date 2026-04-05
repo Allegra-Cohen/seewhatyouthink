@@ -3,7 +3,7 @@ import { img } from "@/lib/imageLoader";
 
 export function LeftMargin() {
   return (
-    <>
+    <div>
       {/* Desktop: vertical stacked title in left column */}
       <div className="hidden lg:block self-stretch" style={{ marginTop: "-2.5rem", paddingLeft: "max(1rem, 3vw)" }}>
         <h1
@@ -17,8 +17,8 @@ export function LeftMargin() {
         </h1>
       </div>
 
-      {/* Mobile: horizontal title with eye drawing */}
-      <div className="flex lg:hidden items-center gap-3 px-4 pt-4 pb-2">
+      {/* Mobile: horizontal title with eye drawing and nav */}
+      <div className="flex lg:hidden items-center gap-3 px-4 pt-4 pb-2 pointer-events-auto">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={img("/drawings/eye.png")}
@@ -37,6 +37,6 @@ export function LeftMargin() {
           <Link href="/about" className="hover:text-accent transition-colors">about me</Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
