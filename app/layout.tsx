@@ -16,15 +16,15 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = {
   title: "See what you think",
-  description: "Allegra Cohen's blog about knowledge curation, new interfaces, large-scale qualitative data, and whatever else comes to mind.",
+  description: "Allegra A. Beal Cohen's blog",
   icons: {
     icon: "/favicon.png",
   },
   authors: [{ name: "Allegra A. Beal Cohen" }],
   openGraph: {
     title: "See what you think",
-    description: "Allegra Cohen's blog about knowledge curation, new interfaces, large-scale qualitative data, and whatever else comes to mind.",
-    type: "website",
+    description: "Allegra A. Beal Cohen's blog",
+    type: "article",
     authors: ["Allegra A. Beal Cohen"],
     images: [{ url: "https://seewhatuthink.com/drawings/blog_picture.png" }],
   },
