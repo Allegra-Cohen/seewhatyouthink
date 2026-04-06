@@ -1,6 +1,7 @@
 import { LeftMargin } from "@/app/components/LeftMargin";
 import { BackgroundDrawings } from "@/app/components/BackgroundDrawings";
 import { SummaryLensProvider } from "@/app/components/SummaryLensProvider";
+import { EmailSignup } from "@/app/components/EmailSignup";
 
 export default function PostLayout({
   children,
@@ -14,6 +15,9 @@ export default function PostLayout({
         <LeftMargin />
         <main className="py-8 px-6 lg:py-16 lg:px-25 pointer-events-auto">
           {children}
+          <div style={{ marginTop: "4rem" }}>
+            <EmailSignup />
+          </div>
           <div style={{ height: "10vw" }} />
         </main>
         <div />
