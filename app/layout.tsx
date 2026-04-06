@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  openGraph: {
+    title: "See what you think",
+    description: "Allegra Cohen's blog",
+    images: [{ url: "https://seewhatuthink.com/drawings/blog_picture.png" }],
+  },
 };
 
 export default function RootLayout({
