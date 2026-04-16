@@ -14,7 +14,12 @@ const REFERENCES: Record<string, ReactNode> = {
   "david_2024_unpleasant": <a href = "https://www.apa.org/pubs/journals/releases/bul-bul0000443.pdf">Louise David et al. "The Unpleasantness of Thinking: A Meta-Analytic Review of the Association Between Mental Effort and Negative Affect." APA Psychological Bulletin, 2024.</a>,
   "ferdman_2025_deskilling": <a href = "https://link.springer.com/article/10.1007/s00146-025-02686-z">Avigail Ferdman. "AI deskilling is a structural problem." AI & Society, 05 Nov 2025.</a>,
   "anthropic_2026_AI": <a href = "https://www.anthropic.com/features/81k-interviews">Saffron Huang et al. "What 81,000 people want from AI." Anthropic.com, 18 Mar 2026.</a>,
-
+  "andrews_2010_space": <a href = "https://dl.acm.org/doi/epdf/10.1145/1753326.1753336">Christopher Andrews et al. "Space to Think: Large, High-Resolution Displays for Sensemaking." CHI 2010, April 10 - 15, 2010.</a>,
+  "hill_1992_wear": <a href = "https://dl.acm.org/doi/10.1145/142750.142751">William Hill et al. "Edit wear and read wear." CHI 1992.</a>,
+  "zhu_2025_sense": <a href = "https://joelchan.me/assets/pdf/Zhu_Chan_2025_Sense%20and%20Senseability.pdf"> Siyi Zhu and Joel Chan. "Sense and Senseability: Exploring Future Immersive Environments for Scholarly Sensemaking." Creativity & Cognition 2025, June 23 - 25.</a>,
+  "amelia_fisheye": <a href = "https://wattenberger.com/thoughts/fish-eye/"> Amelia Wattenberger. "Fish Eyes."</a>,
+  "tang_2024_steering": <a href = "https://arxiv.org/pdf/2409.17289"> Xuxin Tang et al. "Steering LLM Summarization with Visual Workspaces for Sensemaking." arXiv preprint arXiv:2409.17289, 2024.</a>,
+  
 
 };
 
