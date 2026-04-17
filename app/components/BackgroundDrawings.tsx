@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { HoverBlob } from "./HoverBlob";
+import { DrivableDrawing } from "./DrivableDrawing";
 import { img } from "@/lib/imageLoader";
 
 // All units in vw. Bottom values converted from vh% assuming 1440×900 reference:
@@ -14,14 +15,18 @@ const DRAWINGS = [
   { src: "/drawings/oracle.png", size: "15vw", left: "0vw", bottom: "0.6vw", blob: null, href: null },
   { src: "/drawings/statue.png", size: "12vw", left: "1vw", bottom: "14.6vw", blob: { color: "#7346cf", index: 0, label: "about" }, href: "/about" },
   { src: "/drawings/gumdrop_red.png", size: "3vw", left: "14vw", bottom: "1.1vw", blob: null, href: null },
-  { src: "/drawings/gumdrop_green.png", size: "3.5vw", left: "75vw", bottom: "2.4vw", blob: null, href: null },
+  { src: "/drawings/gumdrop_green.png", size: "3.5vw", left: "75vw", bottom: "2.4vw", blob: null, href: null, drivable: true },
   { src: "/drawings/eye.png", size: "8.5vw", left: "15vw", bottom: "45vw", blob: null, href: null },
 ];
 
 export function BackgroundDrawings() {
   return (
     <div className="fixed inset-0 pointer-events-none hidden lg:block" style={{ zIndex: 0 }}>
-      {DRAWINGS.map(({ src, size, left, bottom, blob, href }) => {
+      {DRAWINGS.map(({ src, size, left, bottom, blob, href, drivable }) => {
+        if (drivable) {
+          return <DrivableDrawing key={src} src={src} size={size} initialLeft={left} initialBottom={bottom} />;
+        }
+
         const image = (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -47,7 +52,7 @@ export function BackgroundDrawings() {
         return (
           <div
             key={src}
-            className="absolute"
+            className="absolute background-drawing"
             style={{ left, bottom, width: size, height: size, pointerEvents: interactive ? "auto" : "none", overflow: "visible" }}
           >
             {content}

@@ -8,7 +8,7 @@ export function LeftMargin() {
       <div className="hidden lg:block self-stretch" style={{ marginTop: "-2.5rem", paddingLeft: "max(1rem, 3vw)" }}>
         <h1
           style={{ fontSize: "clamp(2.5rem, 4vw, 4.5rem)", fontFamily: "var(--font-lato)" }}
-          className="font-black leading-[0.95] sticky top-2"
+          className="font-black leading-[0.95] sticky top-2 left-margin-title"
         >
           See <br />
           <span style={{ marginLeft: "3rem" }} />what<br />
