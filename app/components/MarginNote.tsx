@@ -264,7 +264,7 @@ export function MarginNote({
       {open && (
         <span
           style={{ color, backgroundColor: bg, fontSize: "clamp(12pt, 1vw, 15pt)", fontFamily: "var(--font-lato)", fontWeight: 400 }}
-          className="block lg:hidden rounded px-3 py-2 mt-1 mb-1"
+          className={`block lg:hidden rounded px-3 py-2 mt-1 mb-1 ${isFootnote ? "" : "reference-note"}`}
         >
           {children}
         </span>
@@ -286,7 +286,7 @@ export function MarginNote({
           transition: "opacity 0.15s ease",
           pointerEvents: visible ? "auto" : "none",
         }}
-        className="hidden lg:block absolute right-0 w-[25%] pr-6 leading-snug"
+        className={`hidden lg:block absolute right-0 w-[25%] pr-6 leading-snug ${isFootnote ? "" : "reference-note"}`}
       >
         {marginMarkerContent}
         {children}

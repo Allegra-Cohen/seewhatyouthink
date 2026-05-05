@@ -8,6 +8,9 @@ import {
   useRef,
   useEffect,
 } from "react";
+import { usePathname } from "next/navigation";
+
+const HIDE_TLDR_PATHS = ["/posts/the-challenge"];
 
 interface SummaryLensContextType {
   lensActive: boolean;
@@ -137,6 +140,9 @@ function SummaryBox({ text }: { text: string }) {
 function TLDRButton() {
   const { lensActive, toggleLens } = useSummaryLens();
   const [hovered, setHovered] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname && HIDE_TLDR_PATHS.includes(pathname)) return null;
 
   return (
     <div

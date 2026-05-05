@@ -1,0 +1,247 @@
+---
+title: "The Challenge"
+date: "2026-05-03"
+summary: "Field report."
+---
+
+# The Challenge
+
+<PostDate date="2026-05-03" />
+
+## Introduction
+
+Boy, you think you know where you're going when you sign off on a post! You don't. Things can always get more complicated. 
+
+Last time I defined a north star: Tools for thought that don't degrade our cognitive abilities. I also said I would identify the bottlenecks that might be preventing progress towards these tools. But the thing is, making any kind of significant progress towards *your* north star requires other people. Which means you don't just need to understand what the path to your star looks like -- you need to understand what other people think, too, especially if their own north stars have particular gravity that will hasten or warp your path. And even if you find allies whose stars align with yours,<Footnote>Aw, cute ;)</Footnote> you might have very different ideas of the best way to reach them.
+
+I suspect that figuring out this constellation of stars and paths is part of what people call "field-mapping." In that spirit, this post is more of a field report. I do, in fact, have one or two suggestions for levers that could catalyze innovation around poietic tools. But I also think the process I went through to design those suggestions might be interesting to others. So instead of just saying what my recommendations are, I'm going to start with how I got there.<Footnote>You might wonder if that wasn't the point of the first two parts. Yeah, sort of, but that was coming from the direction of the problem. This time I came from the direction of, like, incentives and things. Try to keep up.</Footnote>
+
+## What do you think the future looks like?
+
+Here's a picture I've been thinking about a lot: 
+
+![](/drawings/plot_picture.png)
+
+The y-axis is how good an LLM (or, let's say, AI capabilities in general) is at a thing. The x-axis is how good we are at a thing. The dots are things. Don't worry about what these are yet.<Footnote>Say they're units of knowledge work, from reading a sentence all the way up to forming an argument and beyond. I'm calling them "things" because I can't find a better word.</Footnote> *Do* worry about whether the lower triangle includes augmented humans. It does. Augmentation can mean everything from my notebook to my Claude terminal; the requirement for being below the line is that I'm in control and I know <a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">what's going on</a>.
+
+The dotted line is the line of parity, where AI and humans are equally good at a task. We can expect that as AI gets better, some things will move across the line towards the AI side. But that could happen for two reasons:
+1. AI gets better.
+2. We get worse.
+
+Note that these outcomes aren't independent across things and they're not symmetric, either. As we saw in the first part of this series, AI getting better at one thing could potentially degrade our capabilities for others. And us getting worse at something (e.g., navigating conflict through discussion) doesn't mean AI will pick up the slack. If we get worse and AI does not get better, we could "lose" things entirely. 
+
+At the same time, whether and why a thing crosses the line doesn't always have a universal moral color, whether or not it is lost. Take memorizing epic poems as an example: Socrates thought writing would degrade our memories; most of us today don't care that we can't recite more than the first two lines of the good part of St Crispin's Day speech.<Footnote>WE FEW WE HAPPY FEW WE BA</Footnote> Now take letter-writing as an example. Did we lose a depth of reflection and connection that was never recovered by email?<Footnote>What an insightful and provocative question.</Footnote>
+
+What I've realized over the last few weeks is that anything I write in this post will be colored by what things you<Footnote>Yes, you.</Footnote> think will cross the line and how you feel about that. Some people are very, very scared that AI will swallow all things. Some people are worried about Skynet scenarios<Footnote>There are lots of articles and quotes about this -- I thought <a href="https://ui.stampy.ai/questions/6953/Do-people-seriously-worry-about-existential-risk-from-AI">this</a> was a useful summary.</Footnote> or more insidious versions where machines creep into control simply by virtue of our inability to coordinate and notice on large scales.<Reference id = "kulveit_2025_gradual"/> Some people are actually pretty into that. Some people don't think that AI will come for the things they value anytime soon and are much more worried about, say, mass layoffs, or the fact that building data centers <a href="https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom">degrades the environment</a> faster than any AI-enabled maneuvering will fix it. I've read and talked to people about a lot of these takes and my head has gotten muddled. It's hard to have a conversation about what to "do" if no one agrees what the problem is. 
+
+So here's a clarifying exercise. The groundwork for any productive conversation about the picture above probably looks like this:
+
+1. How long, if ever, before a thing crosses the line?
+2. Why will the thing cross the line?<Footnote>To get to the oth oh my god never mind</Footnote>
+3. Should the thing remain below the line?
+4. If so, how can we keep the thing below the line? If not, how can we kick it across faster?
+
+Now, look, this set of questions is not unique. Plenty of think pieces are being published that answer them implicitly. I'm sure more collective efforts like conferences try to answer them more explicitly. There probably aren't even unanimous answers for most things. But I'm laying them out here so that a) you can see why I suggest the lever I do and b) if you disagree, I know whether you have predictive qualms (1 - 2), normative or moral qualms (3), or practical qualms about leverage (4).
+
+Here's the interactive part. I've picked a thing. You pick the answers. (Well, actually, I pick one of the answers but you'll see why.) I propose the same lever, but the design changes depending on what you pick.<Footnote>And if you don't like that, there's another lever you can read about instead.</Footnote>
+
+Ready?<Footnote><a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4">No.</a></Footnote>
+
+## The Thing
+
+We're going to focus on a well-studied and pretty important thing: Sensemaking.
+
+"Sensemaking" is a term used by Pirolli and Card to describe how intelligence analysts turn heaps of disconnected data into clear narratives.<Reference id= "pirolli_2005_sensemaking"/> Take a look at their picture of what intelligence analysis looks like as a whole:
+
+![](/drawings/pirolli.png)
+
+You have lower-order tasks like searching for information, filtering it, skimming it, and so on. Pirolli and Card term this the "foraging loop." Then you have higher-order tasks like schema building, hypothesis testing and storytelling. These parts are what Pirolli and Card call "sensemaking." Right now, LLMs live mostly in the bottom left part of the picture, and they're not even great at that.<Reference/> Humans are good at the top right part of the picture, with two caveats: 1) We need to go through the whole process to get good at the top bits, and 2) It can take us a very long time to get the right answers.<Footnote>Think back to my friend's story about the CIA analyst who caught bin Laden. She did it, but it took something like ten months.</Footnote>
+
+Ok, so sensemaking is our chosen thing. Take as given that we want to get better at it.<Footnote>That is because we want to catch terrorists faster, not to mention that we also do sensemaking when we're catching money launderers, tracing a pandemic, investing money, donating money, mapping a field, doing a Google search, talking to our therapist, etc.</Footnote> Take also as a given that there is a *lot* of research on how humans learn and think, a *lot* of research on how humans do sensemaking specifically, a *lot* of research on how humans share mental models in teams, and even a *lot* of research on how technology can help us do these things faster.<Footnote>Much of it funded by DARPA, much of it bottlenecked by AI. For example, DARPA's Causal Exploration program. When I was at DARPA, Dan Adams took me through the UI for collectively building and visualizing causal models. It was great, he said, but the whole thing hinged on an ontology that had to be manually updated.</Footnote> But LLMs are so new, so much better than past NLP, and sometimes still so much worse than humans that how to integrate them into sensemaking isn't clear. And that's before we start worrying about possible deleterious effects on human ability. 
+
+## The Lever
+
+Let me pause for a moment to tell you a story you have probably already heard. In 2004, the DoD wanted autonomous vehicles to be a thing, and the research world was moving too slowly. So DARPA offered $1 million to any team with a self-driving car that could drive 150 miles through the Mojave Desert. The DARPA Grand Challenge, as it was known, was very popular, super difficult and heralded as the beginning of the self-driving car industry. It sparked progress and innovation through the <a href="https://www.renaissancephilanthropy.org/playbooks/market-shaping">definition and incentivizing of a clear goal.</a> 
+
+Challenges are useful when there is a) a clear objective and we b) don't know the best way to get to it. This is true of sensemaking: We have a bunch of ideas about how machines can help do it, but none has been proven the best and many of the most innovative approaches are still prototypes. So that's one box checked on the list of criteria for a challenge. Another thing about sensemaking: The success condition is clear. No matter how fuzzy and mysterious and remarkable the stuff inside our heads is, at the end of the day, we've either caught bin Laden faster or we haven't.<Footnote>Or, you know, caught more bin Ladens, or what have you. We'll discuss the details later.</Footnote> Clear objective, many possible paths, and simple rules for winning: These, my friends, are good conditions for a challenge.
+
+But hold on, you might be thinking -- you didn't actually state an objective. Do we want to get better at sensemaking, or do we want to get better at sensemaking in a way that doesn't damage our own skills and expertise? We can't avoid answering this, because it changes the design of the challenge. And, hey, you and I both know what I think. 
+
+Here's the super fun interactive part. What do you think?
+
+## The Questions<Footnote>Ok, just a disclaimer first -- I'm not in your head. If you have answers to the following questions that aren't represented by the options, try beaming them to me. </Footnote>
+
+<DecisionTree> 
+<Question row={1}>How long, if ever, until sensemaking crosses the line of parity?</Question> 
+<Question row={2}>Why would sensemaking cross the line?<Footnote>TO GET TO THE OTHER S</Footnote></Question> 
+<Question row={3}>Should sensemaking remain below the line?</Question> 
+<Question row={4}>If so, how can we keep the thing below the line? If not, how can we kick it across faster?</Question> 
+<Question row={5}>Okay, okay, we'll do something else.</Question> 
+
+<Option row={1} id="1a" opens="version2"> Never, or long enough from now that I don't care. </Option>
+<Option row={1} id="1b" opens="2a,2b,2c"> Soon. </Option>
+<Option row={1} id="1c" opens="5a"> I really don't want to pick a thing, I would rather think about all the things at once. </Option>
+
+<Option row={2} id="2a" opens="3a,3b"> We make advances in structured thinking for LLMs and AI gets much better at sensemaking.</Option>
+<Option row={2} id="2b" opens="3a,3b"> AI gets better and we get worse because outsourcing too much of the process damages our expertise.</Option>
+<Option row={2} id="2c" opens="3a,3b"> AI will stay the same and we will get worse (same reason as above, but the threshold for damage is lower.)</Option>
+
+
+<Option row={3} id="3b" opens="version1"> No, if we can outsource sensemaking, we should, and I see no reason to keep ourselves in the loop.</Option>
+
+<Option row={3} id="3a" opens="version2">Yes, we need to remain in the sensemaking loop because we need to make decisions for ethical and existential reasons; and/or because I think what we learn about sensemaking has broader implications for poietic tools, epistemic security and our civilization more generally.</Option>
+
+<Outcome id="version1">Challenge Version 1</Outcome>
+<Outcome id="version2">Challenge Version 2</Outcome>
+<Outcome id="5a">Snowglobe!</Outcome>
+
+</DecisionTree>
+
+<OutcomeText id = "version1">
+## Design
+
+Let's say for simplicity's sake that you and I work at the Challenge House ("the House" for short) and we're in charge. We issue the following challenge to communities across human-computer interaction, AI, NLP, modeling, operational psychology, cognitive science, augmented reality, hardware, and any other field that wants to get involved: **Design tools and environments to solve complex sensemaking problems.**
+
+We say that the challenge will occur one year after its announcement. Honestly, in this economy, we probably provide seed funding to some teams -- let's say a pot of $10 million with a maximum award of $500k. The solicitation says, "However you want to do it, build something that solves the problem."
+
+In the meantime, the House team gets busy. We hire a testing and evaluation (T&E) team and kick the really thorny design and statistical problems over to them. These are things like, please design a sensemaking challenge that cannot be solved by an out-of-the-box LLM, does not have floor or ceiling effects for human sensemakers, and offers enough opportunity for interesting posthoc analysis about the competing technologies.<Footnote>If you're skeptical about whether problem sets like this exist, I was too -- but it turns out they do! There are a bunch of sensemaking datasets used quite frequently in training and competitions. "Sign of the Crescent" is a classic, where you have to dodge red herrings and sleuth through lots of data to discover a terrorist plot. Of course, the solution to that dataset is on the internet, so we probably need to build our own.</Footnote> This team will have smarter ideas than me, but for the purpose of this post, assume that they design a problem set where the winner is the one that solves the problem fastest.
+
+We also make friends with the intelligence and law enforcement communities, maybe roping a few analyst training programs into supplying us with human *sensemakers*. These are the people who will use the technology built by the competitors in the challenge. We won't give teams' technologies to novices because then we have to account for learning the task; we're giving teams' technologies to people who are already expert in the task.
+
+The day of the challenge arrives! Competing teams and sensemakers congregate in a location.<Footnote>Maybe somewhere with a beach? And a good spot for birding?</Footnote> Each team is assigned a set of sensemakers. When the challenge begins, these sensemakers use their team's technology to solve the problem set by the T&E team (individually, that is. Each sensemaker works with the technology in isolation.) Because we're interested in the effects of the tool, we're also going to have a control group working old school.<Footnote>Let's define this as a computer with a monitor, a search engine with AI overview turned off, and various notetaking and drawing tools commonly available on today's computers. Maybe they get a printer, too.</Footnote> Teams are scored by looking at the difference in time to solve between their sensemakers and the control group.
+
+By the end of the day, the data look something like this<Footnote>Please note that I have no idea what the results would look like, that's the whole point of running a challenge</Footnote> (where the score is how much *faster* the team was than the control group):
+
+ | Team     | Score |
+ | -------- | -------- |                                                                                                                                         
+ | "Magic Hands": Haptics + space to think + LLMs  | 2:02:55  |                                                              
+ | "Five Hundred LLMs in a Trench Coat": Neurosymbolic agent frameworks with occasional human guidance | 0:59:49 | 
+ | "Old School Rules": Rule-based machine reading + visualization | 0:45:23 |
+ | "The Pudding's in the Proof": The human does most of the work but they can set up and use a theorem prover | 0:10:17 |
+ | "Worst is First": Just the worst tool, actively misinforms you | -3:08:01 |
+
+This tells us that one particular approach did much better than the others: Different modalities (haptics and visual data environments) shared by humans and LLMs. If our T&E team is really good, we probably have a lot of other data points for posthoc analyses. For example, perhaps approaches with the most human direction got to certain steps in the solution much faster than approaches that leaned more heavily on AI. Maybe the team that went hard on neurosymbolic strategies did particularly well at tasks that required holding many pieces of information in mind at once...and so on. 
+
+At the end of the day, the winner is crowned. The T&E team bends towards the work of analyzing the results, publishing a report some amount of time later. And that's the challenge!<Footnote>Minus all the details. Like, is there downselect for the funded teams? Do we publish a practice challenge? Are we running this once on one type of problem set or are we doing a tour of many different problem sets across a period of many weeks? What about statistical rigor, how many sensemakers get assigned to each entrant? Will we have to cap the number of entrants, then? How will they set up their technology, what will that look like? Will sensemakers get time to learn the tech before starting the challenge? What about next year, will we have sensemakers work with other sensemakers *and* the AI? That would be cool, right?</Footnote>
+
+## Impact
+I like the challenge idea because, if done well, it's both very flashy and pretty darn informative. For example, if some teams come out miles ahead, then we learn what approaches funders and investors should fund and invest in. Similarly, if teams crash and burn, we get a signal about what approaches don't work. Even if the race is tight, provided that the T&E team did their jobs right, we can see where different approaches pulled ahead or fell behind. At the end of the day, researchers, funders and investors should all learn a lot about promising ways to bring AI into sensemaking.
+
+What about the challenge's impact beyond sensemaking? Or rather, sensemaking-the-process beyond the intelligence context? Lots of jobs entail sensemaking besides intelligence analysis and criminal investigation. Epidemiological tracing, for one. All kinds of investing, for another. Field-mapping for philanthropic foundations. Policy design (ideally.) Even your Google search (or Claude prompt) is a kind of sensemaking. It's not beyond belief to imagine the winner of this challenge could go on to build a very lucrative piece of fintech, design the new search experience or (why not!) detect the next pandemic.
+
+Another impact this challenge might have is on neurosymbolic AI research, and particularly its transition out of the lab. Recall that the T&E team is tasked with designing a challenge problem that LLMs can't solve alone out of the box. That means that teams have to think about the structure of sensemaking and figure out how to bring LLMs into it. There are some very innovative projects being done right now around how to share structure with LLMs that go far beyond RAG. This challenge might incentivize more aggressive progress in that area.
+
+To the last point, you'll note that nothing about the challenge indicates that you can't try to solve it with AI alone. I thought about whether there should be an explicit condition for teams that build "AI alone" approaches (i.e., the system solves the problem and simply hands it to the human sensemaker to submit.) But then I thought, people are probably going to try to do that anyways. Why would I draw artificial divisions? Let people take bets -- both practical and normative -- on whether they think humans should be in the loop.
+
+Speaking of which, this is not the challenge design I would pick! It might point me roughly north, but it does not get me as close to my north star as I would like. If you want to see what I think,<Footnote>haha, titular title returns again</Footnote> pop back up and pick "Yes" for the last question.
+
+</OutcomeText>
+
+<OutcomeText id = "version2">
+## Design
+Let's say for simplicity's sake that you and I work at the Challenge House ("the House" for short) and we're driving this boat. At the start of the year, we issue the following challenge to communities across human-computer interaction, AI, NLP, modeling, operational psychology, cognitive science, augmented reality, hardware, and any other field that wants to get involved: **Design tools and environments for human-machine teams to solve complex sensemaking problems without compromising human understanding.** 
+
+We say that the challenge will occur one year after its announcement. Honestly, in this economy, we probably provide seed funding to some teams -- let's say a pot of $10 million with a maximum award of $500k. The solicitation says that we are particularly interested in novel modalities and environments, and we expect innovation around how humans and AI share information.
+
+In the meantime, the House team gets busy. We hire a testing and evaluation (T&E) team and kick the really thorny design and statistical problems over to them. These are things like, please design a sensemaking problem set that cannot be solved by an out-of-the-box LLM, does not have floor or ceiling effects for human sensemakers, and offers enough opportunity for interesting posthoc analysis about the competing technologies.<Footnote>If you're skeptical about whether problem sets like this exist, I was too -- but it turns out they do! There are a bunch of sensemaking datasets used quite frequently in training and competitions. "Sign of the Crescent" is a classic, where you have to dodge red herrings and sleuth through lots of data to discover a terrorist plot. Of course, the solution to that dataset is on the internet, so we probably need to build our own.</Footnote> This team will have smarter ideas than me, but for the purpose of this post, assume that they design a problem set where the winner is the one that solves the problem fastest.
+
+We also make friends with the intelligence and law enforcement communities, maybe roping a few analyst training programs into supplying us with human *sensemakers*. These are the people who will use the technology built by the competitors in the challenge. We won't give teams' technologies to novices because then we have to account for learning the task; we're giving teams' technologies to people who are already expert in the task.
+
+The first day of the challenge arrives! Competing teams and sensemakers congregate in a location.<Footnote>Maybe somewhere with a beach? And a good spot for birding?</Footnote> Each team is assigned a set of sensemakers. When the challenge begins, these sensemakers use their team's technology to solve the problem set by the T&E team (individually, that is. Each sensemaker works with the technology in isolation.) Because we're interested in the effects of the tool, we're also going to have a control group working old school.<Footnote>Let's define this as a computer with a monitor, a search engine with AI overview turned off, and various notetaking and drawing tools commonly available on today's computers. Maybe they get a printer, too.</Footnote> Teams are scored by looking at the difference in time to solve between their sensemakers and the control group.
+
+By the end of the day, the data look something like this<Footnote>Please note that I have no idea what the results would look like, that's the whole point of running a challenge</Footnote> (where the score is how much *faster* the team was than the control group):
+
+ | Team     | Score |
+ | -------- | -------- |                                                                                                                                         
+ | "Magic Hands": Haptics + space to think + LLMs  | 2:02:55  |                                                              
+ | "Five Hundred LLMs in a Trench Coat": Neurosymbolic agent frameworks with occasional human guidance | 0:59:49 | 
+ | "Old School Rules": Rule-based machine reading + visualization | 0:45:23 |
+ | "The Pudding's in the Proof": The human does most of the work but they can set up and use a theorem prover | 0:10:17 |
+ | "Worst is First": Just the worst tool, actively misinforms you | -3:08:01 |
+
+If our T&E team is good, we probably have a lot of other data points for posthoc analyses beyond just time to solution. For example, perhaps we can see that approaches with the most human direction got to certain steps in the solution much faster than approaches that leaned more heavily on AI. Maybe the team that went hard on neurosymbolic strategies did particularly well at tasks that required holding many pieces of information in mind at once...and so on. 
+
+Now, here's the catch. We're not just interested in what approach got the fastest result. We're also interested in how the approach affected its human driver, i.e., how much did the human sensemakers understand about the world of the problem set by working through it on Day 1? 
+
+So we bring the teams back for Day Two. On Day Two, the human sensemakers return to the world of the problem set *without their team's technology.* They are asked to solve another problem in the same world.<Footnote>My friend used to teach a class called "So You Want to Be a Drug Lord." If that's Day 1, then Day 2 is something like "So You Want To Catch a Drug Lord." The point is that we're testing whether the sensemaker learned and understood enough about the world on Day 1 to have faster insights on Day 2.</Footnote> The Day 2 score (forgive me) is the difference between the *difference in times for the control group* and the *difference in times for the team*, e.g.: 
+
+<p style={{ textAlign: "center" }}>Magic Hands total score = &Delta;(&Delta;(Control Day 1, Control Day 2), &Delta;(Magic Hands Day 1, Magic Hands Day 2)).</p>
+
+Put in English, we're trying to separate the variance in outcome due to learning from the variance due to the approaches. For example, if the Magic Hands sensemakers move much faster the second day than Old School Rules, that could happen either because the Magic Hands approach is better or because the Magic Hands sensemakers didn't really use the technology but learned about the world on their own. Looking at the difference between Days 1 and 2 for the control group tells us what the outcome would be if the latter were true. Therefore, looking at the difference in the differences between days between groups (I'm sorry) lets us say how much variance is due to the approach.
+
+Once Day 2 is finished, we calculate the total score for each team by adding their Day 1 and Day 2 scores together. Now we have the following data:
+
+ | Team     | Day 1 Score | Day 2 Score | Total Score |
+ | -------- | -------- | -------- | -------- |
+ | "Magic Hands": Haptics + space to think + LLMs  | 2:02:55  | 0:25:03 | 2:27:58 |                                     
+ | "Old School Rules": Rule-based machine reading + visualization | 0:45:23 | 0:05:12 | 0:50:35 |                      
+ | "The Pudding's in the Proof": The human does most of the work but they can set up and use a theorem prover | 0:10:17 | 0:07:30 | 0:17:47 |
+ | "Worst is First": Just the worst tool, actively misinforms you | -3:08:01 | -0:11:44 | -3:19:45 |
+ | "Five Hundred LLMs in a Trench Coat": Neurosymbolic agent frameworks with occasional human guidance | 0:59:49 | -4:17:00 | -3:42:49 |
+
+Aha! Now things look different. Magic Hands is still at the top. Their sensemakers were two hours faster than the control group on the first day, and on the second day, they were twenty-five minutes faster on Day 2 than we would expect if they hadn't been using the Magic Hands approach. So the Magic Hands approach is what we want: Something that helps humans solve problems faster while helping us build our knowledge! In a stunning upset, our second place winner on Day 2 is now at the bottom, because their sensemakers did not learn a single thing about the world of the challenge. Possibly as surprising, "Worst is First" took fourth place -- maybe because their sensemakers struggled so badly they ended up remembering certain things.<Footnote>Again please note that these are made-up outcomes and the point of a challenge is that we don't know who will win.</Footnote>
+
+At the end of Day 2, the winner is crowned. The T&E team bends towards the work of analyzing the results, publishing a report some amount of time later. And that's it! That's the challenge!<Footnote>Minus all the details. Like, is there downselect for the funded teams? Do we publish a practice challenge? Are we running this once on one type of problem set or are we doing a tour of many different problem sets across a period of many weeks? What about statistical rigor, how many sensemakers get assigned to each entrant? Will we have to cap the number of entrants, then? How will they set up their technology, what will that look like? Will sensemakers get time to learn the tech before starting the challenge? What about next year, will we have sensemakers work with other sensemakers *and* the AI? That would be cool, right?</Footnote>
+
+## Impact
+I like this idea because, if challenges are done well, they are both very flashy and pretty darn informative. For example, if some teams come out miles ahead, then we learn what approaches funders and investors should fund and invest in. Similarly, if teams crash and burn, we get a signal about what approaches don't work. Even if the race is tight, provided that the T&E team did their jobs right, we can see where different approaches pulled ahead or fell behind. And we can examine the tradeoffs between sensemaking outcome and human outcome. At the end of the day, researchers, funders and investors should all learn a lot about promising ways to bring AI into sensemaking without degrading human awareness and expertise.
+
+What about the challenge's impact beyond sensemaking? Or rather, sensemaking-the-process beyond the intelligence context? Lots of jobs entail sensemaking besides intelligence analysis and criminal investigation. Epidemiological tracing, for one. All kinds of investing, for another. Field-mapping for philanthropic foundations. Policy design (ideally.) Even your Google search (or Claude prompt) is a kind of sensemaking. It's not beyond belief to imagine the winner of this challenge could go on to build a very lucrative piece of fintech, design the new search experience or (why not!) detect the next pandemic. That's even true of teams that do really well on Day 2 but not so well on Day 1. Innovation in how we develop and share mental models has implications for education, the science of teams and collective intelligence.
+
+Another impact this challenge might have is on neurosymbolic AI research, and particularly its transition out of the lab. Recall that the T&E team is tasked with designing a challenge problem that LLMs can't solve alone out of the box. That means that teams have to think about the structure of sensemaking and figure out how to bring LLMs into it. There are some very innovative projects being done right now around how to share structure with LLMs that go far beyond RAG. This challenge might incentivize more aggressive progress in that area.
+
+This brings me to a last point, which is to acknowledge that nothing prevents a team from winning this challenge with AI alone. If you think you can build an all-seeing AI -- and you also think that human sensemakers slow down the loop no matter what -- then you could try to win all the points on Day 1 and forfeit most of them on Day 2. That would certainly be a surprising outcome. I thought about whether there should be an explicit condition for teams that build "AI alone" approaches,<Footnote>i.e., the system solves the problem and simply hands it to the human sensemaker to submit</Footnote> on the theory that as AI improves, humans will only get to stay in the loop if human-machine teams can keep beating AI alone. But then I thought, people are probably going to try to do that anyways, regardless of how the challenge is structured, and that's not what I want to incentivize. Instead, let people take bets -- both practical and normative -- on whether they think humans should be in the loop. That alone is a signal I want to see.
+</OutcomeText>
+
+<OutcomeText id = "5a">
+## The much more ambi(gu)(ti)ous third lever
+You have picked the secret third thing! You, too, are anxious and thorough.<Footnote>throwback to my first post, don't mind me</Footnote> Welcome. This part of the post is a bit of a work in progress. I'll probably expand it in future and I would love to hear your thoughts in the meantime.<Footnote>Your thoughts about what I discuss here. Not the kinds of thoughts I hear from a rideshare driver on my 4 a.m. ride to the airport.</Footnote>
+
+The challenge I describe in the rest of this post is a very precise lever. We're saying that we know what our objective is and all we need is to fund smart people to figure out how to get there. And maybe that's true for sensemaking, but what about all of the other points on the picture I drew? Maybe some things, like writing persuasively, will cross the line because our education systems can't figure out how to keep teaching them. Maybe others, like triage, will cross the line because, whether we think it is ethical or not, machines are simply better. If we don't know what might happen for any given thing, how can we know what we want to save until it's too late? Given that, why would I focus on One Thing??
+
+Yeah, I mean, I'm with you. I think a lot of people are. There are organizations popping up all over the place to study the economic and political impacts of AI,<Footnote>Shout out to <a href = "https://ai.objectives.institute">AOI</a></Footnote> plus the economic and political levers one could pull to "save" things one wants to save. I have noticed, however, a little gap -- maybe just for poietic tools and knowledge work, but I think it might snake its way through a lot of other domains, like medicine and education.
+
+Here's the gap: The people who could build, raise money for and incentivize poietic tools are probably not the people who know how to design them. There's just *so* much research out there pertaining to our brains, our tools, and our brains plus our tools. To write my last two posts, I read literature from ten different and/or overlapping fields, including psychology, neuroscience, cognitive science, education, education *technology*, mixed and augmented reality, optical engineering, philosophy, economics and human-computer interaction. And a tsunami of new research on LLMs and our brains is about to come crashing down. To say nothing about the potential solution space -- there are so many demos of novel approaches that I haven't even had time to mention, like <a href = "https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX">evergreen notes</a>, <a href="https://wattenberger.com/thoughts/fish-eye/">fisheye lenses</a> and <a href="http://dynamicland.org">DynamicLand</a>. And can we pause for a minute to think about how indie art games have cracked the code on making us feel joy and serenity in digital spaces? 
+
+I don't think it's realistic to expect the people who *can* build and popularize tools to keep up on the literature about *how* those tools should behave. And if it's not easy to build the better thing, people will default to maximizing engagement through the eager oracle. That puts downstream economic and policy levers out of work -- without alternatives to the oracular paradigm, there's nothing to incentivize. We need to bridge the gap between research and outcome faster than ever before.<Footnote>Another outcome is people doing the wrong things because those things seemed right but then the research evolved. As an example, pick, like, anything in public health today. Or think about the <a href = "https://www.sciencenews.org/article/balanced-literacy-phonics-teaching-reading-evidence">reading wars.</a></Footnote>
+
+Here is a small and sketchy proposal for a lever to fill this gap: **the Snowglobe.**
+
+The Snowglobe is a group of people who take the blizzard of information about what we "should" be doing and convert it into public goods that designers, programmers, engineers, entrepreneurs and even policymakers can use. The Snowglobe amasses and curates as much information as possible about:
+
+1. What we value
+2. How our brains work
+3. How we can build tools to help us do what we value better
+
+Then, they turn this information into public goods. I'm not sure exactly what that looks like right now, but for poietic tools my thought is something like a design guidebook. Some examples of existing design guidebooks are Google's <a href="https://pair.withgoogle.com/guidebook/">People + AI Research guidebook</a> and Microsoft's <a href="https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/">Guidelines for Human-AI Interaction</a>. Google's in particular does a beautiful job of laying out the principles and patterns you should use in AI product development, down to the worksheets and case studies you can use to employ and understand them.
+
+The Snowglobe would build a guidebook for poietic tools specifically. It would be part automated literature review, part expert curation, and it would be given focus by unprecedented mountains of information about knowledge workers' priorities across the globe. You could imagine a startup entrepreneur cracking open the guidebook to decide, "Is the new AI feature all my competitors are adding worth it?" and receiving an answer based on how that feature might affect users' memories, creativity, and progress towards goals. You could even imagine this answer coming with a carbon tally -- how many tokens will it take and is the outcome worth the cost? (Now we're getting into the sketchiest parts. To do this right you need a clear objective, just like the challenge; I'm still noodling.)
+
+The Snowglobe would not build guidebooks by hand, of course. This is why I call it a "snowglobe" instead of something like an "observatory." Observatories are for observing things that are far away; the members of the Snowglobe are moving through the same blizzard we are. In a perfect world, the Snowglobe not only produces public goods but tests and builds innovative tools for doing so faster, from <a href = "https://arxiv.org/pdf/2602.21136">adaptive interviewers</a> to <a href = "https://elicit.com">AI-enabled literature reviews</a> to novel ways of visualizing field-mapping.<Footnote>Look, all I want is an e-ink tapestry that I can tack to my wall that represents knowledge work as a campaign map. And then a portable version I can roll up like a scroll and take to my meetings so it can talk to other scrolls and tell me what the rest of the world looks like. Is that so hard?</Footnote> 
+
+Of course, building central and current curations of huge, complicated knowledge is not quite enough, because we don't always read things ourselves. It should be machine-readable, too. Easy enough, in the age of LLMs -- but because we're focusing often on *digital* tools, I think we can go a step farther and try to link software specs and open-source packages to the guidebook through a public API. For example, suppose I want to turn my office into an immersive digital workspace. I should be able to bookmark a section of the guidebook, send it to Claude to read, and then have Claude query that section and pull any packages that might help, like visualization packages and hand tracking.<Footnote>Claude can actually already sort of do this last part, if you know what to ask for. I just want something more organized.</Footnote> It should also come back with rules of thumb -- like, when I add something to the workspace, a good assistant occasionally reminds me of that thing to help me bring it into my knowledge schema.
+
+You could imagine the Snowglobe putting out many guidebooks, from building poietic tools to evaluating them, from sensemaking and knowledge work to more focused books for education and medicine. I don't think the Snowglobe would be permanent -- the goal would be to wrangle as much information about our changing world into useful formats as possible, then wind down gracefully with just enough budget for the machines to keep the guidebooks current. But I do think that even a year or two of concerted effort could have an impact on the picture I showed at the top of this post. 
+
+That's all I have to say on the Snowglobe! Let me know your thoughts. Or, if you suspect my proposals might be more compelling at a lower level of abstraction, check out the challenge I describe in the other paths.
+
+</OutcomeText>
+
+<Tail>
+
+## Conclusion
+
+Wow, we've come a long way together.<Footnote>Or maybe you haven't -- maybe you just picked one path and sailed straight through. That's fine. No hard feelings.</Footnote> Let me recap the series so far:
+
+1. The oracular paradigm might be bad for our brains
+2. Novel tools and modalities could help us bring machines into knowledge work without damaging our own capabilities
+3. Incentivizing those tools is hard, but if we pick a specific type of knowledge work, we can design a challenge that incentivizes innovation around it. Or, if we don't want to pick anything specific, we can think about how machines can help us curate what we know about ourselves in order to guide how we build and incentivize tools going forward.
+
+I've learned my lesson on promising things about the next post, but I expect I'll keep thinking about that picture at the top. If you have thoughts on any of this, please reach out.<Footnote>I assume that if you're reading this, you already know me -- but in the unlikely event that we have not met, ping me on LinkedIn or something.</Footnote> And maybe stand by for a demo?
+
+
+### Acknowledgements
+Thanks to Daniel Hart, Paul Cohen, Zac Hill, Joel Chan, Michael Hsu, Dave Gunning, Julie Fitzgerald, Rob Johnston, Timothy Mckinnon, Zachary Schlosser and many other people I've spoken to over the last several weeks; and to the Speculative Technologies Brains program team: Eileen Nakahata, Jessica Alfoldi, Daniel Aziz and Ben Reinhardt.
+</Tail>
+
+

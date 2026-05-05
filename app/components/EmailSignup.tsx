@@ -21,6 +21,7 @@ export function EmailSignup() {
   if (submitted) {
     return (
       <div
+        className="drivable-target"
         style={{
           fontFamily: "var(--font-lato)",
           fontSize: "clamp(12pt, 1vw, 16pt)",
@@ -45,6 +46,7 @@ export function EmailSignup() {
         method="POST"
         target="email-signup-iframe"
         onSubmit={handleSubmit}
+        className="drivable-target"
       >
         <label
           htmlFor="email"

@@ -5,7 +5,7 @@ import { img } from "@/lib/imageLoader";
 const SPEED = 6; // pixels per frame
 
 // Elements the gumdrop can knock down
-const HIT_SELECTOR = "main p, main h1, main h2, main h3, main li, main blockquote, main img, main figure, main hr, main ul, main ol, .left-margin-title, .background-drawing";
+const HIT_SELECTOR = "main p, main h1, main h2, main h3, main li, main blockquote, main img, main figure, main hr, main ul, main ol, .left-margin-title, .background-drawing, .drivable-target";
 
 const COLLISION_PADDING = -35; // negative = rects must overlap by this many px before triggering
 

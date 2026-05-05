@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, formatDate } from "@/lib/posts";
 import { LeftMargin } from "@/app/components/LeftMargin";
 import { BackgroundDrawings } from "@/app/components/BackgroundDrawings";
 import { SummaryLensProvider } from "@/app/components/SummaryLensProvider";
@@ -35,13 +35,26 @@ export default function Home() {
                   href={`/posts/${post.slug}`}
                   className="hover:text-accent transition-colors"
                 >
-                  {post.summary ? (
-                    <Summary note={post.summary}>
+                  <span className="flex items-baseline gap-3 flex-wrap">
+                    {post.summary ? (
+                      <Summary note={post.summary}>
+                        <h2 className="text-2xl font-semibold">{post.title}</h2>
+                      </Summary>
+                    ) : (
                       <h2 className="text-2xl font-semibold">{post.title}</h2>
-                    </Summary>
-                  ) : (
-                    <h2 className="text-2xl font-semibold">{post.title}</h2>
-                  )}
+                    )}
+                    {post.date && (
+                      <span
+                        style={{
+                          color: "var(--accent-secondary)",
+                          fontSize: "clamp(10pt, 0.85vw, 13pt)",
+                          fontFamily: "var(--font-lato)",
+                        }}
+                      >
+                        {formatDate(post.date)}
+                      </span>
+                    )}
+                  </span>
                 </Link>
               </li>
             ))}

@@ -30,12 +30,12 @@ export default function AboutPage() {
             My background is in computational modeling. I earned a Ph.D. from the Agricultural and Biological Engineering department at University of Florida,
             building an agent-based model of gender norms in agricultural systems. I did my postdoc on the DARPA Habitus program, where I built a little tool
             for processing the qualitative data I was eliciting from local experts in the Senegal River Valley.</p>
-            <p>I'm currently reading Vernor Vinge, George Saunders and Darwin's book on worms (strangely relaxing.) I'm always reading William Gibson.</p>
+            <p>I'm currently reading <s>Vernor Vinge, George Saunders and Darwin's book on worms (strangely relaxing.)</s> <em>Anathem</em> again. I'm always reading William Gibson.</p>
           </div>
           <div style={{ height: "10vw" }} />
         </main>
-        <div className="px-6 pb-8 -mt-6 lg:mt-0 lg:py-8 lg:pr-2 pointer-events-auto">
-          <div className="flex justify-center lg:block lg:mt-24 lg:-ml-60">
+        <div className="px-6 pb-8 -mt-6 lg:mt-0 lg:py-8 lg:pr-2">
+          <div className="flex justify-center lg:block lg:mt-24 lg:-ml-60 pointer-events-auto w-fit">
             <Headshot />
           </div>
         </div>

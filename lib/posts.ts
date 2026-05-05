@@ -39,3 +39,14 @@ export function getAllPosts(): Post[] {
   // Sort newest first
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
+
+export function formatDate(iso: string): string {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-").map(Number);
+  if (!y || !m || !d) return iso;
+  return new Date(y, m - 1, d).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}

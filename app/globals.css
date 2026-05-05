@@ -37,7 +37,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: 700;
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
   line-height: 1.2;
 }
@@ -79,4 +79,34 @@ blockquote {
   padding-left: 1em;
   margin: 1em 0;
   opacity: 0.85;
+}
+
+/* Post-content links match the TL;DR blue. :link and :visited keep the
+   color stable across visited state and add specificity that beats both
+   Tailwind's preflight `a { color: inherit }` and any inherited color
+   from a parent element with a `style="color:..."` (e.g. footnotes). */
+.post-content a,
+.post-content a:link,
+.post-content a:visited {
+  color: #4287f5 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.post-content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* References shouldn't show the blue link color — links inherit the
+   reference's rust color so they blend with surrounding note text. */
+.post-content .reference-note a,
+.post-content .reference-note a:link,
+.post-content .reference-note a:visited {
+  color: inherit !important;
+  text-decoration: none;
+}
+.post-content .reference-note a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
