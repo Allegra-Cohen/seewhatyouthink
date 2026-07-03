@@ -8,6 +8,7 @@ import { Footnote } from "@/app/components/Footnote";
 import { Reference } from "@/app/components/Reference";
 import { Summary } from "@/app/components/Summary";
 import ToggleImage from "@/app/components/ToggleImage";
+import { Video } from "@/app/components/Video";
 import { PostDate } from "@/app/components/PostDate";
 import { DecisionTree, Option, Outcome, OutcomeText, Question, Tail } from "@/app/components/DecisionTree";
 
@@ -95,6 +96,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Reference,
     Summary,
     ToggleImage,
+    Video,
     PostDate,
     DecisionTree,
     Option,

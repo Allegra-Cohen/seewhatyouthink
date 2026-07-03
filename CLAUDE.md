@@ -2,8 +2,9 @@
 
 ## What this is
 A personal blog called "See what you think", built with Next.js (App Router), MDX, and Tailwind CSS.
-Hosted on Vercel (not yet deployed). The audience is people I know personally
-and potential funders — so design quality matters.
+Hosted on GitHub Pages — pushes to `main` trigger `.github/workflows/deploy.yml`,
+which runs `next build` (with `output: "export"`) and deploys the `out/` directory.
+The audience is people I know personally and potential funders — so design quality matters.
 
 ## Stack
 - Next.js 15 (16.2.2), App Router

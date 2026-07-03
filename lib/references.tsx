@@ -20,7 +20,8 @@ const REFERENCES: Record<string, ReactNode> = {
   "amelia_fisheye": <a href = "https://wattenberger.com/thoughts/fish-eye/" target="_blank" rel="noopener noreferrer"> Amelia Wattenberger. "Fish Eyes."</a>,
   "tang_2024_steering": <a href = "https://arxiv.org/pdf/2409.17289" target="_blank" rel="noopener noreferrer"> Xuxin Tang et al. "Steering LLM Summarization with Visual Workspaces for Sensemaking." arXiv preprint arXiv:2409.17289, 2024.</a>,
   "pirolli_2005_sensemaking": <a href = "https://andymatuschak.org/files/papers/Pirolli,%20Card%20-%202005%20-%20The%20sensemaking%20process%20and%20leverage%20points%20for%20analyst%20technology%20as.pdf" target="_blank" rel="noopener noreferrer"> Peter Pirolli and Stuart Card. "The Sensemaking Process and Leverage Points for Analyst Technology as Identified Through Cognitive Task Analysis." 2005.</a>,
-  "kulveit_2025_gradual": <a href = "https://arxiv.org/pdf/2501.16946" target="_blank" rel="noopener noreferrer"> Jan Kulveit et al. "Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development." arXiv preprint arXiv:2501.16946v2, 2025.</a>
+  "kulveit_2025_gradual": <a href = "https://arxiv.org/pdf/2501.16946" target="_blank" rel="noopener noreferrer"> Jan Kulveit et al. "Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development." arXiv preprint arXiv:2501.16946v2, 2025.</a>,
+  
   
 
 };
