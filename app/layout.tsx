@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: "Allegra A. Beal Cohen's blog about knowledge curation, new interfaces, and large-scale qualitative data.",
     type: "article",
     authors: ["Allegra A. Beal Cohen"],
-    images: [{ url: "https://www.seewhatuthink.com/drawings/blog_picture.png" }],
+    images: [{ url: "https://www.seewhatuthink.com/drawings/og_cabin.jpg", width: 2010, height: 1950 }],
   },
 };
 
