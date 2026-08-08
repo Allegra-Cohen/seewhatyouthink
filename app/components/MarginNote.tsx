@@ -286,7 +286,11 @@ export function MarginNote({
           transition: "opacity 0.15s ease",
           pointerEvents: visible ? "auto" : "none",
         }}
-        className={`hidden lg:block absolute right-0 w-[25%] pr-6 leading-snug ${isFootnote ? "" : "reference-note"}`}
+        // `right-0` is the grid container's right edge (the page grids are
+        // `relative`), so this hangs over the third column. Its width must be that
+        // column's width — see --right-col in globals.css. It was `w-[25%]`, which
+        // silently became wrong the moment the third column stopped being 25%.
+        className={`hidden lg:block absolute right-0 w-[var(--right-col)] pr-6 leading-snug ${isFootnote ? "" : "reference-note"}`}
       >
         {marginMarkerContent}
         {children}

@@ -6,6 +6,22 @@
   --accent-primary: #4b830d;
   --accent-secondary: #7346cf;
   --accent-tertiary: #a53f2a;
+
+  /* The width of the right-hand column, and the SINGLE source of truth for it.
+     Three things have to agree on this number or they overlap: the page grids'
+     third track, the subscribe module that sits in it, and the margin notes
+     (MarginNote.tsx), which are `position: absolute; right: 0` over that column
+     rather than children of it. Margin notes used to be `w-[25%]`, which was
+     correct only for as long as the third column was `1fr` of `1fr 2fr 1fr` —
+     when it stopped being 25% of the window, the notes started landing on the
+     prose. Change it here and all three follow. */
+  --right-col: 20rem;
+
+  /* One drawing-composition unit, as a length. The collage is tuned at 1440×900
+     and everything in it is sized in `calc(N * var(--u))`, so the whole picture
+     scales together. Lives on :root because the drivable gumdrop needs it too and
+     it sits outside the stage. Full reasoning at .left-stage below. */
+  --u: min(100vw / 1440, 100vh / 900);
 }
 
 @theme inline {
@@ -109,4 +125,57 @@ blockquote {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   The left-column collage — one composition, one coordinate system.
+
+   The stacked "See what you think" title and the background drawings are a single
+   picture, tuned at 1440×900. `--u` is how many px one unit of that picture is
+   worth in the current window; everything inside the stage is sized and placed in
+   `calc(N * var(--u))`, so the whole thing scales together and no part of it can
+   drift relative to any other part.
+
+   `min()` is what makes it safe rather than merely tidy:
+
+     - It never exceeds 100vw/1440, so the interactive drawings — which live within
+       360 units — can never reach past 25vw, where every page's text column starts
+       (`lg:grid-cols-[1fr_2fr_1fr]`). The text paints above the collage and would
+       take its clicks, so this is a navigation guarantee, not an aesthetic one.
+     - It never exceeds 100vh/900, so the picture cannot grow taller than the
+       window. Positioning used to be a fraction of viewport *width* in both axes,
+       which sent the drawings climbing off the top of a wide window and down onto
+       the title on a narrow one.
+
+   Scaled with calc() rather than `transform: scale()` on purpose: the text is laid
+   out at its true size so it can never rasterise blurry, and `position: fixed`
+   descendants (the drivable gumdrop) keep resolving against the viewport instead
+   of against a transformed ancestor.
+
+   The stage spans the whole window, because there are two anchors inside it: the
+   masthead hangs from the top, the drawings from the bottom (see ANCHORS in
+   Collage.tsx). Both scale by this one `--u`, so each group holds together; extra
+   window height opens in the gap between them rather than lifting the drawings off
+   the ground or pushing the title down the page.
+
+   Full history and the measurements: COLLAGE_RESIZE.md.
+   --------------------------------------------------------------------------- */
+.left-stage {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* HoverBlob's label size lives here rather than inline on the element, so the
+   stage can override it — an inline style would win over any rule. Outside the
+   stage it keeps the viewport-relative size it has always had; inside, it scales
+   like everything else, or it would be a second coordinate system sneaking back
+   in. (1.2vw at the 1440 reference = 17.28.) */
+.hover-blob-label {
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+
+.left-stage .hover-blob-label {
+  font-size: calc(17.28 * var(--u));
 }

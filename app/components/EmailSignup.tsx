@@ -59,7 +59,7 @@ export function EmailSignup() {
         >
           Get notified about new posts
         </label>
-        <div className="flex flex-col gap-3 max-w-full lg:max-w-[50%]">
+        <div className="flex flex-col gap-3 max-w-full lg:max-w-[15rem]">
           <input
             id="name"
             name={NAME_FIELD}

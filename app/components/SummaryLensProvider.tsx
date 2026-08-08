@@ -112,11 +112,14 @@ function SummaryBox({ text }: { text: string }) {
       ref={boxRef}
       style={{
         position: "fixed",
-        left: "75%",
+        // The right-hand column, same as the margin notes. This used to be
+        // `left: 75%; width: 22%`, which was only correct while the page grids were
+        // `1fr 2fr 1fr` and the third column therefore started at 75% of the window.
+        // See --right-col in globals.css — it is the single source of truth.
+        left: "calc(100vw - var(--right-col))",
         top: 0,
-        width: "22%",
+        width: "var(--right-col)",
         transform: "translateY(-50%)",
-        paddingRight: "1.5rem",
         fontSize: "clamp(12pt, 1vw, 15pt)",
         fontFamily: "var(--font-lato)",
         fontWeight: 400,
@@ -124,7 +127,9 @@ function SummaryBox({ text }: { text: string }) {
         backgroundColor: "rgba(66, 135, 245, 0.06)",
         borderLeft: "2px solid #4287f5",
         borderRadius: "2px",
-        padding: "0.5rem 0.75rem",
+        // Right padding matches the margin notes' `pr-6`, so summaries and notes
+        // occupy the same text column and neither runs to the window's edge.
+        padding: "0.5rem 1.5rem 0.5rem 0.75rem",
         lineHeight: 1.45,
         zIndex: 40,
         pointerEvents: "none",

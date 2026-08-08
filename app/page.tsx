@@ -1,20 +1,34 @@
 import Link from "next/link";
 import { getAllPosts, formatDate } from "@/lib/posts";
 import { LeftMargin } from "@/app/components/LeftMargin";
-import { BackgroundDrawings } from "@/app/components/BackgroundDrawings";
+import { Collage } from "@/app/components/Collage";
 import { SummaryLensProvider } from "@/app/components/SummaryLensProvider";
 import { Summary } from "@/app/components/Summary";
 import { EmailSignup } from "@/app/components/EmailSignup";
-import { HoverBlob } from "@/app/components/HoverBlob";
 
 export default function Home() {
   const posts = getAllPosts();
 
   return (
     <SummaryLensProvider>
-      <BackgroundDrawings />
+      <Collage />
+      {/*
+        `25% | rest | 20rem`, and every page with a subscribe module uses the same three.
+
+        - Column 1 is `25%`, not `1fr`: it is the space the collage's navigation
+          drawings occupy, and Collage.tsx's clearance invariant depends on the text
+          starting at exactly 25vw. A `1fr` here gets squeezed by the other columns'
+          minimums and slides the drawings under the text.
+        - Column 3 is a fixed `--right-col` (globals.css), which the margin notes read
+          too — they overlay this column without being in it. It used to be `1fr`,
+          which on a big monitor grew far wider than the form needs while `lg:ml-40`
+          pushed the form rightward inside it, so shrinking to a laptop cut the email
+          field off. A fixed column sized for its contents cannot do that at any width.
+        - Column 2 therefore takes all the remaining width, so the prose reaches much
+          farther right than the old `2fr` share allowed.
+      */}
       <div
-        className="relative grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] min-h-screen pointer-events-none"
+        className="relative grid grid-cols-1 lg:grid-cols-[25%_minmax(0,1fr)_var(--right-col)] min-h-screen pointer-events-none"
         style={{ zIndex: 1 }}
       >
         <LeftMargin />
@@ -60,10 +74,8 @@ export default function Home() {
             ))}
           </ul>
         </main>
-          <div className="lg:ml-40 lg:mt-32 mt-8 mx-auto lg:mx-0 w-1/2 lg:w-auto pointer-events-auto">
-          <HoverBlob color="#a53f2a" blobIndex={2} blobStyle={{ top: "-20%", left: "-10%", width: "90%", height: "80%" }}>
+          <div className="self-start lg:mt-32 mt-8 mx-auto lg:mx-0 w-1/2 lg:w-auto lg:pr-6 pointer-events-auto">
           <EmailSignup />
-          </HoverBlob>
           </div>
           <div style={{ height: "10vw" }} />
         <div />

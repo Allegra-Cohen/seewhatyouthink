@@ -14,12 +14,14 @@ export function HoverBlob({
   blobIndex = 0,
   label,
   blobStyle,
+  labelStyle,
   children,
 }: {
   color: string;
   blobIndex?: number;
   label?: string;
   blobStyle?: React.CSSProperties;
+  labelStyle?: React.CSSProperties;
   children: React.ReactNode;
 }) {
   const [hovered, setHovered] = useState(false);
@@ -50,6 +52,7 @@ export function HoverBlob({
       {children}
       {label && (
         <span
+          className="hover-blob-label"
           style={{
             position: "absolute",
             top: "50%",
@@ -57,11 +60,11 @@ export function HoverBlob({
             transform: "translateY(-50%)",
             fontFamily: "var(--font-lato)",
             fontWeight: 700,
-            fontSize: "clamp(0.8rem, 1.2vw, 1.2rem)",
             color,
             opacity: hovered ? 1 : 0,
             transition: "opacity 200ms ease",
             pointerEvents: "none",
+            ...labelStyle,
           }}
         >
           {label}
