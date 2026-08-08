@@ -77,7 +77,7 @@ const DRAWINGS: Drawing[] = [
   // ── Hangs from the bottom, with the ground ────────────────────────────────
   { src: "/drawings/rubber_plant.png", size: 187.2, left: -14.4, y: { bottom: 403.2 }, blob: { color: "#4b830d", index: 0, label: "home" }, href: "/" },
   { src: "/drawings/gumdrop_purple.png", size: 50.4, left: 144, y: { bottom: 388.8 }, blob: null, href: null },
-  { src: "/drawings/string.png", size: 216, left: 144, y: { bottom: 135.36 }, blob: null, href: null },
+  { src: "/drawings/string.png", size: 216, left: 144, y: { bottom: 135.36 }, blob: { color: "#a53f2a", index: 0, label: "field guides", labelStyle: { transform: `translate(${u(20)}, calc(-50% - ${u(20)}))` } }, href: "/field-guides" },
   { src: "/drawings/bush.png", size: 115.2, left: 259.2, y: { bottom: 32.4 }, blob: null, href: null },
   { src: "/drawings/oracle.png", size: 216, left: 0, y: { bottom: 8.64 }, blob: null, href: null },
   { src: "/drawings/statue.png", size: 172.8, left: 14.4, y: { bottom: 210.24 }, blob: { color: "#7346cf", index: 0, label: "about", labelStyle: { transform: `translate(${u(12)}, -50%)` } }, href: "/about" },

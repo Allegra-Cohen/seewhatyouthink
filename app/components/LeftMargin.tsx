@@ -29,9 +29,14 @@ export function LeftMargin() {
         >
           see what<br />you think
         </h1>
-        <div className="ml-auto flex gap-4" style={{ fontFamily: "var(--font-lato)", fontSize: "0.85rem", fontWeight: 700 }}>
+        {/* The only route to /field-guides on a phone: Collage — which carries
+            the red string into it on desktop — is `hidden lg:block`. Wraps rather than
+            overflowing, since three labels plus the eye and the title don't fit on one
+            line at 375px. */}
+        <div className="ml-auto flex flex-wrap justify-end gap-x-4 gap-y-1" style={{ fontFamily: "var(--font-lato)", fontSize: "0.85rem", fontWeight: 700 }}>
           <Link href="/" className="hover:text-accent transition-colors">home</Link>
           <Link href="/about" className="hover:text-accent transition-colors">about me</Link>
+          <Link href="/field-guides" className="hover:text-accent transition-colors">field guides</Link>
         </div>
       </div>
     </div>

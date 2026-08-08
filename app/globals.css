@@ -179,3 +179,104 @@ blockquote {
 .left-stage .hover-blob-label {
   font-size: calc(17.28 * var(--u));
 }
+
+/* ---------------------------------------------------------------------------
+   /field-guides — the section index and its running list of entries.
+
+   THE MOSS. The card is the "home" hover green, made opaque. HoverBlob paints
+   #4b830d (--accent-primary) at fillOpacity .25 over the page's #fff8ed, so the
+   colour you actually see when you hover the rubber plant is that composite:
+
+     .25 x #4b830d over #fff8ed  =  #d2dbb5   (the fill)
+     .50 x #4b830d over #fff8ed  =  #a5be7d   (the border, one step stronger)
+
+   Flattened rather than reproduced with opacity, because a translucent card would
+   pick up whatever background drawing scrolled behind it.
+
+   (This replaces the viewer's jade #daede5/#74BD9F. The card started as a port of
+   .doc-detail-summary from the guide's own styles.css, but jade is the guide's
+   colour inside the guide; on the blog the section reads better in the blog's own
+   green. The viewer is untouched — it keeps its jade.)
+
+   The uppercase ALLEGRA chip from the viewer is deliberately absent: it exists
+   there to separate her voice from the paper's abstract below it, and on this page
+   every word is already hers.
+   --------------------------------------------------------------------------- */
+
+/* globals.css sets a bare, UNLAYERED `ul { list-style-type: disc }` above, which
+   beats Tailwind's `list-none` (utilities are @layer'd, and unlayered CSS wins over
+   any layer). So the card list has to turn markers off explicitly. */
+.fg-entries {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fg-entry {
+  background: #d2dbb5;
+  border: 1px solid #a5be7d;
+  border-radius: 8px;
+  padding: 1.15rem 1.35rem 1.25rem;
+}
+
+.fg-entry-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+/* Matches the Writing list on the home page, which is the blog's established idiom
+   for "an item in a list of things to read": the title in the body serif, the date
+   beside it in Lato. (It was Lato/Lato before, which made the card read as chrome.) */
+.fg-entry-title {
+  font-family: var(--font-garamond), Garamond, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.fg-entry-date {
+  font-family: var(--font-lato), sans-serif;
+  font-size: 0.95rem;
+  /* The blob's own label colour. Home's Writing list dates are --accent-secondary
+     purple, which fights the moss; #4b830d is what the "home" label is painted in
+     over this exact fill, so it is the precedent for text on this card. */
+  color: #4b830d;
+}
+
+/* Rendered Markdown: Tailwind's preflight zeroes margins, so the block elements
+   remark emits need them restated here. */
+.fg-entry-body > :first-child { margin-top: 0; }
+.fg-entry-body > :last-child { margin-bottom: 0; }
+.fg-entry-body p { margin: 0.6rem 0; line-height: 1.55; }
+.fg-entry-body ul,
+.fg-entry-body ol { margin: 0.6rem 0; padding-left: 1.4rem; }
+.fg-entry-body ul { list-style: disc; }
+.fg-entry-body ol { list-style: decimal; }
+.fg-entry-body li { margin: 0.2rem 0; }
+.fg-entry-body em { font-style: italic; }
+.fg-entry-body strong { font-weight: 700; }
+
+/* Same specificity problem the .post-content rules solve: preflight's
+   `a { color: inherit }` wins otherwise. Ink rather than the posts' blue, which
+   reads as a foreign element on the moss. */
+.fg-entry-body a,
+.fg-entry-body a:link,
+.fg-entry-body a:visited {
+  color: #0f172a;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.fg-entry-body a:hover { text-decoration-thickness: 2px; }
+
+/* The way into the viewer, now an inline link in the intro sentence rather than a
+   button. Same blue as post-content links, so it reads as the blog's ordinary link. */
+.fg-explore,
+.fg-explore:link,
+.fg-explore:visited {
+  color: #4287f5;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.fg-explore:hover { text-decoration-thickness: 2px; }

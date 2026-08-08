@@ -7,7 +7,15 @@ const FORM_ACTION =
 const EMAIL_FIELD = "entry.1193661868";
 const NAME_FIELD = "entry.493226534";
 
-export function EmailSignup() {
+// `label` is the ONLY thing that varies between the places this appears — home says
+// "new posts", /field-guides says "new entries". It defaults to home's wording so that
+// call site stays exactly as it was. Note both submit to the SAME Google Form, so
+// there is one mailing list, not one per section.
+export function EmailSignup({
+  label = "Get notified about new posts",
+}: {
+  label?: string;
+} = {}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -57,7 +65,7 @@ export function EmailSignup() {
           }}
           className="block mb-3"
         >
-          Get notified about new posts
+          {label}
         </label>
         <div className="flex flex-col gap-3 max-w-full lg:max-w-[15rem]">
           <input
