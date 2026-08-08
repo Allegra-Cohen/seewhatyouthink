@@ -1,0 +1,1156 @@
+{
+ "nodes": [
+  {
+   "id": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "source",
+   "label": "openAlex",
+   "attributes": {
+    "url": "https://openalex.org",
+    "homepage": null
+   }
+  },
+  {
+   "id": "3876023e-61cf-4ab6-a0c0-ba1aadf561dc",
+   "type": "source",
+   "label": "arXiv",
+   "attributes": {
+    "url": "https://arxiv.org",
+    "homepage": null
+   }
+  },
+  {
+   "id": "2514317d-8d7c-46be-b884-7ab1e245c560",
+   "type": "source",
+   "label": "Cosmos Institute",
+   "attributes": {
+    "url": "https://blog.cosmos-institute.org/feed",
+    "homepage": "https://blog.cosmos-institute.org/feed"
+   }
+  },
+  {
+   "id": "47e8ea0a-d73d-464a-a339-934696e46401",
+   "type": "source",
+   "label": "Future of Life Institute",
+   "attributes": {
+    "url": "https://futureoflife.org/feed",
+    "homepage": "https://futureoflife.org/feed"
+   }
+  },
+  {
+   "id": "62f17533-14cc-46d8-aebe-ae3d6b9c4614",
+   "type": "source",
+   "label": "[ Center for Humane Technology ]",
+   "attributes": {
+    "url": "https://centerforhumanetechnology.substack.com/feed",
+    "homepage": "https://centerforhumanetechnology.substack.com/feed"
+   }
+  },
+  {
+   "id": "b9cae96c-81bb-4c55-9fda-d3532df25f6f",
+   "type": "source",
+   "label": "Cognitive Security Task Force",
+   "attributes": {
+    "url": "https://cstf.substack.com/feed",
+    "homepage": "https://cstf.substack.com/feed"
+   }
+  },
+  {
+   "id": "ddb8debd-000d-4e05-a381-99923d18e8c5",
+   "type": "source",
+   "label": "NOEMA",
+   "attributes": {
+    "url": "https://www.noemamag.com/feed/",
+    "homepage": "https://www.noemamag.com/feed/"
+   }
+  },
+  {
+   "id": "b570a730-1a79-4d04-a91c-f67d826b16cf",
+   "type": "source",
+   "label": "The Real AI",
+   "attributes": {
+    "url": "https://therealartificialintelligence.substack.com/feed",
+    "homepage": "https://therealartificialintelligence.substack.com/feed"
+   }
+  },
+  {
+   "id": "9506d10e-9ff0-46ba-b341-9600b3376c0a",
+   "type": "source",
+   "label": "@saffron",
+   "attributes": {
+    "url": "https://saffron.substack.com/feed",
+    "homepage": "https://saffron.substack.com/feed"
+   }
+  },
+  {
+   "id": "ede39648-adab-429d-a38f-8622d28c6bac",
+   "type": "source",
+   "label": "Anthropic Societal Impacts",
+   "attributes": {
+    "url": "https://www.anthropic.com/research/team/societal-impacts",
+    "homepage": "https://www.anthropic.com/research/team/societal-impacts"
+   }
+  },
+  {
+   "id": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "concept",
+   "label": "Human autonomy",
+   "attributes": {
+    "description": "The capacity of a person to make informed, uncoerced, and independent choices about their own life, thoughts, and actions. In the context of AI, the way that the inputs, outputs, transmission and design of AI systems supports or undermines human autonomy. Also, the self-governance humans have over our own actions: Our authority to author our own intentions and actions."
+   }
+  },
+  {
+   "id": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "concept",
+   "label": "Cognitive security",
+   "attributes": {
+    "description": "The protection of human cognitive processes from hazardous influence; protecting the conditions under which people and groups reason for themselves as generative and agentic AI reshape attention, belief, memory, judgment, and agency. (Definition adopted from the [Cognitive Security Task Force](doc:ea042c2d-484d-4db8-a08b-ff373068b34e).)"
+   }
+  },
+  {
+   "id": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "concept",
+   "label": "Cognitive agency",
+   "attributes": {
+    "description": "In the context of AI, the capacity for people to think and act with AI in ways that increase their control, or the ability to shape the information environment; efficacy, or the capacity to act and think effectively with AI to pursue goals; and mastery, or the capacity to experience, learn, and grow durable capabilities through human-AI interaction over time. This definition includes both individual agency and collective agency, e.g., collective control has to do with access, portability and interoperability of information. (Definition adopted from [Taylor and Krishna, 2026](doc:7ae206d8-b677-4570-a419-8dcd48c78ecc).)\n"
+   }
+  },
+  {
+   "id": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "concept",
+   "label": "Cognitive sovereignty",
+   "attributes": {
+    "description": "The enacted behavior of exercising intellectual independence in AI-rich environments. It manifests as the ability to set goals, validate outputs, and appropriately overrule the tool when necessary. Cognitive Sovereignty excludes mere influence; being persuaded by a well-reasoned argument (from a human or AI) is not a loss of sovereignty. (Definition adopted from [Klein and Klein, 2025](doc:6abe562e-48cd-44b8-a02f-48f04f710a8e).)\n\nAnother definition comes from [Konigsberg, 2026](doc:4c5b8a1a-132d-460c-838f-8d92de7baa07):  The capacity to (a) notice when one's thinking is being displaced (b) maintain a meaningful connection to how one's beliefs and judgments are formed, and (c) distinguish between genuine reasoning and the subjective impression of having reasoned."
+   }
+  },
+  {
+   "id": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "concept",
+   "label": "Cognitive liberty",
+   "attributes": {
+    "description": "The \"right to mental self-determination\", or cognitive liberty, is the freedom of an individual to control their own mental processes, cognition, and consciousness. Originally used in the context of neuroscience and related technologies that can monitor or influence consciousness, as well as the right of humans to influence their own consciousnesses (e.g., through yoga.) Now, in the context of AI, referenced when discussing AI systems that influence human perception, attention, decision-making, emotions, behavior and preferences, especially at scale."
+   }
+  },
+  {
+   "id": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "type": "document",
+   "label": "The extended hollowed mind: why foundational knowledge is indispensable in the age of AI",
+   "attributes": {
+    "title": "The extended hollowed mind: why foundational knowledge is indispensable in the age of AI",
+    "summary": "In their 2025 paper on the \"extended hollowed mind,\" Klein and Klein lay out a set of arguments for why it might not be so simple to keep thinking for yourself in the age of AI. They call it the \"Sovereignty Trap\", a reference to their term \"cognitive sovereignty,\" or the ability to exercise intellectual independence in AI-rich environments. The points that make up the Trap are: \n\n1) Easy answers from LLMs undermine the processes our brains use to form strong knowledge bases, like retrieving information often and connecting new information to old.\n\n2) Moreover, we prefer this, because cognitive effort is unpleasant and everything about chat-based LLM interactions is designed to be frictionless.  \n\n3) Reduced effort around information actually changes how well we encode it. This means we either think we know something better than we do (\"illusory knowledge\"), or we're aware of our reduced command of information and no longer feel motivated to keep learning. \n\nKlein and Klein call the result of this Trap the hollowed mind: \"A state of dependency where the frictionless availability of AI-generated answers enables users to systematically bypass the effortful cognitive processes essential for deep learning.\" In the Trap, not only do you fail to form robust knowledge schema, you're also disincentivized to interrogate an LLM's answers. This lack of effort further undermines your memory systems, and the next time you need to think for yourself, you are less competent and confident in doing so.",
+    "abstract": "Generative artificial intelligence (AI) presents a fundamental duality for education: it simultaneously offers powerful cognitive extension while posing a significant risk of cognitive atrophy. This paper introduces the ‘hollowed mind’ as a conceptual framework to understand this risk—a state of dependency where the frictionless availability of AI-generated answers enables users to systematically bypass the effortful cognitive processes essential for deep learning. We argue this dynamic is driven by the ‘Sovereignty Trap’: a psychological mechanism where the AI’s authoritative competence tempts users to cede their own intellectual judgment, mistaking access to information for genuine ability. To substantiate this claim, we synthesize a multi-disciplinary body of evidence from cognitive science (e.g., dual-process theory, cognitive load), neurobiology (e.g., conflict-monitoring networks), and developmental psychology. We use this foundation to explain the widely documented ‘Expertise Duality’—why AI acts as a ‘leveler’ for novices but an ‘amplifier’ for experts. Moving beyond critique, this paper posits that the central challenge is one of environmental design, not user competence. We propose the ‘Fortified Mind’ as the pedagogical goal: a resilient internal architecture of indispensable knowledge and metacognitive skills required to achieve genuine ‘Cognitive Sovereignty’. Finally, we outline a forward-looking research agenda focused on redesigning AI tools from ‘answer engines’ into cognitive training environments that promote effortful engagement. Our work provides a robust conceptual guide for educators, researchers, and system designers, arguing that in the age of AI, the cultivation of fundamental knowledge is not just relevant, but more crucial than ever.",
+    "oa_pdf_url": null,
+    "publication": "Frontiers in Artificial Intelligence",
+    "source_type": "journal",
+    "canonical_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1719019/full#sec7",
+    "published_date": "2025-12-11"
+   }
+  },
+  {
+   "id": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "source",
+   "label": "Added by hand",
+   "attributes": {
+    "url": "urn:field-guide:manual",
+    "homepage": null
+   }
+  },
+  {
+   "id": "9b091b8a-a299-416d-be67-74bfdc7316b7",
+   "type": "person",
+   "label": "Christian R. Klein",
+   "attributes": {
+    "orcid": "0009-0006-1306-7775",
+    "homepage": null,
+    "full_name": "Christian R. Klein"
+   }
+  },
+  {
+   "id": "d4c59376-0554-4de4-b6a6-7804fa7144dc",
+   "type": "person",
+   "label": "Reinhard Klein",
+   "attributes": {
+    "orcid": "0000-0002-5505-9347",
+    "homepage": null,
+    "full_name": "Reinhard Klein"
+   }
+  },
+  {
+   "id": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "type": "document",
+   "label": "The Battle for Cognitive Liberty in the Age of Corporate AI",
+   "attributes": {
+    "title": "The Battle for Cognitive Liberty in the Age of Corporate AI",
+    "summary": "Courtney Radsch argues that \"a handful of corporations are redesigning the architecture of human thought into a system of cognitive capture\" designed to influence what we see, think and feel. The increasing prevalence of AI and data collection about almost everything will lead to a mirror-world in which everything anticipates what you might want and works to persuade you of what you should think and do, from what products to buy to which politicians to support. Far from being unrealistic, Radsch's vision is just the AI version of what already happens today: Tech companies monopolize communication and media platforms to manipulate users' information access, beliefs and purchases. And opting out of these systems can be inconvenient or impossible, especially as the proliferation of AI leads to cognitive atrophy, reduced income for human creators and an increasingly polluted information landscape. Radsch argues that these outcomes are by design and that power concentration, surveillance and data capture are the goal, regardless of how helpful AI systems seem right now. Her conclusion is that protections for freedom of thought must be put into place immediately: \"Without laws to protect freedom of thought, prohibit cognitive manipulation and require AI agents to act in the best interest of users; a market designed to make it unprofitable if not impossible to do otherwise; and competition to develop alternative rights-based AI products that are economically lucrative and socially beneficial, there is little to prevent this dystopian future.\"",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Tech Policy Press",
+    "source_type": "journal",
+    "canonical_url": "https://www.techpolicy.press/the-battle-for-cognitive-liberty-in-the-age-of-corporate-ai/",
+    "published_date": "2026-01-06"
+   }
+  },
+  {
+   "id": "d7f528d6-45a9-45a2-a74f-10be1fcfd9f4",
+   "type": "person",
+   "label": "Courtney C. Radsch",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Courtney C. Radsch"
+   }
+  },
+  {
+   "id": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "type": "document",
+   "label": "Rethinking Cognitive Security in the Age of Generative AI",
+   "attributes": {
+    "title": "Rethinking Cognitive Security in the Age of Generative AI",
+    "summary": "The Cognitive Security Task Force says that \"Cognitive security protects against unauthorized access to and hazardous influence over cognitive processes, such as perception, reasoning, decision-making, learning, and judgment. At its core, cognitive security refers to our ability to maintain sovereignty over our inner mental landscape, including our thoughts, feelings, subjective experiences, and dispositions. A cognitively secure world, then, supports human agency in deliberation, reflection, and sensemaking.\" They argue that though this idea isn't new (think about propaganda and advertising), it needs to be updated for the modern AI world, pointing at AI psychosis and personalized attacks on individuals as examples.\n\nCSTF justifies the word \"security\" (over, e.g., liberty, another word in our ontology) because many of the things they are worried about are driven by malicious intent, e.g., mass disinformation. They also like that \"security, in its technical lineage, implies ongoing attention to design, vulnerability, and repair.\" Their goal is to build robust standards and norms before we reach a \"mass-adoption tipping point\" where our minds are no longer considered sanctums. ",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Cognitive Security Task Force",
+    "source_type": "substack",
+    "canonical_url": "https://cstf.substack.com/p/rethinking-cognitive-security-in",
+    "published_date": "2026-04-07"
+   }
+  },
+  {
+   "id": "b1365a28-bc49-476d-8708-7637e421f799",
+   "type": "person",
+   "label": "Peggy Yin",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Peggy Yin"
+   }
+  },
+  {
+   "id": "7e5afedb-57d1-4cc9-992f-cdd887a1eaa8",
+   "type": "person",
+   "label": "Julie Heng",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Julie Heng"
+   }
+  },
+  {
+   "id": "0df79441-4471-4881-81f9-75fa44a3c7cd",
+   "type": "organization",
+   "label": "Cognitive Security Task Force",
+   "attributes": {
+    "kind": "institution",
+    "homepage": null
+   }
+  },
+  {
+   "id": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "type": "document",
+   "label": "Context-maxxing: A path to cognitive agency with generative AI",
+   "attributes": {
+    "title": "Context-maxxing: A path to cognitive agency with generative AI",
+    "summary": "This paper grounds \"cognitive agency\" in the broader tradition of human and sustainable development, drawing from Amartya Sen's work on human development as the \"expansion of people's freedom to live lives they have reason to value\" as well as Naila Kabeer's work on human empowerment and Elinor Ostrom's work on collective action. Whereas Sen, Kabeer and Ostrom were working in the context of the physical world, Taylor and Krishna define cognitive agency in the context of the digital world: The ability of people, individual and collective, to think and act within a digital environment shared with AI systems. They also define three pre-conditions: Control, or the ability to shape the information environment; efficacy, or the capacity to act and think effectively with AI to pursue goals; and mastery, or the capacity to experience, learn, and grow durable capabilities through human-AI interaction over time. One interesting thing about Taylor and Krishna's definitions is they include the collective, e.g., collective control has to do with access, portability and interoperability; collective efficacy requires a shared understanding of goals and cognitive diversity, etc.\n\nThe paper hinges on the OpenClaw movement, which allowed users to maintain much deeper control over their interaction environments than was ever possible before generative AI. The authors argue that this was an enormous shift: That, although the classic interfaces with generative AI are associated with loss of cognitive agency, and although the frontier labs are in a race to capture human context, generative AI has also provided an unprecedented opportunity for people to shape their own interfaces and keep control over their own context; and that the role of policy ought to be to codify, test and disseminate the emerging practices of this community. They focus on an approach they call \"context-maxxing,\" or \"using self-managed hardware and software to maximally control user-generated context to support interactions with generative AI.\"\n\nThe paper thus proposes a playbook for context-maxxing, with the claim that context-maxxing can help preserve and grow cognitive agency. It includes five infrastructure building blocks of context-maxxing (conditions for the \"control\" required for cognitive agency): A harness, or software that allows users to connect AI models to files, instructions, memory and tools; LLM access via API; a context web, or the information available across the user's digital surfaces; security measures; and hosting on hardware. They also provide suggestions for specification, orchestration and exploration, including the use of templates and ontologies (bolstering cognitive mastery), agent architectures and process decomposition (supporting cognitive efficacy), and reinvesting time once spent on grunt work in human-to-human interaction. To evaluate the effects of context-maxxing, the authors call for matched-task comparisons across architectures, longitudinal tracking, and collective-level analysis.\n\nThe paper closes by saying that increasing cognitive agency through context-maxxing could help people increase their ability to verify AI output (an advantage in today's economy) and protect worker agency by preventing context extraction. But the startup and infrastructure costs of context-maxxing today are quite high, suggesting policy moves are needed.",
+    "abstract": "This working paper argues that generative AI should be assessed by whether it supports cognitive agency—or the capacity for people to think and act with AI in ways that increase their control, efficacy, and mastery. This account combines the foundational work in development economics (that identifies agency as central to human and sustainable development outcomes) with the latest research on socio-cognitive and informational agency to capture an emerging cognitive partnership between people and AI systems.",
+    "oa_pdf_url": null,
+    "publication": "Brookings",
+    "source_type": "journal",
+    "canonical_url": "https://www.brookings.edu/articles/context-maxxing-cognitive-agency-generative-ai/",
+    "published_date": "2026-05-06"
+   }
+  },
+  {
+   "id": "88c9c570-52b4-41f6-ad90-90d310bc4314",
+   "type": "organization",
+   "label": "Brookings Institution",
+   "attributes": {
+    "kind": "institution",
+    "homepage": null
+   }
+  },
+  {
+   "id": "608f1b98-9bfe-46b1-8c39-22e39caeacd0",
+   "type": "person",
+   "label": "Jacob Taylor",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Jacob Taylor"
+   }
+  },
+  {
+   "id": "07f5b4ca-fe25-4141-9d85-b13b75e283a2",
+   "type": "person",
+   "label": "Kershlin Krishna",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Kershlin Krishna"
+   }
+  },
+  {
+   "id": "cb78c6d1-7ea8-4d66-b2ef-3f6b2af89634",
+   "type": "concept",
+   "label": "Cognitive atrophy",
+   "attributes": {
+    "description": "Cognitive atrophy, or a gradual loss or decline in cognitive ability that is not due to disease but rather to disuse or lack of mental challenge; in this context, specifically due to offloading cognitive effort onto AI. It is the “use‑it‑or‑lose‑it” counterpart to neuroplasticity; extended periods of low cognitive demand can shrink neural efficiency and lead to poorer performance on tasks that require working memory, fluid intelligence, etc. "
+   }
+  },
+  {
+   "id": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "concept",
+   "label": "Thinking for ourselves",
+   "attributes": {
+    "description": "\"Thinking for ourselves\" encompasses the terminology people are using to refer to the general ability of humans to perceive, think and decide for ourselves in the context of Large Language Models and other frontier AI. The definitions within this concept use different words (from cognitive liberty to cognitive security) and range from the individual to the collective, but are all concerned with how generative AI influences human cognition and our ability to navigate the world according to what's in our own heads."
+   }
+  },
+  {
+   "id": "8dfd2ebb-4a8b-450a-aa4f-4bf588ca5fc1",
+   "type": "concept",
+   "label": "Effects of AI use on human cognition",
+   "attributes": {
+    "description": "The effects of AI use on human cognition, including Large Language Models and other generative or frontier AI. This is specifically focused on individual effects, both short-term and longitudinal, such as the effects on memory of using LLMs, or how AI use changes problem-solving and higher-level judgment. How AI affects human cognition at all of the levels of Bloom's taxonomy (i.e., remembering up through analysis and creation) as well as longer-term aspects like persistence are all in scope."
+   }
+  },
+  {
+   "id": "821ee615-5f2b-49c8-8a17-eaac614ce5b6",
+   "type": "concept",
+   "label": "Metacognitive laziness",
+   "attributes": {
+    "description": "Metacognitive laziness is learners’ tendency to offload effortful metacognitive self-regulatory practices, such as goal-setting, error monitoring, and strategic reflection, to AI systems rather than engaging in deliberate cognitive effort."
+   }
+  },
+  {
+   "id": "45d95229-82a2-4ab9-b611-8df969e066c1",
+   "type": "concept",
+   "label": "Cognitive offloading",
+   "attributes": {
+    "description": "Cognitive offloading is the process by which humans delegate a cognitive task (e.g., remembering a phone number, solving a math problem) to an external system (a notebook, a PDA, a calculator, a partner). The external system acts as a “cognitive prosthetic,” freeing internal resources for higher‑order thinking."
+   }
+  },
+  {
+   "id": "163500a9-23d2-443e-94e6-990f76410362",
+   "type": "document",
+   "label": "Brave New Nudge",
+   "attributes": {
+    "title": "Brave New Nudge",
+    "summary": "McCord argues that AI systems can increase agency – our ability to act to get what we want – while degrading autonomy, our ability to determine what we want. A system that makes better choices than we ever could will erode our capacity for choice and our very dignity while still possibly improving our well-being over time. Moreover, AI systems are not guaranteed to make these better choices because much of what it means to be human is to self-author – and the more we defer to the choice a machine makes, the less our own preferences are actually driving the choice.",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Cosmos Institute",
+    "source_type": "journal",
+    "canonical_url": "https://blog.cosmos-institute.org/p/brave-new-nudge",
+    "published_date": "2026-02-20"
+   }
+  },
+  {
+   "id": "e9ae8daa-f885-46c8-a824-1170ab0caf6f",
+   "type": "person",
+   "label": "Brendan McCord",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Brendan McCord"
+   }
+  },
+  {
+   "id": "06701533-e411-441c-97dc-3468d7e8abb3",
+   "type": "document",
+   "label": "Agency",
+   "attributes": {
+    "title": "Agency",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Stanford Encyclopedia of Philosophy",
+    "source_type": "journal",
+    "canonical_url": "https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt",
+    "published_date": "2015-08-10"
+   }
+  },
+  {
+   "id": "984031d3-bfeb-44fc-9e24-1c4f9d6b3055",
+   "type": "person",
+   "label": "Schlosser, Markus",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Schlosser, Markus"
+   }
+  },
+  {
+   "id": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+   "type": "document",
+   "label": "Personal Autonomy",
+   "attributes": {
+    "title": "Personal Autonomy",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Stanford Encyclopedia of Philosophy",
+    "source_type": "journal",
+    "canonical_url": "https://plato.stanford.edu/entries/personal-autonomy/",
+    "published_date": "2002-05-28"
+   }
+  },
+  {
+   "id": "4ce1dfc8-0dfa-4708-89e0-d8224696537d",
+   "type": "person",
+   "label": "Buss, Sarah",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Buss, Sarah"
+   }
+  },
+  {
+   "id": "8c6be351-2592-4e3a-891c-5c557974c684",
+   "type": "person",
+   "label": "Westlund, Andrea",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Westlund, Andrea"
+   }
+  },
+  {
+   "id": "32605367-0666-4993-9f78-6adac64dba8f",
+   "type": "document",
+   "label": "Cognitive liberty",
+   "attributes": {
+    "title": "Cognitive liberty",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Wikimedia Foundation, Inc.",
+    "source_type": "journal",
+    "canonical_url": "https://en.wikipedia.org/wiki/Cognitive_liberty",
+    "published_date": "2005-01-05"
+   }
+  },
+  {
+   "id": "dadea3af-9849-4b2f-9cfd-7d0ca08f7ff6",
+   "type": "person",
+   "label": "Contributors to Wikimedia projects",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Contributors to Wikimedia projects"
+   }
+  },
+  {
+   "id": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "type": "document",
+   "label": "Well-Being, Agency and Freedom: The Dewey Lectures 1984",
+   "attributes": {
+    "title": "Well-Being, Agency and Freedom: The Dewey Lectures 1984",
+    "summary": "These are lectures given by Amartya Sen, an economist and philosopher who has worked in many contexts including welfare economics, social choice theory and famine. I include these lectures as context for Taylor and Krishna's definition of cognitive agency. In them, Sen defines \"agency freedom\" and identifies two components, one of which seems related to other philosophers' views of human autonomy.",
+    "abstract": "The main aim of Dewey lectures is to explore a moral approach that sees persons from two different perspectives: and agency. Both the well-being aspect and the agency aspect of persons have their own relevance in the assessment of states and actions. A second objective is to examine a set of metaethical issues, making use of an approach to moral analysis which focuses on the admissibility and use of different types of information in moral valuation. Informational analysis can be used to bring out the content, scope, and limitations of different moral principles. A few examples may help to illustrate the diversity of ways in which informational constraints may be used through the specification of invariance requirements. Authorship invariance does have some claims to being a reasonable requirement of moral evaluation. The possibility of combining position relativity with authorship invariance is also the reason why positionality of moral valuation is perfectly consistent with objectivity of moral values.",
+    "oa_pdf_url": "https://aristotle.rutgers.edu/joomlatools-files/docman-files/11AmartyaSen.pdf",
+    "publication": "The Journal of Philosophy",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.2307/2026184",
+    "published_date": "1985-04"
+   }
+  },
+  {
+   "id": "c8a9c7e6-ce04-489b-9df2-171102fa5428",
+   "type": "person",
+   "label": "Amartya Sen",
+   "attributes": {
+    "orcid": "0000-0002-6203-4674",
+    "homepage": null,
+    "full_name": "Amartya Sen"
+   }
+  },
+  {
+   "id": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+   "type": "document",
+   "label": "A Framework for Measuring Human Cognitive Agency Amid Routine AI Adoption",
+   "attributes": {
+    "title": "A Framework for Measuring Human Cognitive Agency Amid Routine AI Adoption",
+    "summary": "",
+    "abstract": "The rapid integration of large language models into everyday cognitive tasks writing, reasoning, decision-making, and professional judgmenthas created an urgent need for frameworks that capture the cognitive consequences of delegating thinking to AI systems. Existing constructs in psychology and education, including critical thinking, metacognition, intellectual autonomy, and epistemic agency, each address related phenomena but none adequately describes the specic capacity threatened by habitual AI-assisted cognition: the ability to remain the genuine author of one's own understanding. This paper introduces cognitive sovereignty as a distinct psychological construct, defined as the capacity to (a) notice when one's thinking is being displaced (b) maintain a meaningful connection to how one's beliefs and judgments are formed, and (c) distinguish between genuine reasoning and the subjective impression of having reasoned. I trace the concept's philosophical lineage, dierentiate it from adjacent constructs through systematic comparison, propose a ve-dimensional model (Authorship Awareness, Process Ownership, Source Discrimination, Capacity Maintenance, and Delegation Discernment), present a nomological network with predicted relations to existing measures, and outline a measurement instrument: the Cognitive Sovereignty Scale (CSS), with candidate items and a multi-phase validation strategy. We conclude with specic, testable predictions that follow from the framework. We argue that cognitive sovereignty names a phenomenon that existing constructs individually fail to capture and that its operationalization is a prerequisite for empirical research on the cognitive consequences of AI adoption.",
+    "oa_pdf_url": null,
+    "publication": "SSRN Electronic Journal",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.2139/ssrn.6548138",
+    "published_date": "2026-01-01"
+   }
+  },
+  {
+   "id": "e07e402b-2ec9-4449-b1f5-b132fa399d25",
+   "type": "person",
+   "label": "Amir Konigsberg",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Amir Konigsberg"
+   }
+  },
+  {
+   "id": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+   "type": "document",
+   "label": "A Historical and Comparative Analysis of Cognitive Security",
+   "attributes": {
+    "title": "A Historical and Comparative Analysis of Cognitive Security",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Cognitive Security Task Force",
+    "source_type": "substack",
+    "canonical_url": "https://cstf.substack.com/p/a-historical-and-comparative-analysis",
+    "published_date": "2026-04-14"
+   }
+  }
+ ],
+ "artifacts": [
+  {
+   "id": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "label": "What Words Are We Using?: The \"Cognitives\"",
+   "body": "Lots of people are talking about human cognition in the context of AI...and we're all using different terms! Even more confusing, sometimes authors define the same terms differently. This is a short-and-sweet summary of the terms I'm seeing most frequently: Cognitive sovereignty, cognitive liberty, cognitive agency and cognitive security.\n\n**Cognitive sovereignty**: [Klein and Klein](doc:6abe562e-48cd-44b8-a02f-48f04f710a8e) define cognitive sovereignty as \"the enacted behavior of exercising intellectual independence in AI-rich environments, [manifested] as the ability to set goals, validate outputs and appropriately overrule the tool when necessary.\" Slightly more recently, Konigsberg [defines cognitive sovereignty](doc:4c5b8a1a-132d-460c-838f-8d92de7baa07) as \"the capacity to (a) notice when one’s thinking is being displaced, (b) maintain a meaningful connection to how one’s beliefs and judgments are formed, and (c) distinguish between genuine reasoning and the subjective impression of having reasoned.\" Cognitive sovereignty is the term here that focuses most tightly on the individual and on metacognition: It refers to our ability not only to verify and correct machine thinking, but recognize, describe and protect our own thought processes.\n\n**Cognitive liberty**: If cognitive sovereignty is about our capacity to govern our own minds, this term is about our freedom to do so. [Cognitive liberty](doc:32605367-0666-4993-9f78-6adac64dba8f) has conditions: Freedom from interference (e.g., I have the right not to undergo an EEG or take SSRIs); and freedom to self-determine (e.g., I have the right *to* undergo an EEG or take SSRIs.) Cognitive liberty is often invoked in serious legal contexts – think, say, Fifth Amendment-type stuff or whether it is legal to administer drugs to someone to make them able to stand trial. That's probably why Courtney Radsch, a journalist and scholar who applies the term to corporate AI, [uses it.](doc:c70af410-3c1e-4eb2-93c0-d8d385b4c3af) Radsch argues that \"a handful of corporations are redesigning the architecture of human thought into a system of cognitive capture\" designed to influence everything we see, think and even feel. She further argues that power concentration, surveillance and data capture are the goal of this system and that the only way to protect ourselves is to pass laws protecting freedom of thought.\n\n**Cognitive agency**: [Taylor and Krishna](doc:7ae206d8-b677-4570-a419-8dcd48c78ecc) at the Brookings Institution define cognitive agency as \"the capacity for people to think and act with AI in ways that increase their control, efficacy and mastery.\" I really like this definition as it describes cognitive agency along three dimensions: Control, or the \"ability to shape the information environment\"; efficacy, or the \"capacity to act and think effectively with AI to pursue goals\"; and mastery, or the \"capacity to experience, learn and grow durable capabilities through human-AI interaction over time.\" Unlike the cognitive sovereignty definitions I've seen, Taylor and Krishna emphasize that cognitive agency can be collective, e.g., collective control over an information environment involves questions of access, portability and interoperability. Their definition takes inspiration from \"agency\" in the context of human development, where agency is often seen as a necessary condition for empowerment and can be both individual and collective. I think this term lends itself more readily to movements like Public AI than, say, cognitive sovereignty (although I noticed that Konigsberg, whose definition we use above, uses the two interchangeably. I'll also note that cognitive agency, as Taylor and Krishna define it, is a teensy bit circular – control, efficacy and mastery both define and result from cognitive agency?)\n\n**Cognitive security**: The more traditional definitions of cognitive security focus on how people can be manipulated or influenced by information, e.g., propaganda and deepfakes. The latest definition from Stanford's Cognitive Security Task Force (CSTF) includes both the manipulation and the person's capacity to withstand it – something closer to cognitive sovereignty. In fact, the CSTF defines cognitive security as \"protect[ing] against unauthorized access to and hazardous influence over cognitive processes, such as perception, reasoning, decision-making, learning, and judgment. At its core, cognitive security refers to our ability to maintain **sovereignty** over our inner mental landscape, including our thoughts, feelings, subjective experiences, and dispositions. A cognitively secure world, then, supports **human agency** in deliberation, reflection, and sensemaking.\" (Emphasis mine.) \n\nThis feels like a pretty broad definition, especially when you look at how tightly-scoped a term like \"cognitive sovereignty\" is, but I think that's intentional – the CSTF seems to be positioning \"cognitive security\" as a term for [multiple fields to rally around](doc:f91c46a2-2410-4719-b168-f5fbebf3824b). The CSTF cites the technical lineage of the term, but then extends it across domains and disciplines to policy, UI/UX design, education playbooks, media literacy, disinformation detection, and so on. I have been thinking of \"cognitive security\" as including everything from LLM sycophancy to those times Meta served beauty ads to teenage girls who had just deleted selfies.  \n\n**...and now, a bonus term!** What about \"autonomy\", either cognitive or human? What is it, and how is it different from agency? Not to turn this into an episode of \"I read the Stanford Encyclopedia of Philosophy so you don't have to,\" but it is complicated. Let's take agency first, because we already have a term (\"cognitive agency\") that invokes it.\n\nThe SEP [notes that](doc:06701533-e411-441c-97dc-3468d7e8abb3), though agency most broadly means the ability to act on something – the way that, for example, your cat wakes you up in the middle of the night – the common use of the term implies *intention* (which, ok, having met a cat, maybe the example holds.) More specifically, the standard definition of agency is the capacity to perform intentional actions, which – more or less, with a layman's gloss – is driven by mental states, like desires, beliefs and intentions. The SEP also notes that there can be more \"refined\" kinds of agency than simply acting intentionally, including *mental agency*, as in over decision-making and remembering, and *epistemic agency*, or the control we have to acquire and revise our own beliefs. This appears to be a very rich area of philosophical scholarship (who'd've thunk?) but the version I've put in my pocket for later is: Humans have stuff in our heads, and we act intentionally based on that stuff, and that is human agency. And if somebody asked me to define \"cognitive agency\" without having read Taylor and Krishna, I would probably say that it's a combination of the SEP's mental and epistemic agency, an umbrella term that encompasses all the actions we take within our own heads.<Footnote>e.g., remembering, judging, trying out hypotheses, evaluating new information, etc.</Footnote>\n\nNow, Taylor and Krishna draw the term \"agency\" from the work of Amartya Sen and others in the context of international development. Sen defines [agency freedom](doc:01ef5509-8fea-4b70-9b98-9eefd75729b9) as the \"freedom to achieve whatever the person, as a responsible agent, decides he or she should achieve.\" He further breaks this freedom down into effective power (e.g., whether you are actually free to do something) and procedural control (e.g., whether you are actively choosing to do that thing.) For example, suppose I intend to buy milk, but when I get to the store it is too expensive. Sen would say that the price of milk affects my effective power whereas my *decision* to buy milk is about procedural control. I suspect Taylor and Krisha inherit these components, too, though they elide \"agency freedom\" into just \"agency.\" They might say I have diminished cognitive agency, for example, if the interface I am using is designed to interrupt memory formation despite my intent to remember things.\n\nHere's where it gets a bit complicated. Sen's \"procedural control\", to my ears, sounds a bit like \"autonomy.\" And whether you consider autonomy as a flavor of agency or a separable phenomenon depends on who you read. The SEP describes [personal autonomy](doc:6486cb39-0193-4698-b7f9-f19f9c0bde1b) as the authority over one's own actions, and seems to define it as a *special case* of agency, i.e., \"autonomous agency.\" On the other hand, Brendan McCord, who founded the Cosmos Institute and thinks a lot about autonomy and agency in the age of AI, [argues](doc:163500a9-23d2-443e-94e6-990f76410362) that AI can increase agency (which he defines as the ability to get what you want) while neglecting or even degrading autonomy (which he defines as the ability to judge and decide what you want.)\n\nI would smooth out this wrinkle immediately and tell you not to worry about it if I didn't suspect many workshops might degrade into diction sparring. If you subscribe to one set of definitions, then when you say \"agency\" you not only mean your ability to act but your ability to govern what's in your own head. If you subscribe to another, then \"agency\" leaves out that critical second part. Does it matter? Well, think about when Meta served beauty product ads to those teenage girls. Using one definition, the ads may have undermined the girls' authority over their own intents and actions, reducing their agency. Using the other, this did not undermine their agency at all – it in fact increased it by offering them options. When we convene workshops and host conferences about what, say, the big labs are doing to us, I'd rather we be discussing what happened than talking past each other. \n\nSo, who's right? Should we commit to autonomy as a condition of agency or a related but separable thing? At risk of sounding uncharacteristically serene,<Footnote>or cynical – if the philosophers aren't on the same page, I don't see why we ought to try and convince anyone else to change terms</Footnote> I think that's the wrong question. I often remember something <a href=\"https://joelchan.me\">Joel Chan</a>, a professor over at UMD, said at a workshop – one where, incidentally, there was a lot of fighting over terms and disciplines. He said he sees people as pointers to the vast universes of everything they know and have worked on, and language as a terribly lossy and insufficient means of communicating those universes. I feel that way about \"agency\" versus \"autonomy\": It's less about the words used and more about the context.<Footnote>isn't that always the case!</Footnote> Sen works in the contexts of welfare economics, well-being and famine, and gave his lectures on agency freedom at a time where policymakers didn't always take seriously the difference between having the right to do something and the actual ability to do it. McCord works in the context of generative AI, where the concern is not that we will starve but that optimization will damage our capacity for choice even as it makes better choices than we could. Both are talking about respecting and enabling humans' ability to do things, even things that seem sub-optimal to our own immediate well-being (e.g., Sen's example of jumping into a freezing river to save a drowning person; McCord's example of a young person making mistakes as a form of self-authorship.) Both take freedom very seriously. In that respect, I think it doesn't matter whether their terms overlap or conflict, so long as they mean something to someone and we have a reliable translation function.\n\nWhat is that translation function? Well, let's review. I feel comfortable enough saying that cognitive sovereignty is roughly interchangeable with the \"mastery\" dimension of Taylor and Krishna's cognitive agency, the \"procedural control\" aspect of Sen's agency freedom, and even McCord's definition of \"autonomy\":\n- cognitive sovereignty ≈ mastery ≈ procedural control ≈ autonomy\n\nI'm also okay viewing cognitive liberty as an enabler of cognitive sovereignty, and acknowledge by the transitive property that it is probably invoked in similar places as \"autonomy\" as well:\n- cognitive liberty → (cognitive sovereignty ≈ autonomy)\n\nCognitive security is clearly more about the protective posture, and because it's intended as a unifying term, I think it probably doesn't matter much whether they're saying \"agency\" or \"autonomy\" (though it will be interesting to see if a favorite floats to the top as the Task Force does more work.)\n\nHonestly, everyone's definitions are pretty copacetic except for McCord's claim that agency and autonomy can be separated, which I'm not sure Sen or Taylor and Krishna's definitions agree with. But McCord is making his argument in a context that I think Sen would find familiar: That the relentless machinations of the systems you live in can influence your preferences over time. I doubt anybody would disagree that forces like AI can influence how we think, and to ignore our capacity for self-governance is to miss a huge part of the picture. \n\nWorried about diction swinging at your next gathering? Well, honestly, it's not like the philosophers have figured this out either, so if it were me I'd pick a set of terms and go with it. But if you want to be more egalitarian, I propose, like, ten minutes tops of diction negotiation, starting with:\n\n1. What words are people using to describe whether somebody governs their own mind?\n2. What words are people using to describe whether somebody can act in the real world in the way they intend?\n3. Is one a condition of the other?\n4. Repeat if you are also discussing collectives.",
+   "subjects": [
+    {
+     "id": "5e159bca-4bd9-4d59-9c20-f14330863563",
+     "type": "concept",
+     "label": "Cognitive agency"
+    },
+    {
+     "id": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+     "type": "concept",
+     "label": "Cognitive liberty"
+    },
+    {
+     "id": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+     "type": "concept",
+     "label": "Cognitive sovereignty"
+    },
+    {
+     "id": "79f43504-6802-489b-9d93-5dc6e943aa61",
+     "type": "concept",
+     "label": "Cognitive security"
+    },
+    {
+     "id": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+     "type": "document",
+     "label": "Rethinking Cognitive Security in the Age of Generative AI"
+    },
+    {
+     "id": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+     "type": "document",
+     "label": "The Battle for Cognitive Liberty in the Age of Corporate AI"
+    },
+    {
+     "id": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+     "type": "document",
+     "label": "The extended hollowed mind: why foundational knowledge is indispensable in the age of AI"
+    },
+    {
+     "id": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+     "type": "document",
+     "label": "Context-maxxing: A path to cognitive agency with generative AI"
+    },
+    {
+     "id": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+     "type": "concept",
+     "label": "Thinking for ourselves"
+    },
+    {
+     "id": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+     "type": "concept",
+     "label": "Human autonomy"
+    },
+    {
+     "id": "163500a9-23d2-443e-94e6-990f76410362",
+     "type": "document",
+     "label": "Brave New Nudge"
+    },
+    {
+     "id": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+     "type": "document",
+     "label": "A Framework for Measuring Human Cognitive Agency Amid Routine AI Adoption"
+    },
+    {
+     "id": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+     "type": "document",
+     "label": "Well-Being, Agency and Freedom: The Dewey Lectures 1984"
+    }
+   ],
+   "citations": [
+    {
+     "id": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+     "label": "The extended hollowed mind: why foundational knowledge is indispensable in the age of AI"
+    },
+    {
+     "id": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+     "label": "The Battle for Cognitive Liberty in the Age of Corporate AI"
+    },
+    {
+     "id": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+     "label": "Context-maxxing: A path to cognitive agency with generative AI"
+    },
+    {
+     "id": "32605367-0666-4993-9f78-6adac64dba8f",
+     "label": "Cognitive liberty"
+    },
+    {
+     "id": "06701533-e411-441c-97dc-3468d7e8abb3",
+     "label": "Agency"
+    },
+    {
+     "id": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+     "label": "Personal Autonomy"
+    },
+    {
+     "id": "163500a9-23d2-443e-94e6-990f76410362",
+     "label": "Brave New Nudge"
+    },
+    {
+     "id": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+     "label": "A Framework for Measuring Human Cognitive Agency Amid Routine AI Adoption"
+    },
+    {
+     "id": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+     "label": "Well-Being, Agency and Freedom: The Dewey Lectures 1984"
+    },
+    {
+     "id": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+     "label": "A Historical and Comparative Analysis of Cognitive Security"
+    }
+   ],
+   "author": "curator",
+   "updated_at": "2026-08-10"
+  }
+ ],
+ "edges": [
+  {
+   "id": "6d014f6a-94bc-4040-aa1f-cc2c11772d61",
+   "source": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "1ddda077-68cd-45e4-8d85-07b558e1b4fe",
+   "source": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "target": "9b091b8a-a299-416d-be67-74bfdc7316b7",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "f3462e44-c791-4106-ab2d-2d98e664e3e9",
+   "source": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "target": "d4c59376-0554-4de4-b6a6-7804fa7144dc",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "06862d02-20d1-4ecc-a004-f926e16fdb92",
+   "source": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "dd0d669a-68fe-4f47-aac1-8b39e98a8660",
+   "source": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "2d222371-18c8-4a1f-b2ae-67bd2fd065c5",
+   "source": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "target": "d7f528d6-45a9-45a2-a74f-10be1fcfd9f4",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "07b8f074-81da-45ec-8bbc-4dba524f06b1",
+   "source": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "8cf552dc-1f56-4865-b4ed-3c27dad163e1",
+   "source": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "e0d6d7b6-fda9-4d10-919a-650b25a20ced",
+   "source": "0df79441-4471-4881-81f9-75fa44a3c7cd",
+   "target": "b9cae96c-81bb-4c55-9fda-d3532df25f6f",
+   "type": "writes_at",
+   "attributes": {
+    "end": null,
+    "role": null,
+    "start": null
+   }
+  },
+  {
+   "id": "b2b09bb2-2fcd-405d-803e-0011bd8a8235",
+   "source": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "target": "b1365a28-bc49-476d-8708-7637e421f799",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "96a66d0f-9c3d-492f-8b94-9ac8fba80f46",
+   "source": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "target": "7e5afedb-57d1-4cc9-992f-cdd887a1eaa8",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "62f96eff-9f3a-44c9-af3d-f35624fc1786",
+   "source": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "target": "0df79441-4471-4881-81f9-75fa44a3c7cd",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "7dd30a7f-e0f8-40ed-b068-2bd1537b0f05",
+   "source": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "target": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "0f91b766-63f0-4888-8844-611127ab3365",
+   "source": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "131a2555-0ceb-4382-b899-b516e1dcc04e",
+   "source": "608f1b98-9bfe-46b1-8c39-22e39caeacd0",
+   "target": "88c9c570-52b4-41f6-ad90-90d310bc4314",
+   "type": "member_of",
+   "attributes": {
+    "end": null,
+    "role": null,
+    "start": null
+   }
+  },
+  {
+   "id": "182a176a-e5ca-4786-be0e-db0796ce91c0",
+   "source": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "target": "608f1b98-9bfe-46b1-8c39-22e39caeacd0",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "c70482ed-ca5e-4a14-a9f3-9072c2c2cff1",
+   "source": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "target": "07f5b4ca-fe25-4141-9d85-b13b75e283a2",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "6b498ded-1108-49ee-8bc1-4ddf0bdfe09d",
+   "source": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "2d29cc92-d96e-430f-b205-367d4c7eeb22",
+   "source": "07f5b4ca-fe25-4141-9d85-b13b75e283a2",
+   "target": "88c9c570-52b4-41f6-ad90-90d310bc4314",
+   "type": "member_of",
+   "attributes": {
+    "end": null,
+    "role": null,
+    "start": null
+   }
+  },
+  {
+   "id": "f4a9f629-1943-4bd5-a66e-91973d25d53c",
+   "source": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "2d57ea7b-a102-4df1-8576-ef33a19b128a",
+   "source": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "8da0df00-2c8a-4b93-9240-2d5b58a3d656",
+   "source": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "285a4d9b-ab10-45fd-bbb8-e528ce45ce48",
+   "source": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "3ab92da9-bb64-4187-9459-dd1f1714bcfe",
+   "source": "cb78c6d1-7ea8-4d66-b2ef-3f6b2af89634",
+   "target": "8dfd2ebb-4a8b-450a-aa4f-4bf588ca5fc1",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "c42738c0-3119-4e08-89b7-c14d2e5503f2",
+   "source": "821ee615-5f2b-49c8-8a17-eaac614ce5b6",
+   "target": "8dfd2ebb-4a8b-450a-aa4f-4bf588ca5fc1",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "6dd3a2b7-234e-420e-a379-d3e6c786a9e5",
+   "source": "45d95229-82a2-4ab9-b611-8df969e066c1",
+   "target": "8dfd2ebb-4a8b-450a-aa4f-4bf588ca5fc1",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "ed369d21-139e-4b98-ae8c-a99a2188cb90",
+   "source": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "target": "cb78c6d1-7ea8-4d66-b2ef-3f6b2af89634",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "04f606b1-3680-4ffe-bed7-e7cb18c09220",
+   "source": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "26548d3f-7149-41b3-b608-f70141addfdd",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "1274cea9-c672-4e64-bb20-372261491185",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "2dddf2ec-0341-4522-a04f-3bac68b3e889",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "a0ffc9bb-46cb-437d-83e6-33a2d587ce7b",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "995f5f9a-92c8-478c-a0f2-acd5f505a0b4",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "ea042c2d-484d-4db8-a08b-ff373068b34e",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "504186aa-97e6-453c-ae05-fc8ab3dc5565",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "b7151629-7f73-4f36-8559-bc614bb24875",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "1d0843d4-7ef7-4355-a566-eb8f683b92ec",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "d19a4530-b736-4d03-96fb-693892f1be23",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "b7083639-18a5-49a1-93e4-ff6302d6f666",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "54f45d1f-a001-463b-9ad6-a6bada27ee4e",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "c9cfab88-18f4-424f-9dab-7c8142f2d2e3",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "4facef70-b3ca-4a2a-a144-bc5be25b9bb4",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "c0d39098-f9bd-4a2c-9183-7074c08f2f15",
+   "source": "163500a9-23d2-443e-94e6-990f76410362",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "f4379a0c-9144-47da-bd69-5075aee2e1a4",
+   "source": "163500a9-23d2-443e-94e6-990f76410362",
+   "target": "e9ae8daa-f885-46c8-a824-1170ab0caf6f",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "21358274-d3f9-4ef6-9f18-382fa2e1121d",
+   "source": "163500a9-23d2-443e-94e6-990f76410362",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "def84017-bca0-42f6-affb-a0de0d0f818d",
+   "source": "06701533-e411-441c-97dc-3468d7e8abb3",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "c5d251fa-b186-4043-aa49-f3d60e5861c9",
+   "source": "06701533-e411-441c-97dc-3468d7e8abb3",
+   "target": "984031d3-bfeb-44fc-9e24-1c4f9d6b3055",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "ce2a1c1f-e76f-44eb-86ec-d744068f60f0",
+   "source": "06701533-e411-441c-97dc-3468d7e8abb3",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "e145528b-650f-400a-b229-594c1f9dfc85",
+   "source": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "18f6d175-d5ed-4b95-a5fd-2291b371dc2d",
+   "source": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+   "target": "4ce1dfc8-0dfa-4708-89e0-d8224696537d",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "0c1b4530-066b-47f4-aaed-3668cdf5ca36",
+   "source": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+   "target": "8c6be351-2592-4e3a-891c-5c557974c684",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "5d1a1e6f-54d5-460a-aa20-e9a60e87f4e6",
+   "source": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "7e022eab-0047-406c-aa9c-26276e05bd63",
+   "source": "32605367-0666-4993-9f78-6adac64dba8f",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "c842eeb9-b4f2-4147-a42f-a30914405490",
+   "source": "32605367-0666-4993-9f78-6adac64dba8f",
+   "target": "dadea3af-9849-4b2f-9cfd-7d0ca08f7ff6",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e6f04069-2b24-4516-85d4-8eeb0758c4b8",
+   "source": "32605367-0666-4993-9f78-6adac64dba8f",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "a0a4e893-e2b2-4aae-be11-0e6820748dd8",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "163500a9-23d2-443e-94e6-990f76410362",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "312e70db-0329-4b3e-9bca-3a9ab61c2f8a",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "32605367-0666-4993-9f78-6adac64dba8f",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "f96eb84c-8988-4394-86d6-dccba11d3018",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "06701533-e411-441c-97dc-3468d7e8abb3",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "628305dd-611a-4c42-ac18-1ee8ed7388d5",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "257026b6-9fff-4091-aab1-e36bdd3e31bd",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "163500a9-23d2-443e-94e6-990f76410362",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "30bb21b5-4958-4b53-8e4a-a52fa773f2dd",
+   "source": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "9bee7e9c-3b44-4931-9607-02d5909c4755",
+   "source": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "target": "c8a9c7e6-ce04-489b-9df2-171102fa5428",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "2a2ea347-3cc0-46c7-84a6-511f7e91ed58",
+   "source": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "bf1290a5-bd19-4b2b-bae3-d98555ffaeb3",
+   "source": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "a72737ff-f349-4113-b21c-f04cc303d853",
+   "source": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "f29c6fbb-ed7d-4050-9ed5-e0bfaa1d8fa0",
+   "source": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+   "target": "e07e402b-2ec9-4449-b1f5-b132fa399d25",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "985bfffe-dce8-48a0-b558-8bd0b4281d6a",
+   "source": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "8ced6055-cac1-4f82-bb40-2e2724da14ae",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "2f11e5e3-83ff-4675-8c7a-bc476baadfb7",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "660c8e5b-2426-4755-8124-74a8a1e05b5c",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "da226836-f566-4104-9cac-b7cfe7e6d74f",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "684b82de-6d3f-4661-987b-dd697a530899",
+   "source": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "8a25f997-b198-422d-8330-513ef857b724",
+   "source": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+   "target": "0df79441-4471-4881-81f9-75fa44a3c7cd",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "a4eba1df-d69a-45a5-9d98-01e44adf775b",
+   "source": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+   "target": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "b95a9c01-8f0e-488d-bb87-87fe1d7fc097",
+   "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+   "target": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+   "type": "cites",
+   "attributes": {}
+  }
+ ]
+}
