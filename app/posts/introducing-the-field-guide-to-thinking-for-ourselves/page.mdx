@@ -1,0 +1,78 @@
+---
+title: "Introducing the Field Guide to Thinking for Ourselves"
+date: "2026-08-07"
+summary: "I got funding to build a field guide! Let me tell you about it!"
+---
+# Introducing the Field Guide to Thinking for Ourselves
+
+<PostDate date="2026-08-07" />
+
+## Introducing...a Field Guide!
+
+The first series on this blog was about how our brains interact with LLMs. I focused mainly on individual aspects: LLMs and human memory, specific UI/UX design, what we want our tools to do for us, etc. We talked a little bit about time – how repeated supplications to the eager oracle might damage our cognitive resources. And we touched a teeny bit on scale – how doing this for various tasks and skills could cause some to become "lost," i.e., no longer done well either by humans or machines. 
+
+But there's so much more to learn! What's the latest on poietic tools? Have there been any longitudinal studies lately? How do our anxieties about thinking for ourselves line up with larger concerns about, e.g., gradual disempowerment<Reference id = "kulveit_2025_gradual"/>? 
+
+I have all of these questions too! And I'm pleased to say that I've received a grant from <a href = "https://bluedot.org/">BlueDot Impact</a> to work on answering them. I'm going to be building a Field Guide. Originally I had been calling it the "field guide to epistemic agency in the context of gradual disempowerment," but given that a) "epistemic agency" is perhaps a bit narrow and b) you shouldn't have to read the field guide before you can understand its title, I am now calling it...the Field Guide to Thinking for Ourselves in the Age of AI.
+
+## What's a field guide for? 
+
+You know those Rick Steves episodes on network television where he goes around nice places, talks a bit about the history, eats with local guides and gets you thinking about finally taking a vacation? That's kind of how I see this field guide. Specifically, it will:
+- Organize a rich and complex landscape into must-reads and local color
+- Dip into history when it is relevant and interesting
+- Be written by a human, for humans
+
+This guide will also be a bit more comprehensive and choose-your-own-adventure than your standard Rick Steves episode. I've built it on top of a property graph containing concepts, documents and entities (i.e., authors and organizations.) The work that I do as the curator is as follows:
+- Define concepts in an ontology
+- Send machines out to bring back new writing about those concepts<Footnote>Right now we check arXiv, OpenAlex, and a set of hand-curated sources like Substacks and lab research blogs</Footnote>
+- Review the results by a) assigning documents to concepts and b) writing summaries of (some of) the documents
+- Write curation artifacts ("remarks") that sit on top of the property graph and interpret how concepts and documents go together.
+
+This means that readers can explore the graph themselves, down to the papers, blogs and authors. For those who just want the highlights (e.g., funders wondering what's hot and dangerous), the remarks suffice. For those who want to learn alongside me, concepts and documents let you snoop around.
+
+## How am I building it?
+
+I built a neat little interface for curation. I won't go too far into it, but here's a little screenshot with the basic functions marked:
+
+![](/introducing-the-field-guide-to-thinking-for-ourselves/curator_view.png)
+
+
+## What role does AI play?
+
+If I'm going to go to the effort of developing an ontology and property graph, why not just build a whole model of the literature? In theory I could:
+- Seed a small model with what I already know (e.g., "cognitive offloading relates to cognitive atrophy")
+- Send machines out to read documents and determine what relations belong (e.g., "cognitive offloading causes cognitive atrophy")
+- Iteratively and automatically build out the graph with new knowledge, bringing myself in only to make high-level judgment calls about what's interesting
+- Use new additions to organically expand the ontology itself (and thus the search terms), removing the need for human input
+- In this way capture every relevant and high-quality document that's out there about any of these subjects
+
+I could also bring LLMs in to break other bottlenecks, like curator-written summaries of documents and the curator-written remarks that make up the Guide itself. Sure, it would cost more to set up, but wouldn't it be more comprehensive? 
+
+Maybe! But I think we have enough summaries and explainers written by LLMs out there. The purpose of curation isn't just to generate new content about old content, it's to build a knowledge base and a mental model over time. That's what gives us the creativity to put things together in new ways and notice what might be missing. So I designed the Guide to maximize my chances of being able to do that: Machines do the legwork of bringing in documents, but I do the work of figuring out what's interesting, how things fit together, and what readers might be thinking. And I do it at least semi-formally through this property graph, which not only helps the machines see what I think<Footnote>TITULAR</Footnote> but lets readers click around and come to their own conclusions outside of whatever I'm writing about that day.<Footnote>I've built the bones of the Guide to allow multiple curators, so maybe at some point you'll be able to submit your own documents and write your own remarks. I mean, like, that's the plan.</Footnote>
+
+
+## Without further TODO...<Footnote>terrible</Footnote>
+
+As I hinted at earlier, the terminology around this space is pretty specialized. I think we all *sort of* agree on what we're talking about: Generative AI can affect human brains, and most of us would like to continue to think for ourselves even as AI improves and becomes ubiquitous. But the concept of "thinking for ourselves" is multi-faceted. Can we say that, for example, Meta's algorithms impinge on our ability to think for ourselves? What about the choices Claude's designers make? Many people are working in this space – UI/UX designers, cognitive scientists, lawyers – but they're all using slightly different words to describe what they're worried about and what they want to protect. And I found, when I was trying to name this Field Guide, that I wasn't sure which terms to use.
+
+So the first installment of the Field Guide is about the words we use, and specifically "the Cognitives": Cognitive sovereignty, cognitive liberty, cognitive agency and cognitive security. I also do a little bonus round with "autonomy." If you've ever felt a little unsure when these words start flying, I hope this little explainer can orient you. To read it, just hop on over via <a href = "/field-guides/fgttfo/?open=32594bc2-e59a-4c3b-b02a-dbee7629e827">this link</a> and the remark should open for you in the right-hand corner.
+
+There's not a lot in there right now; I'll be building out the Guide from these founding terms over the next few weeks. There's a lot to read! To avoid repetition, I'll be putting this work mostly inside the Guide itself (and on my much inferior Substack) and posting updates on a brand new page that you can get to by clicking the red string to the left. Cool!
+
+## Miscellaneous questions about design
+
+### Why an ontology? Do you have edges?
+
+I'm using the ontology mainly as search guidance for my little machine scouts, and also as a chapter-like structuring for remarks. I'm not planning on trying to create an ontology for the whole field – I just want to be able to say, hey, scouts, go read up on this topic generally but don't bother with one of its subtopics because I'm not tracking it right now. Or, hey, readers, we're opening up a whole new can of worms today called "A Different Concept than the Other Concepts."
+
+Why are edges interesting? Well, right now I'm basically just using edges to build the ontology (e.g., "this concept is a sub-concept of this other concept") and to do some light bookkeeping (e.g., "this author wrote this document"; "this organization writes at this Substack.") But you could imagine using edges to try and match the content of curator remarks, and to do smarter scouting. For example, if I wrote a remark that said, "I've read Literature X and Literature Y, and I think that A causes B based on what I've read," it would be cool to represent that in the graph as an edge between A and B, not only because then readers could explore how the two literatures interact, but because then my little scouts could go out and look for new information *specifically* about that proposed relationship. This would be neat.
+
+### What about the drawing-based canvas from the last demo? That graph viz is...fine.
+
+Look, I think that demo was cool. But a big thing has since happened, which is that my marvelous and devastatingly handsome husband defended his Ph.D. and I got the full use of my six foot desk back. Which made me realize, there are maybe just two kinds of thought in my life right now:
+- Iterative, informal, sprawling trains of thought that make heavy use of physical space and decay at roughly the rate that 8x11 pieces of paper fall off the edge of my desk
+- Structured thinking that demands lots of documents, is increasingly complicated and will probably be turned into public-facing information soon
+
+The first kind requires, well, a stack of 8x11s and a six foot desk; the second one requires the Guide curator view. Maybe as I build out the Guide I'll find that the drawing-is-thinking canvas and the lasso feature hit sort of a sweet spot between these two modes, but I haven't found that yet. (I agree though – something's gotta change about the graph viz in the Guide because, yeah, it's fine, but I don't think it's going to hold up once we get more content going.)
+
+See you all soon!

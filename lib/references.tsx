@@ -21,6 +21,9 @@ const REFERENCES: Record<string, ReactNode> = {
   "tang_2024_steering": <a href = "https://arxiv.org/pdf/2409.17289" target="_blank" rel="noopener noreferrer"> Xuxin Tang et al. "Steering LLM Summarization with Visual Workspaces for Sensemaking." arXiv preprint arXiv:2409.17289, 2024.</a>,
   "pirolli_2005_sensemaking": <a href = "https://andymatuschak.org/files/papers/Pirolli,%20Card%20-%202005%20-%20The%20sensemaking%20process%20and%20leverage%20points%20for%20analyst%20technology%20as.pdf" target="_blank" rel="noopener noreferrer"> Peter Pirolli and Stuart Card. "The Sensemaking Process and Leverage Points for Analyst Technology as Identified Through Cognitive Task Analysis." 2005.</a>,
   "kulveit_2025_gradual": <a href = "https://arxiv.org/pdf/2501.16946" target="_blank" rel="noopener noreferrer"> Jan Kulveit et al. "Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development." arXiv preprint arXiv:2501.16946v2, 2025.</a>,
+  "miner_2024_car": <a href = "https://www.sciencedirect.com/science/article/pii/S0966692324000267" target = "_blank" rel="noopener noreferrer"> Patrick Miner et al. "Car harm: A global review of automobility's harm to people and the environment." Journal of Transport Geography, Feb 2024.</a>,
+  "guidi_2024_environmental": <a href = "https://arxiv.org/pdf/2411.09786" target = "_blank" rel="noopener noreferrer"> Gianluca Guidi et al. "Environmental Burden of United States Data Centers in the Artificial Intelligence Era." arXiv preprint arXiv:2411.09786v1, 2024.</a>,
+  "williams_2022_exploited": <a href = "https://www.noemamag.com/the-exploited-labor-behind-artificial-intelligence/" target = "_blank" rel="noopener noreferrer">Adrienne Williams et al. "The Exploited Labor Behind Artificial Intelligence." Noema Magazine, 2022.</a>
   
   
 
