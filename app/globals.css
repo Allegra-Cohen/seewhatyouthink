@@ -113,6 +113,46 @@ blockquote {
   text-decoration-thickness: 2px;
 }
 
+/* A big centered call-to-action button that can sit mid-sentence in a post.
+   The selector is doubled up (and !important'd) because `.post-content a`
+   above paints every post link blue with an underline. */
+.post-content a.post-button,
+.post-content a.post-button:link,
+.post-content a.post-button:visited {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0.9em auto;
+  padding: 0.55em 1.1em;
+  background: rgba(115, 0, 807, 0.46);
+  color: rgba(0,0,0,1) !important;
+  border: 2px solid rgba(115, 0, 207, 0.15);
+  border-radius: 0.4em;
+  text-align: center;
+  text-decoration: none;
+  font-size: clamp(16pt, 1.6vw, 26pt);
+  line-height: 1.2;
+  /* The glow: an outer bloom plus a soft inner one so the border itself
+     reads as lit rather than just outlined. */
+  box-shadow: 0 0 14px rgba(80, 0, 807, 0.45),
+              inset 0 0 10px rgba(115, 70, 207, 0.18);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease,
+              border-color 0.12s ease;
+}
+.post-content a.post-button:hover {
+  background: rgba(115, 0, 807, 0.4);
+  border-color: rgba(115, 70, 207, 0.85);
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(115, 70, 207, 0.6),
+              inset 0 0 12px rgba(115, 70, 207, 0.24);
+  text-decoration: none;
+}
+.post-content a.post-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 10px rgba(115, 0, 807, 0.4),
+              inset 0 0 8px rgba(115, 70, 207, 0.2);
+}
+
 /* References shouldn't show the blue link color — links inherit the
    reference's rust color so they blend with surrounding note text. */
 .post-content .reference-note a,
