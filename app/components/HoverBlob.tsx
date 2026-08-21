@@ -50,6 +50,11 @@ export function HoverBlob({
         <path d={path} fill={color} fillOpacity={0.25} />
       </svg>
       {children}
+      {/* The label is ALWAYS visible, not a hover reveal. These labels are the
+          site's navigation, and a nav you have to find by sweeping the mouse over
+          a background collage is one readers told us they could not find at all.
+          The blob still belongs to hover — it is the affordance that says "this
+          particular drawing is the thing you are about to click". */}
       {label && (
         <span
           className="hover-blob-label"
@@ -58,11 +63,9 @@ export function HoverBlob({
             top: "50%",
             right: "10%",
             transform: "translateY(-50%)",
-            fontFamily: "var(--font-lato)",
-            fontWeight: 700,
+            fontFamily: 'var(--font-garamond), Garamond, "Times New Roman", serif',
+            fontWeight: 400,
             color,
-            opacity: hovered ? 1 : 0,
-            transition: "opacity 200ms ease",
             pointerEvents: "none",
             ...labelStyle,
           }}

@@ -73,16 +73,52 @@ function ArrowKeysHint({ visible }: { visible: boolean }) {
   );
 }
 
+/**
+ * The drawing's name, sitting under it. Same job as the labels on the left-column
+ * drawings (see HoverBlob): it says what the thing is without you having to find
+ * it with the cursor first. Unlike those, this one is not a link — the gumdrop is
+ * a toy, and "mischief" is the only instruction it gets.
+ *
+ * Sized in stage units so it tracks the gumdrop, whose `size` is also in stage
+ * units — deliberately smaller than the left column's labels (17.28), which are
+ * navigation and have to be read; this one is an aside. It sits in the 1.6rem gap
+ * between the gumdrop and the bottom of the window.
+ */
+function DrawingLabel({ label, color }: { label: string; color: string }) {
+  return (
+    <span
+      style={{
+        position: "absolute",
+        top: "100%",
+        left: "50%",
+        transform: "translateX(-50%)",
+        fontFamily: 'var(--font-garamond), Garamond, "Times New Roman", serif',
+        fontSize: "calc(12 * var(--u))",
+        lineHeight: 1,
+        whiteSpace: "nowrap",
+        color,
+        pointerEvents: "none",
+      }}
+    >
+      {label}
+    </span>
+  );
+}
+
 export function DrivableDrawing({
   src,
   size,
   initialLeft,
   initialBottom,
+  label,
+  labelColor = "#4b830d",
 }: {
   src: string;
   size: string;
   initialLeft: string;
   initialBottom: string;
+  label?: string;
+  labelColor?: string;
 }) {
   const [active, setActive] = useState(false);
   const [hovered, setHovered] = useState(false);
@@ -198,6 +234,7 @@ export function DrivableDrawing({
           alt=""
           className="w-full h-full object-contain opacity-50"
         />
+        {label && <DrawingLabel label={label} color={labelColor} />}
       </div>
     );
   }
@@ -226,6 +263,8 @@ export function DrivableDrawing({
         alt=""
         className={`w-full h-full object-contain ${active ? "opacity-80" : "opacity-50"}`}
       />
+      {/* Gone while it is being driven — same as the arrow-key hint above it. */}
+      {label && !active && <DrawingLabel label={label} color={labelColor} />}
     </div>
   );
 }

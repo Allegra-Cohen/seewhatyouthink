@@ -64,23 +64,28 @@ type Drawing = {
 };
 
 /**
- * `labelStyle.transform` nudges a hover label off its drawing and into clear space
+ * `labelStyle.transform` nudges a label off its drawing and into clear space
  * beside it. HoverBlob's default puts the label at `right: 10%` of the box, which
  * lands it on top of the statue and in the middle of the string. The nudge is in
  * stage units like everything else, and it replaces the default `translateY(-50%)`
  * that does the vertical centring — so any override has to restate it.
+ *
+ * These labels are on permanently — they are the nav, and readers could not find
+ * it while it only appeared under the cursor. Only the blob is a hover reveal. So
+ * placement now has to read well at rest, not just for the moment you are pointing
+ * at it: a label overlapping its neighbour is a standing collision, not a flicker.
  *
  * The string's label is the one to watch: it starts at x 250.8, so it cannot be
  * pushed much further right than this without crossing 360 into the text column.
  */
 const DRAWINGS: Drawing[] = [
   // ── Hangs from the bottom, with the ground ────────────────────────────────
-  { src: "/drawings/rubber_plant.png", size: 187.2, left: -14.4, y: { bottom: 403.2 }, blob: { color: "#4b830d", index: 0, label: "home" }, href: "/" },
+  { src: "/drawings/rubber_plant.png", size: 187.2, left: -14.4, y: { bottom: 403.2 }, blob: { color: "#4b830d", index: 0, label: "home", labelStyle: { transform: `translate(${u(-8)}, -50%)` } }, href: "/" },
   { src: "/drawings/gumdrop_purple.png", size: 50.4, left: 144, y: { bottom: 388.8 }, blob: null, href: null },
   { src: "/drawings/string.png", size: 216, left: 144, y: { bottom: 135.36 }, blob: { color: "#a53f2a", index: 0, label: "field guides", labelStyle: { transform: `translate(${u(20)}, calc(-50% - ${u(20)}))` } }, href: "/field-guides" },
   { src: "/drawings/bush.png", size: 115.2, left: 259.2, y: { bottom: 32.4 }, blob: null, href: null },
   { src: "/drawings/oracle.png", size: 216, left: 0, y: { bottom: 8.64 }, blob: null, href: null },
-  { src: "/drawings/statue.png", size: 172.8, left: 14.4, y: { bottom: 210.24 }, blob: { color: "#7346cf", index: 0, label: "about", labelStyle: { transform: `translate(${u(12)}, -50%)` } }, href: "/about" },
+  { src: "/drawings/statue.png", size: 172.8, left: 14.4, y: { bottom: 210.24 }, blob: { color: "#7346cf", index: 0, label: "about", labelStyle: { transform: `translate(${u(6)}, -50%)` } }, href: "/about" },
   { src: "/drawings/gumdrop_red.png", size: 43.2, left: 201.6, y: { bottom: 15.84 }, blob: null, href: null },
 
   // ── Hangs from the top, with the masthead ─────────────────────────────────
@@ -212,6 +217,7 @@ export function Collage() {
           size={u(50.4)}
           initialLeft={`calc(100vw - 8.5rem - ${u(50.4)})`}
           initialBottom="1.6rem"
+          label="mischief"
         />
       </div>
     </>
