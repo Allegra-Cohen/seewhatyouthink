@@ -1,20 +1,20 @@
 {
  "nodes": [
   {
-   "id": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
-   "type": "source",
-   "label": "openAlex",
-   "attributes": {
-    "url": "https://openalex.org",
-    "homepage": null
-   }
-  },
-  {
    "id": "3876023e-61cf-4ab6-a0c0-ba1aadf561dc",
    "type": "source",
    "label": "arXiv",
    "attributes": {
     "url": "https://arxiv.org",
+    "homepage": null
+   }
+  },
+  {
+   "id": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "source",
+   "label": "openAlex",
+   "attributes": {
+    "url": "https://openalex.org",
     "homepage": null
    }
   },
@@ -328,6 +328,51 @@
    }
   },
   {
+   "id": "b76fe829-65a8-4908-a28d-b72d6e5d2cd0",
+   "type": "document",
+   "label": "What is the point of making intelligent agents?",
+   "attributes": {
+    "title": "What is the point of making intelligent agents?",
+    "summary": "This is the earliest post I'm aware of re: chat interfaces are not always the perfect way of interfacing with LLMs, and human autonomy depends on empowering interfaces.",
+    "abstract": "It&#8217;s strange to me that AI and HCI (human-computer interaction), as fields, are not more connected.",
+    "oa_pdf_url": null,
+    "publication": "@saffron",
+    "source_type": "substack",
+    "canonical_url": "https://saffron.substack.com/p/what-is-the-point-of-making-intelligent",
+    "published_date": "2022-12-20"
+   }
+  },
+  {
+   "id": "3a36ba61-406e-41b5-aa42-460e91a4c694",
+   "type": "document",
+   "label": "Authors vs. Characters: The New Class Divide",
+   "attributes": {
+    "title": "Authors vs. Characters: The New Class Divide",
+    "summary": "Short and sweet read, recommended for McCord's description of the \"first-mover position in thought\" – when does the human versus the AI provide the *structure* of thought?",
+    "abstract": "Will AI sort humanity into two kinds of people?",
+    "oa_pdf_url": null,
+    "publication": "Cosmos Institute",
+    "source_type": "journal",
+    "canonical_url": "https://blog.cosmos-institute.org/p/authors-vs-characters-the-new-class",
+    "published_date": "2026-05-15"
+   }
+  },
+  {
+   "id": "84a831f9-4c72-4e20-8fc8-385269212e1d",
+   "type": "document",
+   "label": "Measuring AI agent autonomy in practice",
+   "attributes": {
+    "title": "Measuring AI agent autonomy in practice",
+    "summary": "February 2026 numbers on how humans govern Claude behavior for simple and complex tasks. Interesting tidbit: \"As agents and the science of agent measurement mature, the focus should be on whether humans are *in a position to effectively monitor and intervene*, rather than on requiring particular forms of involvement.\" (emphasis mine) The position seems to be that humans develop trust in Claude and shift from step-by-step approvals to general oversight, but the paper doesn't address how that shift affects human cognition other than saying it's important that interaction design not cause unnecessary friction.",
+    "abstract": "Measuring AI agent autonomy in practice\nAI agents are here, and already they’re being deployed across contexts that vary widely in consequence, from email triage to cyber espionage. Understanding this spectrum is critical for deploying AI safely, yet we know surprisingly little about how people actually use agents in the real world.\nWe analyzed millions of human-agent interactions across both Claude Code and our public API using our privacy-preserving tool, to ask: How much autonomy do people grant agents? How does that change as people gain experience? Which domains are agents operating in? And are the actions taken by agents risky?\nWe found that:\n- Claude Code is working autonomously for longer. Among the longest-running sessions, the length of time Claude Code works before stopping has nearly doubled in three months, from under 25 minutes to over 45 minutes. This increase is smooth across model releases, which suggests it isn’t purely a result of increased capabilities, and that existing models are capable of more autonomy than they exercise in practice.\n- Experienced users in Claude Code auto-approve more frequently, but interrupt more often. As users gain experience with Claude Code, they tend to stop reviewing each action and instead let Claude run autonomously, intervening only when needed. Among new users, roughly 20% of sessions use full auto-approve, which increases to over 40% as users gain experience.\n- Claude Code pauses for clarification more often than humans i",
+    "oa_pdf_url": null,
+    "publication": "AnthropicAI",
+    "source_type": "journal",
+    "canonical_url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+    "published_date": "2026-02-18"
+   }
+  },
+  {
    "id": "163500a9-23d2-443e-94e6-990f76410362",
    "type": "document",
    "label": "Brave New Nudge",
@@ -501,6 +546,1081 @@
     "canonical_url": "https://cstf.substack.com/p/a-historical-and-comparative-analysis",
     "published_date": "2026-04-14"
    }
+  },
+  {
+   "id": "be418371-25dd-42b5-972d-635855d7d6f4",
+   "type": "document",
+   "label": "“You shall have the thought”: habeas cogitationem as a New Legal Remedy to Enforce Freedom of Thinking and Neurorights",
+   "attributes": {
+    "title": "“You shall have the thought”: habeas cogitationem as a New Legal Remedy to Enforce Freedom of Thinking and Neurorights",
+    "summary": "In the tradition of *habeas corpus*, the authors propose *habeas cogitationem* as \"a prerogative writ used to challenge the validity of a neurotechnological interference in a person's thought process, either in official or private hands.\" They give many examples of neurorights that would be enforced by such a writ, e.g., the right of a person not to be algorithmically discriminated against by an insurance algorithm using facial data collected to diagnose Parkinson's. While the paper is largely out of scope for this Field Guide at the moment, I recommend it as a review of neurorights in the context of neurotechnologies.",
+    "abstract": "Abstract Despite its obvious advantages, the disruptive development of neurotechnology can pose risks to fundamental freedoms. In the context of such concerns, proposals have emerged in recent years either to design human rights de novo or to update the existing ones. These new rights in the age of neurotechnology are now widely referred to as “neurorights.” In parallel, there is a considerable amount of ongoing academic work related to updating the right to freedom of thought in order to include the protection of “freedom of thinking” (i.e., freedom of thought itself) and not only its social manifestations. Neurorights such as cognitive liberty, free will, mental freedom, and mental self-determination come into play here. Importantly, freedom of thought has often been considered a prerequisite for all the other fundamental freedoms and rights. In any case, just as other rights require additional legal instruments to guarantee their compliance, substantial neurorights will probably require specific complementary developments in procedural law. In relation to this, there is a long tradition of habeas corpus as an emergency remedy to enforce the rights of a citizen against illegal or arbitrary detention. More recently, the habeas data writ has been proposed and admitted in certain countries to guarantee a person’s ownership of their personal data. In this article, we propose to expand this procedural apparatus by incorporating a third habeas, which we call habeas cogitationem : a writ aimed primarily at enforcing the right to freedom of thinking (and, subsidiarily, the rest of neurorights) against direct, harmful interferences in a person’s thought process by both public and private perpetrators.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s12152-024-09551-8.pdf",
+    "publication": "Neuroethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s12152-024-09551-8",
+    "published_date": "2024-04-01"
+   }
+  },
+  {
+   "id": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "type": "document",
+   "label": "A Conceptual Framework to Safeguard the Neuroright to Personal Autonomy",
+   "attributes": {
+    "title": "A Conceptual Framework to Safeguard the Neuroright to Personal Autonomy",
+    "summary": "This paper is another framework for parsing exactly what rights we *have* when it comes to thinking for ourselves. The authors bring up a range of concerns around \"free will\" as the neuroright designated to protect personal autonomy. They also compare free will (the \"right to have ultimate control over [one's] own decision-making, without unknown manipulation from external neurotechnologies\") to cognitive liberty (the \"right to alter one's mental states with the help of neurotools as well as to refuse to do so\") and suggest that some of the confusion around these terms is because our understanding of human action is impoverished. I particularly appreciate their bringing in Pacherie's action theory, which differentiates intentions, deliberations, decisions, and the \"realization of actions.\" They conclude by proposing a definition of personal autonomy that aligns closely with [McCord's](doc:163500a9-23d2-443e-94e6-990f76410362) and comes with two conditions: That the person requests or authorizes intervention, and that they are fully informed about the behavioral consequences of that intervention.",
+    "abstract": "Abstract In this article, we propose a philosophical exploration on the main problems involved in two neurorights that concern autonomous action, namely free will and cognitive liberty, and sketch a possible solution to these problems by resourcing to a holistic interpretation of human actions. First, we expose the main conceptual and practical issues arising from the neuroright to “free will,” which are far from minor: the term itself is denied by some trends participating in the neurorights debate, the related concept of ultimate control is also disputed, the understanding of free will depends on cultural context, and the exercise of being free to act in several domains may be covered by other regulations. Second, we analyze the historical origin of cognitive liberty, its current status, and its relation with free will. Third, we criticize the concept of decision in mainstream action theory and propose to conceive action as a unified process constituted by three explanatory, non-sequential dimensions: intention, decision, and action realization. Fourth, we discuss two possible cases involving neurotechnologies and suggest ways to interpret them according to a unified framework in which free will and cognitive liberty fall under a single neuroright to personal autonomy. Finally, we outline a recommendation to introduce freedom of thought and personal autonomy as complementary neurorights to protect both the internal and external dimensions of thought and action.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s12152-023-09523-4.pdf",
+    "publication": "Neuroethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s12152-023-09523-4",
+    "published_date": "2023-08-05"
+   }
+  },
+  {
+   "id": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "type": "document",
+   "label": "The fundamental rights risks of countering cognitive warfare with artificial intelligence",
+   "attributes": {
+    "title": "The fundamental rights risks of countering cognitive warfare with artificial intelligence",
+    "summary": "This paper frames government efforts to fight disinformation as potentially paternalistic and counter to \"citizens' fundamental rights in liberal-democratic political systems.\" \"Cognitive warfare\", i.e., non-kinetic warfare relying on information and communication technologies, has been around for a while; recent election interference, for example, counts as cognitive warfare, and the authors bring up COVID-19 misinformation as well. Of course, the advent of generative AI threatens to make the problem much worse as human-like content, including deepfakes, can now be generated at massive scales. The authors are mainly concerned with new efforts by EU and NATO policymakers to protect citizens from cognitive warfare, including misinformation campaign detection projects and automated moderation tactics where machines correct misinformation across platforms. They claim that while this type of activity is fine for corporations to do as they have contracts with their users, for the state to do so amounts to \"epistemic paternalism\" and must be evaluated more carefully. Their main concerns are:\n\n1. Training AI systems to detect cognitive warfare may interfere with privacy and data protection rights.\n2. Using these systems may impact communication rights, i.e., freedoms of expression, information and the media.\n3. The risk of being silenced by these systems may reduce the diversity of media and information sources in a society and limit collective decision-making opportunities (i.e., \"any government intervention with the help of AI to decide what information is acceptable infringes on the process of political will-formation itself and thus implicates the right to self-determination.\")\n\nThe authors close by claiming that the link between sustained disinformation campaigns and actual behavior change, e.g., in elections, hasn't been solidly established in the literature yet, and thus justifying state-controlled AI mediation can really only be done via the precautionary principle (i.e., \"if this is bad it's going to be **real** bad, so we ought to do something about it before we have all the information.\")",
+    "abstract": "This article analyses ideas to use AI-supported systems to counter 'cognitive warfare' and critically examines the implications of such systems for fundamental rights and values. After explicating the notion of 'cognitive warfare' as used in contemporary public security discourse, the article describes the emergence of generative AI tools that are expected to exacerbate the problem of adversarial activities against the online information ecosystems of democratic societies. In response, researchers and policymakers have proposed to utilize AI to devise countermeasures, ranging from AI-based early warning systems to state-run content moderation tools. These interventions, however, interfere, to different degrees, with fundamental rights and values such as privacy, communication rights, and self-determination. This article argues that such proposals insufficiently account for the complexity of contemporary online information ecosystems, particularly the inherent difficulty in establishing causality and attribution. Reliance on the precautionary principle might offer a justificatory frame for AI-enabled measures to counter 'cognitive warfare' in the absence of conclusive empirical evidence of harm. However, any such state intervention must be based in law and adhere to strict proportionality.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s10676-025-09868-9.pdf",
+    "publication": "Ethics and Information Technology",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s10676-025-09868-9",
+    "published_date": "2025-10-06"
+   }
+  },
+  {
+   "id": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "type": "document",
+   "label": "Mental integrity, autonomy, and fundamental interests",
+   "attributes": {
+    "title": "Mental integrity, autonomy, and fundamental interests",
+    "summary": "This paper sits again in the context of neurotechnology or neuromodulation: \"targeted energetic intervention in the brain using electrical, magnetic or other forms of stimulation.\" While this Guide focuses more on LLMs, UIs and other non-zapping technologies, it's useful to read work by neuroethicists because the terminology overlap is large. In this paper, Zuk is concerned with *mental integrity*. \n\nZuk reviews definitions of mental integrity, most of which begin with autonomy (the \"autonomy-based conception.\") Some theorists define mental integrity as being about control or authority over one's own mind, either over the contents or the sources of influence on those contents. Others say that mental integrity is a state, i.e., the absence of influences on or interference with our autonomous preferences. (This control-versus-state difference is similarly found in the agency literature – recall that in [The Cognitives](node:32594bc2-e59a-4c3b-b02a-dbee7629e827), \"agency freedom\" and \"agency\" are somewhat interchangeable.) Regardless of whether mental integrity is a state or a form of control, Zuk points out that these definitions are weaker than they could be because \"interference is ubiquitous.\" What's to differentiate, for example, the interference of you talking to me in a conversation from you pointing a transcranial magnetic stimulation device at me? \n\nRather than discuss mental integrity in terms of specific interference and specific preferences, Zuk proposes that it could be a precondition of autonomy, a \"general capacity to form and enact autonomous preferences and to consent.\" He argues that this definition leads to a more defendable right to mental integrity – that is, the right to mental integrity is violated when the following capacities are undermined:\n\n1. Our capacity for affect, i.e., our ability to \"experience certain feelings.\" So, for example, being tranquilized against our will might be a violation of mental integrity via the diminishment of our affective interests.\n2. Our capacity for cognition and \"the epistemic interests it grounds.\" Zuk takes the position that \"we have a second set of interests in our capacity as *inquirers* attempting to make sense of the world and our place in it, often in concert with others.\" So, for example, the pollution of the information environment by LLM paper mills might be a violation of our mental integrity, or an [LLM designed to subtly gaslight us](node:60da85f4-8630-4076-b0cc-bc5697f785c5), or even an algorithm designed to disrupt our attention spans and make rational reflection more difficult.\n3. Our capacity for agency, i.e., to intend or will and act accordingly. We talk quite a bit about agency in [The Cognitives](node:32594bc2-e59a-4c3b-b02a-dbee7629e827) and Zuk does not throw any curveballs here.\n\nSo Zuk's definition of mental integrity is that it is violated \"when the *capacities underlying* fundamental interests are bypassed, eroded, overwhelmed, or otherwise undermined.\" Taking our example from earlier, when you and I are having a conversation, your tone may cheer me up or bum me out (changing my affect), and the content of the conversation may influence what I believe (an epistemic influence), but the conversation does not violate my mental integrity because my *capacities* to feel and believe are not affected. By contrast, if you're pointing a TMS device at me designed to activate parts of my brain that make me feel excited, you are undermining my capacity to govern my own affect, which *could* be a violation of mental integrity (especially if, e.g., you're also trying to sell me a timeshare.) Or, more realistically, it is also a violation of mental integrity if we have many conversations over time in which you gaslight me and undermine my capacity to form beliefs. Zuk's examples are particularly relevant to the concerns of this Field Guide: He classifies an onslaught of upsetting posts, pervasive misinformation, and algorithms that erode our attention spans as violations of mental integrity.\n\nZuk's last point concerns the conditions under which violating mental integrity is wrong. He gives an example of a woman who sees a factory farming video and is upset for the rest of the day. Zuk's position is that it is wrong to \"violate mental integrity *for no good reason*,\" but kicks the \"good reason\" can down the road.",
+    "abstract": "Many technology ethicists hold that the time has come to articulate neurorights : our normative claims vis-à-vis our brains and minds. One such claim is the right to mental integrity (‘MI’). I begin by considering some paradigmatic threats to MI (§1) and how the dominant autonomy-based conception (‘ABC’) of MI attempts to make sense of them (§2). I next consider the objection that the ABC is overbroad in its understanding of what threatens MI and suggest a friendly revision to the ABC that addresses the objection (§3). I then consider a second objection: that the ABC cannot make sense of the MI of the non-autonomous . This objection appears fatal even to the revised ABC (§4). On that basis, I develop an alternative conception on which MI is grounded in a plurality of simpler capacities, namely, those for affect , cognition , and volition . Each of these more basic capacities grounds a set of fundamental interests, and they are for that reason worthy of protection even when they do not rise to the level of complexity necessary for autonomy (§5). This yields a fully general theory of MI that accounts for its manifestations in both the autonomous and the non-autonomous.",
+    "oa_pdf_url": "https://jme.bmj.com/content/medethics/50/10/676.full.pdf",
+    "publication": "Journal of Medical Ethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1136/jme-2023-109732",
+    "published_date": "2024-08-13"
+   }
+  },
+  {
+   "id": "ee7f6808-8b4c-4da5-a8c7-d75961b5c8a5",
+   "type": "document",
+   "label": "Cognitive sovereignty and neurocomputational harm in predictive digital platforms",
+   "attributes": {
+    "title": "Cognitive sovereignty and neurocomputational harm in predictive digital platforms",
+    "summary": "I could not tell the difference between LLM writing and the writing in this paper. But it does make an interesting point that the design of sports betting platforms can undermine cognitive sovereignty and are a tractable area to test out policy on that topic. In particular, Atkinson focuses on \"tempo,\" making the argument that algorithms can mess with your brain's sense of timing such that not acting can feel bad. He also argues that, seeing as platforms can tell when a person is vulnerable, not applying safeguards is a form of negligence.",
+    "abstract": "",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s10676-025-09873-y.pdf",
+    "publication": "Ethics and Information Technology",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s10676-025-09873-y",
+    "published_date": "2025-11-15"
+   }
+  },
+  {
+   "id": "4c5d1a2b-598a-4b4c-a565-b19e220b2088",
+   "type": "document",
+   "label": "Achieving Cognitive Liberty (book review)",
+   "attributes": {
+    "title": "Achieving Cognitive Liberty (book review)",
+    "summary": "This is a review of The Battle for Your Brain, a book by neuroethicist and law professor Nita Farahany. The book focuses on neurotechnology as a threat to cognitive liberty, which is slightly outside the scope of this Guide at the moment – but the review is short and sweet, worth a peek to see what the neurotechnologists are thinking about.",
+    "abstract": "Neurotechnologies necessitate new thinking on human rights.",
+    "oa_pdf_url": null,
+    "publication": "Science",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1126/science.adf8306",
+    "published_date": "2023-03-16"
+   }
+  },
+  {
+   "id": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "type": "document",
+   "label": "Dropping Anchor in Rough Seas: Co-Reasoning with Personalized AI Advisors and the Liberalism of Fear",
+   "attributes": {
+    "title": "Dropping Anchor in Rough Seas: Co-Reasoning with Personalized AI Advisors and the Liberalism of Fear",
+    "summary": "I liked this paper a lot, particularly as an elaboration on McCord's [piece about human autonomy](doc:163500a9-23d2-443e-94e6-990f76410362) and as an exploration of the cognitive aspects of gradual disempowerment. Queloz is responding to an earlier piece by Benjamin Lang describing how personalized AI advisors can strike the right balance between fidelity to a user's established normative values and flexibility to recalibrate as those values evolve. Queloz argues that, even if such a model could be perfectly designed, Lang is an optimist when it comes to political contexts; and the risks change when one applies Judith Shklar's \"liberalism of fear.\" \n\nShklar's liberalism of fear argues that, rather than asking how we might optimize towards utopia, our first question ought to be: \"How do we prevent the worst things that humans predictably end up doing to one another when armed with power?\" Put another way: \"Before we maximize the odds of self-realization, we should minimize the odds of domination by others.\" This feels **so relevant** to ongoing discussions about AI today. The leaders of the big labs are relentless in their claims of self-realization – take Meta's recent manifesto, which directly asks whether AI will be a \"tool that empowers everyone\" and claims that \"everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about.\" We could take that at face value, or, in Shklar's tradition, we could remind ourselves of Meta's past and ongoing campaigns to concentrate power and attention across its platforms, and ask how we should design these agents to prevent damage on an unprecedented scale. \n\nQueloz gives some great examples of why we should worry about personal agents even if Lang's design \"works.\" One in particular is [the example that got me started in this area](doc:60da85f4-8630-4076-b0cc-bc5697f785c5): The asymmetric information that personal agents have about us compared to our squishy and fallible brains could make us feel that their authority is primary (i.e., your LLM can gaslight you.) Another is the fear that \"what looks like co-reasoning at [time] *t* can be part of a long arc of 'soft steering,' though the pattern may be so subtle that it is discernible only over many years and across many users.\" That is, entire populations could be nudged towards, e.g., a preference for dictatorship, and we would only be able to detect and prosecute that pattern once it took effect at massive scales over a long period of time. I'll add a note here, too, that this steering needn't even be malicious or intentional, though that's what Queloz is worried about; for example, [Kulveit et al.'s paper on gradual disempowerment](doc:cdd59efc-5156-4be5-ae3c-d6880998e7c7) doesn't require malicious intention either from humans or AIs.\n\nTo close, Queloz lays out some minimum requirements to avoid personal AI advisors becoming \"technologies of soft governance\":\n\n1. The design of these advisors should first protect users from domination before maximizing self-realization. That means that, say, we should avoid aggregating data that can be bought by law enforcement and can't be deleted, even if that means the advisors function less well.\n2. Operational norms (how advisors \"treat trade-offs between, say, conformity and dissent, self-sacrifice and self-care, prudence and solidarity\") should be publicly contestable and controllable.\n3. The recognition that some burdens, e.g., \"the burden of resisting cruel institutions,\" are *civic* burdens. Queloz writes, \"a liberalism of fear will therefore be sceptical of any technology whose primary contribution is to help individuals adjust to life in unjust conditions.\" \n\nAlthough Queloz and Lang's pieces both focus on normative decision-making and self-realization, I think the requirements above apply across domains. For example, the requirement around contestability of operational norms brings to mind Deep Mind's Habermas Machine, which makes choices about the priority of consensus over dissent that we didn't sign off on. And the last point calls to mind [Ferdman's argument](doc:af3bc2ac-d3f0-43e5-aa88-d657c818c8c8) that AI deskilling is a structural problem – an agent helping you decide, for example, what work is still available to you could be used to dampen widespread unrest about skill decay and job loss. In general I found this piece to be short, sweet and useful – would recommend you take a peek yourself.",
+    "abstract": "Abstract In response to Benjamin Lang’s defence of “co-reasoning” with personalized AI advisors, this article formulates a political critique of the co-reasoning model through the lens of the liberalism of fear. This reframes the ethical aspiration to self-realization with the assistance of AI by embedding it within a realistic political setting. It suggests that before we seek to maximize the odds of self-realization, we should strive to minimize the odds of domination by others. After highlighting three power asymmetries involved in the co-reasoning model, the article argues that personalization risks stabilizing domination by translating structural injustices into individualized aspirational challenges. Three political constraints on personalized AI are then proposed: the priority of non-domination, the public contestability of operative norms, and the recognition of non-personalizable civic burdens.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s13347-025-01006-z.pdf",
+    "publication": "Philosophy & Technology",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s13347-025-01006-z",
+    "published_date": "2025-11-22"
+   }
+  },
+  {
+   "id": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "type": "document",
+   "label": "Freedom of Thought and Digital Technologies: Operationalizing State Obligations for Social Media, Virtual Reality, and Neurotechnology",
+   "attributes": {
+    "title": "Freedom of Thought and Digital Technologies: Operationalizing State Obligations for Social Media, Virtual Reality, and Neurotechnology",
+    "summary": "The aim of this paper is to clarify and operationalize the right to \"freedom of thought\" in the context of digital technologies. Bublitz takes an approach I'm starting to recognize (see, e.g., [this paper](node:3b95960d-5c36-4b6f-8959-c7e8e2abcbb4)), where he avoids messy problems like how to define and scope such a right in favor of clarifying its *preconditions.* He begins by explaining that freedom of thought appears in many human rights treaties and that states are obligated not only to *not* interfere with people's thoughts but to protect people *from* interference, e.g., at the hands of companies. However, because \"thought\" is hard to define and interference is not justifiable under these treaties, case law is remarkably lacking. And digital technologies aren't likely to clear the bar of severity (e.g., seeing a single personalized advertisement) – plus, we use them voluntarily.\n\nRather than focus on specific harms, Bublitz reframes the problem as the state's obligation to \"fulfil conditions for the full enjoyment of the right [to freedom of thought].\" He lays out ten aspects of freedom of thought based on discourse going back to Voltaire, which, at risk of a lengthy summary, I think are worth replicating here:\n\n1. Thinking for oneself (the core definition)\n2. Freedom from external influence (a prerequisite)\n3. The ability to think independently and make up one's own mind\n4. \"Free\" thinking, i.e., creative, innovative, flexible, etc.\n5. Critical thinking, i.e., skepticism, belief revision, etc.\n6. Rational thought or reasoning\n7. The freedom to seek the truth (not the right not to be lied to, but the freedom to discern true from false)\n8. Free decision-making, i.e., if I am liable for my decisions and presumed to have made them freely, the law must also safeguard that freedom\n9. Control of attention\n10. Privacy of thought, i.e., protection from digital and bio-surveillance\n\nBublitz then reviews three examples of technologies that may impact freedom of thought: Neurotechnologies (e.g., reconstructing inner dialogue using brain data and machine learning algorithms), virtual reality (i.e., an environment that potentially totally and \"systematically frustrates the search for truth\") and social media (i.e., at the opposite end of the spectrum from virtual reality in that it is not \"one overwhelming immersive experience but a multitude of innocuous stimuli.\") He narrows in on concerns about social media, namely that it weakens attention and reflective thinking, creates \"subtle forms of addiction,\" and warps the ways we form beliefs (e.g., repeated exposure to statements increases perceived truthfulness.) Addressing these concerns legally, though, comes with some challenges:\n\n1. Attention capture could be seen as rights interference...but attention disruption is ubiquitous and easily trivialized. (This is the same concern Zuk holds in his [paper on mental integrity](node:3b95960d-5c36-4b6f-8959-c7e8e2abcbb4).) What's more, users use social media voluntarily – we all sign agreements that give our consent for advertising – which means that we can't usually say our rights have been infringed upon.\n2. Social media harms are a \"many hands\" problem, i.e., it is very hard / implausible to link a specific harm to a specific actor.\n\nWhich brings Bublitz back to the obligation to *fulfill*, i.e., not only to enforce rights but to promote the preconditions for the enjoyment of rights. He argues that, though specific harms can't easily be attributed to specific actors, the *aggregate* harms from social media still exist; and, on top of that, avoiding social media in this day and age can cause harm in other parts of a person's life, e.g., social exclusion.<Footnote>Side note – how come I need a Twitter account to get, e.g., news from my local government officials?</Footnote> So *fulfilling* freedom of thought may require regulation of the digital environment, just as fulfilling the right to water requires controlling water quality. He makes a final argument that, while state limitations on technology use is paternalistic, \"mandating companies to provide better products...is not,\" particularly as the detrimental effects of voluntary use are often regretted by users and that the market currently doesn't *offer* alternatives to products that have those side effects.",
+    "abstract": "Abstract Freedom of thought is among the strongest human rights, yet it is largely devoid of practical legal application. This article operationalizes the right by distilling ten core aspects, mainly psychological capacities such as attention, meta-control over thought, and rational belief formation. It then examines how these aspects may be adversely affected by three digital technologies: neurotechnologies, virtual reality, and especially social media. The article addresses why the use of digital technologies might be a human rights issue at all and the doctrinal challenge associated with it. People use these technologies voluntarily, and detrimental effects tend to arise from a multitude of diffuse stimuli rather than from discrete identifiable interventions by a specific human -rights-bound actor. This complicates, and often renders impossible, findings of conventional interferences with rights. But this may not exhaust the remit of human rights. Another human rights-based perspective is proposed: Detrimental effects on thought might be conceptualized as risks arising from a digital environment, which may prompt States’ obligations to fulfil the enjoyment of the right by securing its factual–in this case, psychological–preconditions. A prime measure to meet this obligation is the regulation of technology through innovative models such as a freedom-of-thought impact assessment, or freedom-of-thought-sensitive technology design, for which the ten aspects provide a workable foundation.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s12142-025-00751-0.pdf",
+    "publication": "Human Rights Review",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s12142-025-00751-0",
+    "published_date": "2025-11-22"
+   }
+  },
+  {
+   "id": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "type": "document",
+   "label": "The Cambridge Handbook of the Right to Freedom of Thought",
+   "attributes": {
+    "title": "The Cambridge Handbook of the Right to Freedom of Thought",
+    "summary": "I have not read this book! It is too far out of the scope of this guide. But if you find yourself interested in the law and freedom of thought, this seems like the thing to read. It's got chapters on many different countries' treatment of freedom of thought.",
+    "abstract": "The right to freedom of thought features prominently in debates about emerging technologies including neurotechnology and AI, but there is little understanding of its scope, content or application. This handbook presents the first attempt to set out how the right is protected, interpreted and applied globally. Eighteen jurisdictions are examined along with chapters describing context-setting, interdisciplinary approaches, and close analysis of the right in relation to specific challenges and conceptual difficulties. Readers familiar with the right will discover fresh perspectives and those new to the right will learn how it is part of the matrix of rights protecting autonomy, dignity, and privacy.",
+    "oa_pdf_url": null,
+    "publication": "Cambridge University Press eBooks",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1017/9781009539616",
+    "published_date": "2025-02-28"
+   }
+  },
+  {
+   "id": "6e34c702-1402-404b-9e99-481038f463ff",
+   "type": "document",
+   "label": "Towards a Human Right to Psychological Continuity? Reflections on the Rights to Personal Identity, Self-Determination, and Personal Integrity",
+   "attributes": {
+    "title": "Towards a Human Right to Psychological Continuity? Reflections on the Rights to Personal Identity, Self-Determination, and Personal Integrity",
+    "summary": "This paper argues that there is no need for a distinct right to psychological continuity as it is already covered by existing protections.",
+    "abstract": "Abstract Scholars from different disciplines are increasingly debating how human rights should protect the autonomy not only over our bodies but also over our minds. These debates are often driven by emerging technologies that appear able to access, monitor, and manipulate mental states in ways that were previously inconceivable. Whereas some human rights already protect certain personal interests in the mental realm, such as the right to freedom of thought, it has been argued that new or updated human rights are necessary to offer adequate protection against modern technologies that may threaten our mental privacy, personal integrity, and identity. One of the proposed rights, which is under consideration by the Council of Europe and the UN Human Rights Council, concerns a right to ‘psychological continuity’. This paper challenges the necessity of recognising such a right, arguing that the notion of psychological continuity already receives considerable protection within the established framework of human rights law.",
+    "oa_pdf_url": "https://brill.com/downloadpdf/view/journals/eclr/aop/article-10.1163-26663236-bja10092/article-10.1163-26663236-bja10092.pdf",
+    "publication": "The European Convention on Human Rights Law Review",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1163/26663236-bja10092",
+    "published_date": "2024-04-11"
+   }
+  },
+  {
+   "id": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+   "type": "document",
+   "label": "Persuasive Technology and computational manipulation: hypernudging out of mental self-determination",
+   "attributes": {
+    "title": "Persuasive Technology and computational manipulation: hypernudging out of mental self-determination",
+    "summary": "This paper links historical discussions on privacy and cognitive liberty to new legislation in Europe and from the U.N. around persuasive AI technologies. Faraoni argues that these technologies can *manipulate* us, i.e., cause us to change our preferences, decisions or actions without engaging our rational or deliberative capacities, and while manipulation has always been part of our lives, the scale, speed and accuracy of AI-driven systems is unprecedented.<Footnote>Faraoni argues that AI technologies can create \"extremely accurate cognitive profile[s]\" of users, which...citation needed, I'm going to look into that. AI is not described precisely in this paper.</Footnote> Faraoni reviews existing legislation around computational manipulation and \"informational self-determination\", i.e., the authority we hold to decide what information about our private lives should be available to others. He then reviews the literature on mental integrity and cognitive liberty and argues that \"hypernudging\" via an AI system violates our right to mental self-determination. I would recommend the paper as a good review of the arguments in this area – I don't think it advances any of those arguments significantly but aims to bring them together in the context of AI systems.",
+    "abstract": "Artificial Intelligence, unperceived, can acquire the user's data, find connections not visible by a human being, profile the users, and aim at persuading them, resulting in Persuasive Technology (PT). During the persuasive process, PT can use manipulation, finding and using routes to affect System 1, the primordial brain of individuals, in the absence of their awareness, undermining their decision-making processes. Multiple international and European bodies recognized that AI systems could use manipulation at an unprecedented degree via second-generation dark patterns such as the hypernudge and that computational manipulation constitutes a risk for autonomy and different, overlapping, fundamental rights such as privacy, informational self-determination and freedom of thought. However, there is a lack of shared ideas regarding which fundamental rights are violated by computational manipulation and which fundamental rights can protect individuals against it. The right to be let alone and the right to hold and express a thought differ from the right to create a thought, being in control of the decision-making process and free from cognitive interferences operated by computational manipulation. Therefore, this paper argues in favor of recognizing a newly emerged fundamental right, the right to mental self-determination, tailored to the unprecedented abilities of AI-driven manipulative technologies.",
+    "oa_pdf_url": "https://www.frontiersin.org/articles/10.3389/frai.2023.1216340/pdf",
+    "publication": "Frontiers in Artificial Intelligence",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.3389/frai.2023.1216340",
+    "published_date": "2023-07-04"
+   }
+  },
+  {
+   "id": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "type": "document",
+   "label": "Minding Rights: Mapping Ethical and Legal Foundations of ‘Neurorights’",
+   "attributes": {
+    "title": "Minding Rights: Mapping Ethical and Legal Foundations of ‘Neurorights’",
+    "summary": "This paper is a multi-disciplinary effort to \"map the ethical and legal foundations of neurorights with the purpose to facilitate international discussions and policy initiatives at various levels.\" They are focused on neurotechnologies, i.e., devices that can monitor and/or intervene in brain activity. The authors acknowledge the ongoing debate about whether specific neurorights are needed, e.g., a specific right to mental privacy or cognitive liberty, and examine the extent to which these things are already protected under current law. Their review claims that the right to mental integrity exists under international and regional law, as does the right to freedom of thought; that the right to mental privacy has not yet been recognized but may be implicit in the rights to privacy, freedom of thought and freedom of expression; and that cognitive liberty is more often seen as a bundle of rights, some of which already exist.",
+    "abstract": "The rise of neurotechnologies, especially in combination with artificial intelligence (AI)-based methods for brain data analytics, has given rise to concerns around the protection of mental privacy, mental integrity and cognitive liberty - often framed as \"neurorights\" in ethical, legal, and policy discussions. Several states are now looking at including neurorights into their constitutional legal frameworks, and international institutions and organizations, such as UNESCO and the Council of Europe, are taking an active interest in developing international policy and governance guidelines on this issue. However, in many discussions of neurorights the philosophical assumptions, ethical frames of reference and legal interpretation are either not made explicit or conflict with each other. The aim of this multidisciplinary work is to provide conceptual, ethical, and legal foundations that allow for facilitating a common minimalist conceptual understanding of mental privacy, mental integrity, and cognitive liberty to facilitate scholarly, legal, and policy discussions.",
+    "oa_pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F3BD282956047E1E67AA9049A2A0B68/S0963180123000245a.pdf/div-class-title-minding-rights-mapping-ethical-and-legal-foundations-of-neurorights-div.pdf",
+    "publication": "Cambridge Quarterly of Healthcare Ethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1017/s0963180123000245",
+    "published_date": "2023-05-15"
+   }
+  },
+  {
+   "id": "8af6ad63-50ef-438b-ae20-0bec1f50be02",
+   "type": "document",
+   "label": "The Right to Mental Integrity: Multidimensional, Multilayered and Extended",
+   "attributes": {
+    "title": "The Right to Mental Integrity: Multidimensional, Multilayered and Extended",
+    "summary": "This is a useful review of prevailing thought around mental integrity and mental privacy, focusing again on neurotechnologies, e.g., the case of a woman whose brain implant was forcibly removed. ",
+    "abstract": "Abstract In this article I present a characterization of the right to mental integrity (RMI), expanding and refining the definition proposed by Ienca and Andorno’s ( Life Science Society Policy 13 5, 2017) and clarifying how the scope of this right should be shaped in cases of cognitive extension (EXT). In doing so, I will first critically survey the different formulations of the RMI presented in the literature. I will then argue that the RMI protects from i) nonconsensual interferences that ii) bypass reasoning and iii) produce mental harm . Contrary to other definitions proposed in the literature, my formulation disentangles the RMI from the right to cognitive liberty (RCL) (Lavazza in Frontiers Neuroscience 12 82, 2018), the right to mental privacy (RMP) (Lavazza and Giorgi in Neuroethics 16 (1): 1-13, 2023), and the right to psychological continuity (RPC) (Zohny et al. in Neuroethics 16: 20, 2023), thus enabling a fine-grained assessment of their simultaneous or individual violation. Finally, I analyse how the extended mind thesis (EXT) reshapes the scope of the RMI, proposing a layered protection of extended mental integrity, which grants stronger protection to the organism-bound cognitive system and self in case of manipulative influences of the mind-extending device. To conclude, I present a variety of neurorights violations and mental harms inflicted to organism-bound and cognitively extended agents.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s12152-025-09585-6.pdf",
+    "publication": "Neuroethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s12152-025-09585-6",
+    "published_date": "2025-02-22"
+   }
+  },
+  {
+   "id": "0827f8ce-469f-4253-b84d-9143a8f1f5e2",
+   "type": "document",
+   "label": "Making Tangible the Long-Term Harm Linked to the Chilling Effects of AI-enabled Surveillance: Can Human Flourishing Inform Human Rights?",
+   "attributes": {
+    "title": "Making Tangible the Long-Term Harm Linked to the Chilling Effects of AI-enabled Surveillance: Can Human Flourishing Inform Human Rights?",
+    "summary": "Like the [paper on co-reasoning with AI advisors](node:8af7601e-750a-4345-b320-dcc2458df1fe), this article concerns itself with self-realization and \"human flourishing\" in the context of AI-enabled surveillance. The authors don't really describe AI-enabled surveillance beyond pointing out that being watched by anything  can have a chilling effect on the decisions individuals make. But I think it's worth a scroll through the summary because a) AI-enabled surveillance is real, from social media tracking to the absolute evil garbage fire that are Flock cameras, and b) this paper brings in a couple of approaches we've seen in other contexts, including [cognitive agency](node:5e159bca-4bd9-4d59-9c20-f14330863563) and [discussions of deskilling](node:af3bc2ac-d3f0-43e5-aa88-d657c818c8c8).\n\nThey first examine the arguments of Aristotle, Philippa Foot and Rosalind Hursthouse, who say that human flourishing can be objectively determined (i.e., \"top-down\") and includes our ability to live rationally (i.e., \"any way that we can rightly see as good, as something *we have reason to do.*\") Acting rightly requires developing virtues such as justice, generosity and so on – but states can fail in their duty to help citizens develop these virtues.<Footnote>This should sound familiar to [Ferdman's argument](node:af3bc2ac-d3f0-43e5-aa88-d657c818c8c8) that capacity-hostile environments can contribute to deskilling beyond the control of any individual and that this undermines our flourishing.</Footnote> The authors then acknowledge that this view of top-down virtues reduces [autonomy](node:5bb1bd8f-935d-4458-917c-1ff780825a93) – Foot, for example, says that people can't choose the virtues against which to decide their actions – which is therefore at odds with the emphasis of human rights law on individual agency and dignity.\n\nL.W. Sumner, on the other hand, proposes a subjective (i.e., \"bottom-up\") perspective on human flourishing that merely requires a person's \"life-satisfaction assessment\" to be informed and autonomous. Basically: Unless you can show someone has been brainwashed, you must take at face value their assessment of their own happiness. But, of course, brainwashing is only the most extreme form of \"corrupting\" someone's autonomy, and Sumner doesn't really deal with the subtler cases of influence (think, say, persistent misinformation on social media, or gaslighting from an LLM.)\n\nSo, if the objective approach threatens autonomy and the subjective approach requires difficult definitions, how should we think about the potential effects of AI surveillance? The authors finally propose the capabilities approach, first introduced by [Amartya Sen](node:c8a9c7e6-ce04-489b-9df2-171102fa5428) in the context of human development. This, again, is focusing on *conditions* for flourishing (or a person's \"capabilities\" to live their life well), not the definition of flourishing itself (a trick we have seen in [other](node:3b95960d-5c36-4b6f-8959-c7e8e2abcbb4) [papers](node:c2f0e8a8-3a42-478c-a30c-e479adb75176).) They review the ten capabilities laid out by Martha Nussbaum and note that her argument is not that states need to help citizens flourish in particular ways but that they must *enable* citizens to do so.\n\nWith the capabilities approach, the authors can argue that AI surveillance limits four of the ten capabilities laid out by Nussbaum: \n1. The ability to develop and exercise sensory, creative and intellectual capacities\n2. The ability to form and live in accordance with an idea of the good life\n3. The ability to live and engage with others\n4. The ability to take part in collective self-determination\n\nTheir argument is that AI surveillance has a chilling effect on individual expression, collective discussion and congregation that amounts to interference and restriction of people's abilities to *develop and exercise* the above capabilities. They don't provide any solutions or options for putting this approach into practice, but they do emphasize that \"facilitating identity development\" is critical to democratic society and that measuring this development (as well as tangible harms to it) is nontrivial. ",
+    "abstract": "Abstract AI-enabled State surveillance capabilities are likely to exert chilling effects whereby individuals modify their behavior due to a fear of the potential consequences if that behavior is observed. The risk is that chilling effects drive individuals towards the mainstream, slowly reducing the space for personal and political development. This could prove devastating for individuals’ ability to freely develop their identity and, ultimately, for the evolution and vibrancy of democratic society. As it stands, human rights law cannot effectively conceptualize this cumulative, longer-term, harm, and so cannot accurately evaluate the cost/benefit of AI tools, risking irreparable harm. As chilling effects impact individuals’ ability to live a good, self-determined life, the concept of human flourishing is relevant. This article engages with Aristotelian naturalism, the life-satisfaction approach, and the capabilities approach to determine which best resonates with the concept of identity as relevant to chilling effects and human rights law. It concludes that the capabilities approach may overcome some of the problems associated with the human rights law approach and may provide a framework capable of capturing both the intricate processes of free identity development and of conceptualizing the harm linked to AI surveillance. The challenge, however, is to ‘operationalize’ this approach.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s12142-024-00727-6.pdf",
+    "publication": "Human Rights Review",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s12142-024-00727-6",
+    "published_date": "2024-08-12"
+   }
+  },
+  {
+   "id": "b7313ec9-783b-4f3d-90b9-f418c6c9852a",
+   "type": "document",
+   "label": "Does a Person Have a Right to Attention? Depends on What She is Doing",
+   "attributes": {
+    "title": "Does a Person Have a Right to Attention? Depends on What She is Doing",
+    "summary": "The area of human rights is fascinating and seemingly infinitely parseable! This paper focuses on *attention rights*, which, as the authors note, can be debated at length – some scholars argue that the right to attention exists, while others argue that it's attentional *privacy* that the attention economy jeopardizes. The authors try to avoid this debate by focusing on the real-world examples of students taking exams and drivers driving on the road. They argue that in fact, what we care about are *concentration rights* – the student and driver's rights to concentrate on a task for a duration of time without having their attention impacted – and *attentiveness duties* – the driver's duty to, for example, not watch videos as they drive. I have a few qualms with this paper, as these definitions feel somewhat unenforceable (i.e., enforcing a right to concentration or duty to attentiveness seems to conflict with other rights in many cases) and the authors themselves admit they are situation-dependent.",
+    "abstract": "Abstract It has been debated whether the so-called attention economy , in which the attention of agents is measured and sold, jeopardizes something of value. One strand of this discussion has focused on so-called attention rights, asking: should attention be legally protected, either by introducing novel rights or by extending the scope of pre-existing rights? In this paper, however, in order to further this discussion, we ask: How is attention already protected legally? In what situations does a person have the right to attention under current law? Unlike (Chomanski, Neuroethics 16:1–11, 2023), who discusses an overall right to attention, or (Puri, Rutgers Law Record 48:206–221, 2021), who discusses an overall right to attentional privacy, in this paper we focus on two types of situations in which a person’s attention is already protected by legal regulation. Sustained attention-requiring tasks can be jeopardized by distractions whereas attentiveness to certain kind of stimuli can be jeopardized by immersive stimuli. That is why distractions are regulated in situations where an agent has what we call a concentration right and immersive stimuli are regulated in situations where an agent has what we call a duty to be attentive. The further analysis of these situations provides an understanding of the legal means by which attention is already regulated, which can be helpful when thinking about how it should be regulated in the future.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s13347-023-00673-0.pdf",
+    "publication": "Philosophy & Technology",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s13347-023-00673-0",
+    "published_date": "2023-12-01"
+   }
+  },
+  {
+   "id": "4e7d3b30-1a93-40a6-947d-c283d64cd21a",
+   "type": "document",
+   "label": "Non-voluntary BCI explantation: assessing possible neurorights violations in light of contrasting mental ontologies",
+   "attributes": {
+    "title": "Non-voluntary BCI explantation: assessing possible neurorights violations in light of contrasting mental ontologies",
+    "summary": "I didn't go beyond the abstract for this paper because it focuses on a case of an implanted brain-computer interface, which is beyond the scope of this Field Guide. But I've seen [Ienca](node:a9dc5f33-eec8-424d-b536-784358f03a8b) cited often in more relevant papers on neurorights so am adding this to the Guide as a pointer for anyone who's interested in diving deeper.",
+    "abstract": "In research involving patients with implantable brain-computer interfaces (BCIs), there is a regulatory gap concerning post-trial responsibilities and duties of sponsors and investigators towards implanted patients. In this article, we analyse the case of patient R, who underwent non-voluntary explantation of an implanted BCI, causing a discontinuation in her sense of agency and self. To clarify the post-trial duties and responsibilities involved in this case, we first define the ontological status of the BCI using both externalist (EXT) and internalist (INT) theories of cognition. We then give particular focus to the theories of extended and embedded cognition, hence considering the BCI either as a constitutive component of the patient's mind or as a causal supporter of her brain-based cognitive capacities. We argue that patient R can legitimately be considered both as an embedded and extended cognitive agent. Then, we analyse whether the non-voluntary explantation violated patient R's (neuro)rights to cognitive liberty, mental integrity, psychological continuity and mental privacy. We analyse whether and how different mental ontologies may imply morally relevant differences in interpreting these prima facie neurorights violations and the correlational duties of sponsors and investigators. We conclude that both mental ontologies support the identification of emerging neurorights of the patient and give rise to post-trial obligations of sponsors and investigators to provide for continuous technical maintenance of implanted BCIs that play a significant role in patients' agency and sense of self. However, we suggest that externalist mental ontologies better capture patient R's self-conception and support the identification of a more granular form of mental harm and associated neurorights violation, thus eliciting stricter post-trial obligations.",
+    "oa_pdf_url": null,
+    "publication": "Journal of Medical Ethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1136/jme-2023-109830",
+    "published_date": "2024-08-08"
+   }
+  },
+  {
+   "id": "8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8",
+   "type": "document",
+   "label": "Neurorights, Mental Privacy, and Mind Reading",
+   "attributes": {
+    "title": "Neurorights, Mental Privacy, and Mind Reading",
+    "summary": "This paper is focused on neurorights in the context of neurotechnologies, but the author argues that \"mind reading\" is not restricted to neurotechnology and can in fact be done by picking up on clues to what someone is thinking or aggregating digital data that point to states of mind. It may be relevant as we get farther into the discussion on LLM assistants and shared mental modeling.",
+    "abstract": "Abstract A pressing worry in the ongoing neurorights debate is the language used to advocate for newly proposed rights. This paper addresses this concern by first examining the partial and ambiguous associations between mind reading and neurotechnology, often cited by advocates in support of the right to mental privacy. Secondly, it addresses the conceptual foundations of mind reading, distinguishing between natural, digital, and neurotechnological forms. These distinctions serve to highlight the normative parallels in privacy vulnerabilities between neurotechnology and other mind-reading methods, with an emphasis on multimodal digital systems. I suggest that authentic safeguards for the mental realm demand an expansion of the protective ambit beyond brain-targeted devices to recognize the spectrum of mind-reading applications. Ultimately, this urges re-evaluation of the scope and justification of a right to mental privacy owing to the need for coherent frameworks in an increasingly interconnected digital landscape.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s12152-024-09568-z.pdf",
+    "publication": "Neuroethics",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s12152-024-09568-z",
+    "published_date": "2024-07-01"
+   }
+  },
+  {
+   "id": "7c126055-00a5-4220-a54b-d4337726d5e5",
+   "type": "person",
+   "label": "José M. Muñoz",
+   "attributes": {
+    "orcid": "0000-0002-1456-9439",
+    "homepage": null,
+    "full_name": "José M. Muñoz"
+   }
+  },
+  {
+   "id": "ae34311f-d5a0-4d7d-8e52-49200fca8800",
+   "type": "person",
+   "label": "Peter Zuk",
+   "attributes": {
+    "orcid": "0000-0003-1265-0791",
+    "homepage": null,
+    "full_name": "Peter Zuk"
+   }
+  },
+  {
+   "id": "e66e8a42-dc19-4273-b15b-3f90ef3b7310",
+   "type": "person",
+   "label": "Robert Atkinson",
+   "attributes": {
+    "orcid": "0000-0002-7878-2693",
+    "homepage": null,
+    "full_name": "Robert Atkinson"
+   }
+  },
+  {
+   "id": "e73d09e4-8d3f-4a67-a7da-11a42b1ce297",
+   "type": "person",
+   "label": "Javier Bernácer",
+   "attributes": {
+    "orcid": "0000-0002-4341-9763",
+    "homepage": null,
+    "full_name": "Javier Bernácer"
+   }
+  },
+  {
+   "id": "6e436829-bce0-4257-849c-36b0e305ece0",
+   "type": "person",
+   "label": "Francisco Güell",
+   "attributes": {
+    "orcid": "0000-0003-3408-6175",
+    "homepage": null,
+    "full_name": "Francisco Güell"
+   }
+  },
+  {
+   "id": "27975687-8b8e-44c2-8b28-5c6d5f35b7bf",
+   "type": "person",
+   "label": "Matthieu Queloz",
+   "attributes": {
+    "orcid": "0000-0001-6644-9992",
+    "homepage": null,
+    "full_name": "Matthieu Queloz"
+   }
+  },
+  {
+   "id": "60da85f4-8630-4076-b0cc-bc5697f785c5",
+   "type": "document",
+   "label": "The Oracular Paradigm and You",
+   "attributes": {
+    "title": "The Oracular Paradigm and You",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": null,
+    "source_type": "journal",
+    "canonical_url": "https://www.seewhatuthink.com/posts/the-oracular-paradigm-and-you",
+    "published_date": "2026-04-03"
+   }
+  },
+  {
+   "id": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "type": "document",
+   "label": "Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development",
+   "attributes": {
+    "title": "Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "arXiv.org",
+    "source_type": "journal",
+    "canonical_url": "https://arxiv.org/abs/2501.16946",
+    "published_date": "2025-01-29"
+   }
+  },
+  {
+   "id": "af3bc2ac-d3f0-43e5-aa88-d657c818c8c8",
+   "type": "document",
+   "label": "AI deskilling is a structural problem",
+   "attributes": {
+    "title": "AI deskilling is a structural problem",
+    "summary": "In this paper, Ferdman lays out the following concerns around AI and deskilling:\n\n1. AI can lead to deskilling, not only in profession-specific skills but in life skills like organizing and planning.\n2. Deskilling diminishes our abilities in the \"arts of personhood,\" including our epistemic, moral, social and creative capacities.\n3. Deskilling is structural, not an individual responsibility.\n\nFerdman argues that, for example, if workplaces prioritize short-term profits over long-term cognitive ability, then individuals don't have much of a choice about whether to preserve their cognitive skills in cases where individual instances of offloading are more profitable. Her term for these environments is \"capacity-hostile\": the idea that environments don't just fail to encourage our capacities but actively discourage their cultivation and practice.",
+    "abstract": "Abstract Many artificial intelligence tools replace or stand to replace human activity, via automated decision-making, recommender systems and content generation. The more artificial intelligence (AI) replaces valuable human activity, the more it risks deskilling humans of their human capacities. This paper argues for applying a structural perspective to this phenomenon. It introduces the concept of ‘capacity-hostile environments’ to identify instances where AI mediation impedes human capacity cultivation. The analysis moves beyond individual responsibility that agents have to cultivate their human capacities, demonstrating how AI’s influence creates systemic conditions that could inhibit the development and exercise of human capacities by undermining the process of capacity cultivation. Drawing on the philosophy of skill as well as social epistemology, this paper argues that capacity cultivation (skilling) includes acquiring agential control over the capacities, inculcated through a long, gradual process of habituation. Habituation, in turn, depends on learning from others: the ‘know how’ of the skill, as well as a shared understanding of the value of the skill. AI mediation risks undermining the quality of the conditions for capacity habituation, leading to capacity impoverishment. By exploring the role of AI in mediating human activity, the paper highlights the need to evaluate AI applications based on their conduciveness or hostility to capacity cultivation. Ultimately, it calls for a critical reflection on the values inherent in AI socio-technical systems and emphasizes the societal obligation to foster capacity-conducive environments in the age of AI.",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s00146-025-02686-z.pdf",
+    "publication": "AI & Society",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s00146-025-02686-z",
+    "published_date": "2025-11-05"
+   }
+  },
+  {
+   "id": "da9c1fd5-55c7-48b8-8726-18b0c63406af",
+   "type": "person",
+   "label": "Allegra A. Beal Cohen",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Allegra A. Beal Cohen"
+   }
+  },
+  {
+   "id": "b6beeb1b-12f5-4538-a893-7453cac451af",
+   "type": "concept",
+   "label": "Gradual Disempowerment",
+   "attributes": {
+    "description": "Gradual disempowerment is the idea that even incremental improvements in AI capabilities can undermine human influence over large-scale systems that society depends on, including the economy, culture, and nation-states. (Definition from Kulveit et al.)"
+   }
+  },
+  {
+   "id": "dbdc3c5f-ad51-44d8-8872-de670c064fc8",
+   "type": "person",
+   "label": "Kulveit, Jan",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Kulveit, Jan"
+   }
+  },
+  {
+   "id": "1fb46ad0-a454-46b1-ae5a-0fa110d75496",
+   "type": "person",
+   "label": "Douglas, Raymond",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Douglas, Raymond"
+   }
+  },
+  {
+   "id": "ef3965ea-ead2-48cd-b6f8-97d0c58e7b4c",
+   "type": "person",
+   "label": "Turan, Deger",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Turan, Deger"
+   }
+  },
+  {
+   "id": "61aaa792-a407-474f-925b-d703de9c5ebd",
+   "type": "person",
+   "label": "Ammann, Nora",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Ammann, Nora"
+   }
+  },
+  {
+   "id": "da3b6100-813d-4514-bd37-d90899ad25ef",
+   "type": "person",
+   "label": "Krueger, David",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Krueger, David"
+   }
+  },
+  {
+   "id": "182cbdde-f2b4-4145-bc1a-6c91c9888488",
+   "type": "person",
+   "label": "Duvenaud, David",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Duvenaud, David"
+   }
+  },
+  {
+   "id": "35a576b2-0439-4f64-8e0a-f3219c8d87f6",
+   "type": "person",
+   "label": "Avigail Ferdman",
+   "attributes": {
+    "orcid": "0000-0002-0950-8762",
+    "homepage": null,
+    "full_name": "Avigail Ferdman"
+   }
+  },
+  {
+   "id": "a1fdcead-ee18-45df-81ef-743800219935",
+   "type": "person",
+   "label": "Henning Lahmann",
+   "attributes": {
+    "orcid": "0000-0002-9890-0300",
+    "homepage": null,
+    "full_name": "Henning Lahmann"
+   }
+  },
+  {
+   "id": "63e06dea-966a-40af-af5b-436f362c4126",
+   "type": "person",
+   "label": "Bart Custers",
+   "attributes": {
+    "orcid": "0000-0002-3355-8380",
+    "homepage": null,
+    "full_name": "Bart Custers"
+   }
+  },
+  {
+   "id": "0544151e-9776-4b76-b611-fccb41755275",
+   "type": "person",
+   "label": "Benjamyn I. Scott",
+   "attributes": {
+    "orcid": "0009-0000-8219-8716",
+    "homepage": null,
+    "full_name": "Benjamyn I. Scott"
+   }
+  },
+  {
+   "id": "ac5354c7-ff15-47e3-b3ae-9717a96ea377",
+   "type": "person",
+   "label": "Christoph Bublitz",
+   "attributes": {
+    "orcid": "0000-0002-9877-2847",
+    "homepage": null,
+    "full_name": "Christoph Bublitz"
+   }
+  },
+  {
+   "id": "53d8deb4-dea7-4523-b9df-fa67a19af8ac",
+   "type": "person",
+   "label": "Niclas Rautenberg",
+   "attributes": {
+    "orcid": "0000-0001-8947-1009",
+    "homepage": null,
+    "full_name": "Niclas Rautenberg"
+   }
+  },
+  {
+   "id": "ccbfac20-f477-4ffe-a030-7e91b8bbdfbf",
+   "type": "person",
+   "label": "Daragh Murray",
+   "attributes": {
+    "orcid": "0000-0002-3891-9130",
+    "homepage": null,
+    "full_name": "Daragh Murray"
+   }
+  },
+  {
+   "id": "9c538a8e-397c-48f1-8e61-056d58d05b47",
+   "type": "person",
+   "label": "José Ángel Marinaro",
+   "attributes": {
+    "orcid": "0000-0002-6486-126X",
+    "homepage": null,
+    "full_name": "José Ángel Marinaro"
+   }
+  },
+  {
+   "id": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "concept",
+   "label": "Rights",
+   "attributes": {
+    "description": "All sorts of discussions on human rights in the context of AI and other digital technologies. Much of this literature is around neurotechnologies, which are not in scope for this Guide, but the arguments are quite relevant to LLMs."
+   }
+  },
+  {
+   "id": "8aedfac7-8288-4bc7-9e6f-fb925622d4ea",
+   "type": "person",
+   "label": "Kaisa Kärki",
+   "attributes": {
+    "orcid": "0000-0002-3028-8063",
+    "homepage": null,
+    "full_name": "Kaisa Kärki"
+   }
+  },
+  {
+   "id": "a7451b70-23c5-461b-a5dc-2d3302f6416c",
+   "type": "person",
+   "label": "Visa Kurki",
+   "attributes": {
+    "orcid": "0000-0002-1308-6398",
+    "homepage": null,
+    "full_name": "Visa Kurki"
+   }
+  },
+  {
+   "id": "d3d67eb3-65d9-43d2-a78c-4b9678bcc5cd",
+   "type": "person",
+   "label": "Guido Cassinadri",
+   "attributes": {
+    "orcid": "0000-0002-1084-4421",
+    "homepage": null,
+    "full_name": "Guido Cassinadri"
+   }
+  },
+  {
+   "id": "a9dc5f33-eec8-424d-b536-784358f03a8b",
+   "type": "person",
+   "label": "Marcello Ienca",
+   "attributes": {
+    "orcid": "0000-0001-8835-5444",
+    "homepage": null,
+    "full_name": "Marcello Ienca"
+   }
+  },
+  {
+   "id": "6ac77a61-8848-4569-a3ef-14c305f195d1",
+   "type": "person",
+   "label": "Cohen Marcus Lionel Brown",
+   "attributes": {
+    "orcid": "0000-0002-4595-0865",
+    "homepage": null,
+    "full_name": "Cohen Marcus Lionel Brown"
+   }
+  },
+  {
+   "id": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "concept",
+   "label": "Neurorights",
+   "attributes": {
+    "description": "A term that usually deals specifically with mental privacy, mental integrity and cognitive liberty as it relates to neurotechnologies, i.e., technologies that can be used to read and influence brain activity. Some discussions of neurorights also involve other forms of influence (e.g., attention capture by social media platforms), especially in the context of \"freedom of thought\" or \"self-determination.\""
+   }
+  },
+  {
+   "id": "cde7ffab-09eb-4a46-920a-95e4709ddb97",
+   "type": "concept",
+   "label": "Mental integrity",
+   "attributes": {
+    "description": "The neurorights community proposes mental integrity as \"a right over certain parts or functions of the body, that is, the brain\" and note that it is similar but distinct from bodily integrity because, e.g., non-invasive brain stimulation can cause mental interference with little to no changes to brain anatomy. [Zuk](node:3b95960d-5c36-4b6f-8959-c7e8e2abcbb4) extends the definition to include the capacities for affect, cognition and agency, and notes it as being fundamental for autonomy."
+   }
+  },
+  {
+   "id": "6adf75a9-bd2b-4106-8cca-753a8460ee8a",
+   "type": "person",
+   "label": "Sjors Ligthart",
+   "attributes": {
+    "orcid": "0000-0001-6458-4058",
+    "homepage": null,
+    "full_name": "Sjors Ligthart"
+   }
+  },
+  {
+   "id": "df576137-8ceb-4eab-8680-4aab4e805aba",
+   "type": "person",
+   "label": "Roberto Andorno",
+   "attributes": {
+    "orcid": "0000-0003-2070-8703",
+    "homepage": null,
+    "full_name": "Roberto Andorno"
+   }
+  },
+  {
+   "id": "f722b5a5-5fc4-4240-b55f-0d6a002d51c7",
+   "type": "person",
+   "label": "Gerben Meynen",
+   "attributes": {
+    "orcid": "0000-0001-7298-8407",
+    "homepage": null,
+    "full_name": "Gerben Meynen"
+   }
+  },
+  {
+   "id": "15cea7d2-9ddd-466b-9d04-a4e61fbf4eb5",
+   "type": "person",
+   "label": "Lisa Claydon",
+   "attributes": {
+    "orcid": "0000-0002-7069-0305",
+    "homepage": null,
+    "full_name": "Lisa Claydon"
+   }
+  },
+  {
+   "id": "768115ea-a036-43c4-92d6-f03cef406bad",
+   "type": "person",
+   "label": "Fruzsina Molnár-Gábor",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Fruzsina Molnár-Gábor"
+   }
+  },
+  {
+   "id": "e2d9d00a-3a80-46a9-b3af-9ef100151126",
+   "type": "person",
+   "label": "Paul Catley",
+   "attributes": {
+    "orcid": "0000-0002-2837-5117",
+    "homepage": null,
+    "full_name": "Paul Catley"
+   }
+  },
+  {
+   "id": "7e41b0f4-b4c4-4e7d-858a-92f1b87e9916",
+   "type": "person",
+   "label": "Thomas A. Douglas",
+   "attributes": {
+    "orcid": "0000-0003-1314-1905",
+    "homepage": null,
+    "full_name": "Thomas A. Douglas"
+   }
+  },
+  {
+   "id": "838421e1-903c-4438-bdf0-bde991a84d3f",
+   "type": "person",
+   "label": "Nita A. Farahany",
+   "attributes": {
+    "orcid": "0000-0003-4808-6256",
+    "homepage": null,
+    "full_name": "Nita A. Farahany"
+   }
+  },
+  {
+   "id": "c6962a81-39a4-4c4a-9593-48f5b39de637",
+   "type": "person",
+   "label": "Joseph J. Fins",
+   "attributes": {
+    "orcid": "0000-0002-7221-0053",
+    "homepage": null,
+    "full_name": "Joseph J. Fins"
+   }
+  },
+  {
+   "id": "4fb1b4f4-4e37-4e17-862c-f9c9c8e74c25",
+   "type": "person",
+   "label": "Sara Goering",
+   "attributes": {
+    "orcid": "0000-0002-1882-3764",
+    "homepage": null,
+    "full_name": "Sara Goering"
+   }
+  },
+  {
+   "id": "1ab5e594-16fd-48b0-a505-c48f9aedd8e8",
+   "type": "person",
+   "label": "Pim Haselager",
+   "attributes": {
+    "orcid": "0000-0002-4077-9560",
+    "homepage": null,
+    "full_name": "Pim Haselager"
+   }
+  },
+  {
+   "id": "b9bd33e2-48ac-4a38-b9a7-a0573d55b5e0",
+   "type": "person",
+   "label": "Fabrice Jotterand",
+   "attributes": {
+    "orcid": "0000-0002-3903-6874",
+    "homepage": null,
+    "full_name": "Fabrice Jotterand"
+   }
+  },
+  {
+   "id": "946ac892-b5ec-427c-b976-8183a7aea4ec",
+   "type": "person",
+   "label": "Andrea Lavazza",
+   "attributes": {
+    "orcid": "0000-0003-2608-2609",
+    "homepage": null,
+    "full_name": "Andrea Lavazza"
+   }
+  },
+  {
+   "id": "3207cfaf-50c4-4d2c-9e1f-2de6c79b354d",
+   "type": "person",
+   "label": "Abel Wajnerman Paz",
+   "attributes": {
+    "orcid": "0000-0003-1551-527X",
+    "homepage": null,
+    "full_name": "Abel Wajnerman Paz"
+   }
+  },
+  {
+   "id": "7aeb23b6-b984-4160-aa0e-097c02af8275",
+   "type": "person",
+   "label": "Jesper Ryberg",
+   "attributes": {
+    "orcid": "0000-0003-2723-1979",
+    "homepage": null,
+    "full_name": "Jesper Ryberg"
+   }
+  },
+  {
+   "id": "95ef918a-fcd9-4f59-b8ad-62d4dc434119",
+   "type": "person",
+   "label": "Allan McCay",
+   "attributes": {
+    "orcid": "0000-0003-2291-0526",
+    "homepage": null,
+    "full_name": "Allan McCay"
+   }
+  },
+  {
+   "id": "c895223a-61d0-497e-8fdc-ab7c0294c90a",
+   "type": "person",
+   "label": "Stephen Rainey",
+   "attributes": {
+    "orcid": "0000-0002-5540-6046",
+    "homepage": null,
+    "full_name": "Stephen Rainey"
+   }
+  },
+  {
+   "id": "61d72fac-db59-4022-bed7-8cc9e36eb4e3",
+   "type": "person",
+   "label": "Philipp Kellmeyer",
+   "attributes": {
+    "orcid": "0000-0001-5538-373X",
+    "homepage": null,
+    "full_name": "Philipp Kellmeyer"
+   }
+  },
+  {
+   "id": "0ae23e2d-22b1-4c28-b646-f0c06df6813b",
+   "type": "person",
+   "label": "Stefano Faraoni",
+   "attributes": {
+    "orcid": "0000-0001-5219-5581",
+    "homepage": null,
+    "full_name": "Stefano Faraoni"
+   }
+  },
+  {
+   "id": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+   "type": "document",
+   "label": "Towards new human rights in the age of neuroscience and neurotechnology",
+   "attributes": {
+    "title": "Towards new human rights in the age of neuroscience and neurotechnology",
+    "summary": "This is one of the papers most often cited by other philosophers and researchers working in and around neurorights. While it focuses on neurotechnologies like EEG recordings, there are vivid parallels to recent discussions of algorithmic surveillance and LLM interactions.<Footnote>Also, for those of us interested in unconventional communication modalities and user interfaces, the authors touch on non-invasive brain-computer interfaces as novel ways of controlling our laptops, etc. So, you know, maybe not as outside the scope of this Guide as one might think.</Footnote> For example, the authors cite a study that showed a \"potential neurocognitive biomarker\" for recidivism in prisoners, and suggest that the penal system might plausibly incorporate brain scans to decide whether people should be released – which sounds very similar to, for example, arguments around algorithmic surveillance and the worry that your conversations with an LLM could be used to infer your state of mind and determine things like how insurable or employable you are.\n\nThe authors argue that human rights law should respond to these new issues brought up by neurotechnologies, the way that it did for the advent of genetic technology, through reconceptualizing existing rights or even creating new rights. They describe four new rights that they believe \"do not raise the risk of rights inflation\"<Footnote>That is, not everything that seems nice or morally desirable can be a right.</Footnote>, summarized here:\n1. [Cognitive liberty](node:cb89131b-8bfe-4f69-bcf6-15f8e54ff88f), a.k.a. *mental self-determination*: a) the right to use emerging neurotechnologies and b) the protection from those technologies being used on you. (See [Bublitz and Merkel](node:a99ed12c-1a88-4e7e-b642-d67172cdf600) for more on cognitive liberty.)\n...which must be supported by:\n2. The right to mental privacy, which specifies the nature of brain data as both information (e.g. brainwaves) and a source of information (e.g. what you are thinking.)\n3. The right to [mental integrity](node:cde7ffab-09eb-4a46-920a-95e4709ddb97), i.e., protection from unauthorized access and manipulation of neural signalling resulting in physical or psychological harm.\n4. The right to psychological continuity, i.e., a \"neuro-focused instance of the right to identity.\" This one is particularly interesting because while, again, Ienca and Andorno are talking about, e.g., using deep-brain stimulation to mess with someone's personality, you could also argue that prolonged LLM exposure causing AI psychosis may disrupt the right to psychological continuity.\n\nNote that Ienca and Andorno propose these as new rights specifically *because* neurotechnology can potentially be so much more invasive and effective than, say, pre-existing technologies like polygraphs and psychoactive drugs. \n",
+    "abstract": "Rapid advancements in human neuroscience and neurotechnology open unprecedented possibilities for accessing, collecting, sharing and manipulating information from the human brain. Such applications raise important challenges to human rights principles that need to be addressed to prevent unintended consequences. This paper assesses the implications of emerging neurotechnology applications in the context of the human rights framework and suggests that existing human rights may not be sufficient to respond to these emerging issues. After analysing the relationship between neuroscience and human rights, we identify four new rights that may become of great relevance in the coming decades: the right to cognitive liberty, the right to mental privacy, the right to mental integrity, and the right to psychological continuity.",
+    "oa_pdf_url": "https://lsspjournal.biomedcentral.com/track/pdf/10.1186/s40504-017-0050-1",
+    "publication": "Life Sciences Society and Policy",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1186/s40504-017-0050-1",
+    "published_date": "2017-04-03"
+   }
+  },
+  {
+   "id": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+   "type": "document",
+   "label": "Crimes Against Minds: On Mental Manipulations, Harms and a Human Right to Mental Self-Determination",
+   "attributes": {
+    "title": "Crimes Against Minds: On Mental Manipulations, Harms and a Human Right to Mental Self-Determination",
+    "summary": "This seems like one of the granddaddies of neurorights papers – most of the other papers in the neurorights cluster I've built cite it. And I can see why, especially in the more recent context of, e.g., the ongoing Meta lawsuit. At the very beginning the authors ask: \"What are the legitimate ways of changing other people's minds?\" Why, for example, is advertising legal and lying is not? Their argument seems to hinge on the idea that mental states, previously too elusive to be dealt with by the law, will become observable via neuroscience technologies in the future and thus will count as evidence of mental harm. Given this assumption and a range of examples of mental tampering (e.g., spraying oxytocin in a room, administering transcranial magnetic stimulation, etc.), they propose the [right to mental self-determination](node:cb89131b-8bfe-4f69-bcf6-15f8e54ff88f) exists (or is \"woven into the law's structure.\") The right is both positive (the freedom to determine one's mental contents) and negative (the freedom from mental tampering.) \n\nIn defining this right, Bublitz and Merkel first acknowledge that our control and understanding over our own minds are limited; we can't always remember everything we want to, for example, and we can't necessarily detect when we are being manipulated or recognize that, say, our opinion of somebody might be influenced by whether we are physically uncomfortable when we meet them. But, they argue, \"legal questions should not be confused with empirical aspects,\" and it is the fact that we *don't* have full control over our minds that make us susceptible to manipulation. They also acknowledge that \"people change each other's minds all the time and in innumerable ways,\" some of which are already punishable by law (e.g., libel, fraud.) But, they argue, the line is between permissible and impermissible interventions: \"No one has a right (a legally enforceable claim) over another's state of mind.\" \n\nThis line has some nuances. First, \"to raise legal suspicion,\" interventions must \"substantially undermine mental self-determination.\" That is, these are interventions that \"reduce or impair cognitive capacities (e.g., memory, concentration, willpower), alter preferences, beliefs and behavioral dispositions\" and so on. Note that, for our purposes, this is super interesting – that's exactly what, e.g., engagement-maximizing algorithms and echo chambers can be said to do. \n\nThe authors also say that the *means* of intervention matter, initially categorized as \"direct\" (working on the brain itself, like LSD) and \"indirect\" (those that are perceived and pass through a person's mind.) They point to a spectrum of control, where, e.g., a TMS device allows the least control and e.g., a debate between two aware people might allow the most. And they propose that *direct* interventions without consent should be criminal, while indirect interventions are usually fine. At this point we might think, well, this paper *isn't* so relevant to echo chambers and algorithms; in fact, the authors say that direct interventions are a clear case because the only \"*factual* interest interveners seem to have is in changing another's mental state,\" and even say their only goal is to show that the rules for indirect and direct interventions are different.\n\nBut! Are \"dark patterns\" and engagement-maximizing design choices not intended to change users' mental states? I think Bublitz and Merkel might agree, because later on they say: \"Intervening *indirectly* into other minds through stimuli purposefully designed to bypass mental control capacities causing severe negative mental consequences shall be punishable unless such stimuli are exercises of permissible conduct such as free speech in respect of the other person's mental self-determination.\" And the interesting thing about the ongoing Meta case is that the arguments are not around content (which invokes free speech) but intervention via design choices. In any case, this paper was written before, e.g., the harms of social media and data surveillance became evident. But I like their closing argument, which they say is a variation of the US Supreme Court: \"The fundamental rights protecting free actions in the external world are indeed fixed stars in the constitutional universe. But their logical, albeit not always visible, center of gravity is the freedom of the inward world in which opinions are formed, life-plans developed, dreams cherished and emotions experienced. If the law assigns insufficient weight to its protection, the entire galaxy of liberty may collapse.\"",
+    "abstract": "The neurosciences not only challenge assumptions about the mind’s place in the natural world but also urge us to reconsider its role in the normative world. Based on mind-brain dualism, the law affords only one-sided protection: it systematically protects bodies and brains, but only fragmentarily minds and mental states. The fundamental question, in what ways people may legitimately change mental states of others, is largely unexplored in legal thinking. With novel technologies to both intervene into minds and detect mental activity, the law should, we suggest, introduce stand alone protection for the inner sphere of persons. We shall address some metaphysical questions concerning physical and mental harm and demonstrate gaps in current doctrines, especially in regard to manipulative interferences with decision-making processes. We then outline some reasons for the law to recognize a human right to mental liberty and propose elements of a novel criminal offence proscribing severe interventions into other minds.",
+    "oa_pdf_url": null,
+    "publication": "Criminal Law and Philosophy",
+    "source_type": "journal",
+    "canonical_url": "https://doi.org/10.1007/s11572-012-9172-y",
+    "published_date": "2012-08-02"
+   }
+  },
+  {
+   "id": "84fe021e-be0e-4466-b496-cfed48fad381",
+   "type": "person",
+   "label": "Reinhard Merkel",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Reinhard Merkel"
+   }
+  },
+  {
+   "id": "765d660a-484b-430f-a668-b08fb0e58666",
+   "type": "person",
+   "label": "Authors",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Authors"
+   }
+  },
+  {
+   "id": "f51a0c2d-71f5-48f7-9129-784b0fb0f0fa",
+   "type": "concept",
+   "label": "Communication modalities",
+   "attributes": {
+    "description": "How humans and AI, particularly Large Language Models and other generative AI, talk to each other. The most common type of modality today is the chat interface, but this topic encompasses more unusual modalities as well, like embodied approaches that give humans \"space to think.\""
+   }
+  },
+  {
+   "id": "2001725d-efc1-4f97-9f40-b6b2277f3232",
+   "type": "person",
+   "label": "saffron huang",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "saffron huang"
+   }
+  },
+  {
+   "id": "feffbe92-72cf-4345-a1c3-f121de7d6ee7",
+   "type": "person",
+   "label": "Patrick O’Callaghan",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Patrick O’Callaghan"
+   }
+  },
+  {
+   "id": "0c927554-e2e9-4547-a0b6-1f60347b6f6f",
+   "type": "person",
+   "label": "Bethany Shiner",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Bethany Shiner"
+   }
+  },
+  {
+   "id": "4e011037-61d3-405e-a0f8-fa69f5f70cde",
+   "type": "person",
+   "label": "Satoshi Yokodaido",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Satoshi Yokodaido"
+   }
+  },
+  {
+   "id": "bbebd0bf-3935-497a-91b0-06731ede0bbe",
+   "type": "person",
+   "label": "Heping Dang",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Heping Dang"
+   }
+  },
+  {
+   "id": "d9c3da47-1d01-496e-b872-e57c986ef2a7",
+   "type": "person",
+   "label": "Giao Vu Cong",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Giao Vu Cong"
+   }
+  },
+  {
+   "id": "4c901d5e-10ff-47a4-9b1f-9c8b98bed4ee",
+   "type": "person",
+   "label": "Kalpana Sivabalah",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Kalpana Sivabalah"
+   }
+  },
+  {
+   "id": "9d45376f-370c-4e97-beda-ef046821f202",
+   "type": "person",
+   "label": "Kelly Amal Dhru",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Kelly Amal Dhru"
+   }
+  },
+  {
+   "id": "34c1d998-d060-46eb-8cdd-308f13c8198d",
+   "type": "person",
+   "label": "Emine Ozge Yildirim-Vranckaert",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Emine Ozge Yildirim-Vranckaert"
+   }
+  },
+  {
+   "id": "3704b541-fc13-4fc6-889d-cbcf653bd5d6",
+   "type": "person",
+   "label": "Felicitas Benziger",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Felicitas Benziger"
+   }
+  },
+  {
+   "id": "6ecf7302-a5f0-4ee4-8289-2604ed8ee2e4",
+   "type": "person",
+   "label": "Nora Hertz",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Nora Hertz"
+   }
+  },
+  {
+   "id": "8de7aaee-9ce9-410d-9721-33a821439bdf",
+   "type": "person",
+   "label": "Victoria Miyandazi",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Victoria Miyandazi"
+   }
+  },
+  {
+   "id": "3c31ab3c-3944-462d-8069-daa02a421901",
+   "type": "person",
+   "label": "Marie-Luce Paris",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Marie-Luce Paris"
+   }
+  },
+  {
+   "id": "ce463f16-85df-4a96-aa04-3f4312a4bb0f",
+   "type": "person",
+   "label": "Miracle Mudeyi",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Miracle Mudeyi"
+   }
+  },
+  {
+   "id": "22e572f5-fc03-437e-8ae9-d261b84b90fb",
+   "type": "person",
+   "label": "Harrison Okoth Otieno",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Harrison Okoth Otieno"
+   }
+  },
+  {
+   "id": "f5fbe680-0f65-4c08-8a64-a95228650422",
+   "type": "person",
+   "label": "Christopher Phiri",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Christopher Phiri"
+   }
+  },
+  {
+   "id": "ca8a87c0-e305-413c-872d-3cfed041b080",
+   "type": "person",
+   "label": "Neel Raamandarsingh Purmah",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Neel Raamandarsingh Purmah"
+   }
+  },
+  {
+   "id": "c83d1112-c230-4850-96ab-711361a33b6a",
+   "type": "person",
+   "label": "Sfiso Benard Nxumalo",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Sfiso Benard Nxumalo"
+   }
+  },
+  {
+   "id": "4394535c-8ca4-426e-94ad-a76211eefab2",
+   "type": "person",
+   "label": "Mariette Jones",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Mariette Jones"
+   }
+  },
+  {
+   "id": "f5f44e5f-b008-4a5c-a91b-2b1594b687ef",
+   "type": "document",
+   "label": "Meta Lawsuit - August 2026 Update",
+   "attributes": {
+    "title": "Meta Lawsuit - August 2026 Update",
+    "summary": "Summary of the Meta lawsuits as of August 2026.",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Social Media Victims Law Center",
+    "source_type": "journal",
+    "canonical_url": "https://socialmediavictims.org/meta-lawsuit/",
+    "published_date": "2026-08-11"
+   }
+  },
+  {
+   "id": "64ba30ad-b5a0-4ae1-8d5b-8220ffbbf664",
+   "type": "document",
+   "label": "A New Mexico judge ordered new child safeguards for Meta. Advocates hope other courts follow",
+   "attributes": {
+    "title": "A New Mexico judge ordered new child safeguards for Meta. Advocates hope other courts follow",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "PBS News",
+    "source_type": "journal",
+    "canonical_url": "https://www.pbs.org/newshour/nation/a-new-mexico-judge-ordered-new-child-safeguards-for-meta-advocates-hope-other-courts-follow",
+    "published_date": "2026-08-08"
+   }
+  },
+  {
+   "id": "1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1",
+   "type": "document",
+   "label": "K.G.M. v. Meta et al.",
+   "attributes": {
+    "title": "K.G.M. v. Meta et al.",
+    "summary": "",
+    "abstract": "",
+    "oa_pdf_url": null,
+    "publication": "Wikimedia Foundation, Inc.",
+    "source_type": "journal",
+    "canonical_url": "https://en.wikipedia.org/wiki/K.G.M._v._Meta_et_al.",
+    "published_date": "2026-02-12"
+   }
   }
  ],
  "artifacts": [
@@ -575,50 +1695,161 @@
      "label": "Well-Being, Agency and Freedom: The Dewey Lectures 1984"
     }
    ],
-   "citations": [
+   "links": [
     {
      "id": "6abe562e-48cd-44b8-a02f-48f04f710a8e",
+     "type": "document",
      "label": "The extended hollowed mind: why foundational knowledge is indispensable in the age of AI"
     },
     {
+     "id": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
+     "type": "document",
+     "label": "A Framework for Measuring Human Cognitive Agency Amid Routine AI Adoption"
+    },
+    {
+     "id": "32605367-0666-4993-9f78-6adac64dba8f",
+     "type": "document",
+     "label": "Cognitive liberty"
+    },
+    {
      "id": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+     "type": "document",
      "label": "The Battle for Cognitive Liberty in the Age of Corporate AI"
     },
     {
      "id": "7ae206d8-b677-4570-a419-8dcd48c78ecc",
+     "type": "document",
      "label": "Context-maxxing: A path to cognitive agency with generative AI"
     },
     {
-     "id": "32605367-0666-4993-9f78-6adac64dba8f",
-     "label": "Cognitive liberty"
+     "id": "f91c46a2-2410-4719-b168-f5fbebf3824b",
+     "type": "document",
+     "label": "A Historical and Comparative Analysis of Cognitive Security"
     },
     {
      "id": "06701533-e411-441c-97dc-3468d7e8abb3",
+     "type": "document",
      "label": "Agency"
     },
     {
+     "id": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
+     "type": "document",
+     "label": "Well-Being, Agency and Freedom: The Dewey Lectures 1984"
+    },
+    {
      "id": "6486cb39-0193-4698-b7f9-f19f9c0bde1b",
+     "type": "document",
      "label": "Personal Autonomy"
     },
     {
      "id": "163500a9-23d2-443e-94e6-990f76410362",
+     "type": "document",
      "label": "Brave New Nudge"
-    },
-    {
-     "id": "4c5b8a1a-132d-460c-838f-8d92de7baa07",
-     "label": "A Framework for Measuring Human Cognitive Agency Amid Routine AI Adoption"
-    },
-    {
-     "id": "01ef5509-8fea-4b70-9b98-9eefd75729b9",
-     "label": "Well-Being, Agency and Freedom: The Dewey Lectures 1984"
-    },
-    {
-     "id": "f91c46a2-2410-4719-b168-f5fbebf3824b",
-     "label": "A Historical and Comparative Analysis of Cognitive Security"
     }
    ],
    "author": "curator",
    "updated_at": "2026-08-10"
+  },
+  {
+   "id": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "label": "What Words Are We Using? The \"Neurorights\"",
+   "body": "As this Guide progresses, we're going to be faced with some \"cans\" and \"shoulds.\" If you're like me, you're interested in the empirical and the technical when it comes to cognitive agency – the studies and projects demonstrating algorithms, modalities and methods that make it easier to think for ourselves while using AI. But I think it helps to start with at least a minimal understanding of the \"so what,\" which necessarily includes policy and litigation. For example, if we have a significant body of evidence indicating that certain design choices threaten autonomy, can and should legislators pass laws banning those choices? Or can companies be held liable for damage caused by those choices? Put another way, is it enough for us to fund and work on ways of increasing cognitive agency knowing that the law will eventually be on our side, or do we need to put more effort into economic justifications of human cognition in the absence of legal protections of the mind?\n\nWe're seeing a version of the liability question play out right now in the 2026 Meta lawsuits around social media, where four states (California, Colorado, Kentucky and New Jersey) [are suing Meta](node:f5f44e5f-b008-4a5c-a91b-2b1594b687ef) for a huge amount of money ($1.5 trillion) with the claim that the *design* of its social media products is intended to be harmful. Judges have already penalized Meta for knowingly harming the mental health of children.<Footnote>Though it looks like the earlier cases in [New Mexico](node:64ba30ad-b5a0-4ae1-8d5b-8220ffbbf664) and [California](node:1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1) did not require Meta to actually *change* addictive design features like the infinite scroll.</Footnote> As far as I can tell (from a bird's eye, non-lawyer view), these cases are claiming that social media is a product, and Meta is liable and negligent because they were aware of the harm caused by the design of that product. We also have a growing number of cases against OpenAI about AI psychosis that are taking similar tacks, but the open question there is [whether courts will treat ChatGPT outputs as a product rather than content.](https://www.bloomberg.com/graphics/2026-chatbot-death)\n\nThis all feels promising, but I started wondering: Would a win in this area say anything about future cases against generative AI companies, particularly when it comes to thinking for ourselves? Say, for example, a series of lawsuits are brought by young adults against an LLM-based education technology company. Suppose these adults did fine on standardized tests, got into fine colleges, etc., but now find themselves struggling to keep up because they did not build up critical thinking skills. Suppose further that they claim this is a direct result of the company's product being a pervasive component of their education. Unlike the social media and AI psychosis cases, we can't show such clear harms as suicide – but surely something bad happened? I think we'd like to be able to hold *someone* or *something* liable...but for what?\n\n## The neurorights\nThe neurorights people have already thought about this, or some of it. If you take \"piece of LLM edtech used over a period of years\" and replace it with \"device that zaps you in the brain one time,\" suddenly you have some vocabulary to work with: The right to self-determination and the right to mental integrity. Granted, those are significant changes, but the question we're trying to answer is the same: What harm is done? Or, in [Bublitz and Merkel's terms](node:a99ed12c-1a88-4e7e-b642-d67172cdf600), \"What are the legitimate ways of changing other people's minds?\"\n\nI'll admit, this literature is a little hairy – there's [ongoing debate](node:4c839fef-a196-490b-beb9-9a677d4b8c24) about what these rights mean, whether they (and others) overlap, and even whether they already exist in the law. But I think the core concepts are interesting:\n\n- [Bublitz and Merkel](node:a99ed12c-1a88-4e7e-b642-d67172cdf600) define the right to *mental self-determination* as both a) the \"freedom to self-determine one's inner realm, e.g., the content of one's thoughts, consciousness, or any other mental phenomena\" and b) freedom *from* unwanted and severe interference. They acknowledge that, of course, we neither have full control nor awareness of the workings of our minds on the best days, but it is \"precisely the acceptance of our limited mental powers...that gives rise to [their] legal protection.\"<Footnote>Note: I've seen \"mental self-determination\" both equated with \"cognitive liberty\" and described as a component of it. I know. Look, it's a Guide, not an Encyclopedia.</Footnote> For a review of the way that \"AI technologies\" can influence mental self-determination, check out [Faraoni's paper.](node:f94cdc05-398a-4f7d-b787-49cf8d8f8a26)\n- Other neurorights heavy hitters like [Ienca and Andorno](node:ae5c4d45-692e-4d8a-b383-4baa36b2d9c1) describe *mental integrity* as protection from unauthorized access and manipulation of neural signalling, which...again, we're not talking about evil BCI hackers. But [Zuk](node:3b95960d-5c36-4b6f-8959-c7e8e2abcbb4) extends the concept, describing the *capacities required* for mental integrity. These include affect (i.e., being able to experience certain feelings), cognition (i.e., our capacity as \"inquirers attempting to make sense of the world\") and agency (i.e., to intend and act accordingly.) In Zuk's definition, mental integrity sits in between agency and autonomy.<Footnote>That is, agency is a capacity required for mental integrity, which is a condition of autonomy. See [the Cognitives](node:32594bc2-e59a-4c3b-b02a-dbee7629e827) for...if you feel like reading more about these words.</Footnote>\n\nWhat comes up again and again in the literature is this idea that we are *always* experiencing interference or intervention into our mental realm. By reading this text right now, you are being interfered with. The things that distinguish a *violation* of your mental integrity or self-determination are **consent** (i.e., you chose to read this text), **manipulation** (i.e., this text is engaging your rational faculties rather than intending to bypass them), and, sometimes, **harm**.<Footnote>well, reading this *might* be painful...so, in the words of my countrymen, sue me?</Footnote> For example, [Munoz et al.](node:12c2e3cd-1920-4640-a627-e06a8f7425d3) argue that interventions are only concordant with personal autonomy if the person authorizes and is *informed about the consequences of* the intervention.<Footnote>Again, they're talking about brain-computer interfaces – but think about the parallels with choosing to use an LLM while being uninformed of its potential effects.</Footnote> In general there's the sense that bypassing our rational faculties – via, say, subtle design choices – is a critical component of a violation.\n\nNow, as I said, a lot of the neurorights literature is focused on what Bublitz and Merkel call *direct* interference, i.e., \"I zap you with my brain zapper.\" And much of the debate hinges on whether the distinctions above can even be operationalized legally. That's what makes [Bublitz's 2025 paper](node:c2f0e8a8-3a42-478c-a30c-e479adb75176) interesting. For one thing, Bublitz considers social media alongside neurotechnology as something to worry about when it comes to mental interference. For another, he reframes the argument from one about specific harms to one about *obligation.* Bublitz says, well, *freedom of thought* is a right enshrined in many treaties, so instead of worrying about the definition of a thought or the definition of interference, let's say that the state has an *obligation* to \"fulfill conditions for the full enjoyment of the right [to freedom of thought].\"<Footnote>I would recommend reading (or at least skimming) the paper in full because it has a fantastic description of freedom of thought.</Footnote> Then, he makes the following argument:\n\n- Specific harms can't always be attributed to specific actors in the digital environment, but *aggregate harms* still exist.\n- Avoiding these harms can cause other harms, especially if there are no alternatives to the products you're choosing not to use (e.g., being excluded socially if you don't use social media; falling behind at work if you don't use LLMs.)\n- Fulfilling freedom of thought, then, may require the state to regulate a digital environment that otherwise would cause harm (cognitive or otherwise) to its citizens.\n\nBublitz argues that this reframing helps us sidestep accusations of paternalism, i.e., mandating better product design is fine whereas telling people how to use technology is not.\n\n(Before we move on, a last note on the neurorights discourse: *Mental privacy* is another concept that is pretty relevant to us as it deals with the idea that our minds can be \"read\" simply by aggregating and processing data (see [Radsch's piece](node:c70af410-3c1e-4eb2-93c0-d8d385b4c3af) for a full depiction of this super fun and normal world.) I think we'll come back to this concept in more detail when we get to collaborative workflows, but for now, let me direct you to [this piece on mind reading](node:8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8) and [this piece on co-reasoning](node:8af7601e-750a-4345-b320-dcc2458df1fe) for a deeper exploration. There's also *psychological continuity*, which [some argue](node:ae5c4d45-692e-4d8a-b383-4baa36b2d9c1) ought to be its own right and [some argue](node:6e34c702-1402-404b-9e99-481038f463ff) already is. We might come back to that if we do a deeper dive on AI psychosis.)\n\n## Cliffhanger!\nSo does any of this apply to our hypothetical case of the bad AI teacher? Well, I think Bublitz and Merkel's [description of indirect intervention ](node:a99ed12c-1a88-4e7e-b642-d67172cdf600) applies, particularly as it hinges on *purposeful design* – if you could show, for example, that the edtech company was aware that its methods maximized test scores but not critical thinking, then you could say that the intervention was designed to \"bypass mental control capacities.\" Zuk's [take](node:3b95960d-5c36-4b6f-8959-c7e8e2abcbb4) on, e.g., algorithms that erode our attention spans is certainly relevant. And perhaps most pertinent is Bublitz's proposal that the state is actually obliged to regulate products that can manipulate our minds – that gets us the closest to the kinds of protections Courtney Radsch lays out in [her piece on cognitive liberty.](node:c70af410-3c1e-4eb2-93c0-d8d385b4c3af)\n\nBut, of course, philosophy and legal scholarship is not the same as actual lawsuits or actual laws. While freedom of thought is enshrined in the Universal Declaration (i.e., is global), and mental or psychological integrity crop up in various regional charters, ideas like cognitive liberty are still mostly academic. Plus, the neurorights folks are the first to acknowledge case law is exceedingly thin, even for more established / enshrined concepts like freedom of thought.<Footnote>From a shallow paddle through this area, it seems like \"freedom of thought\" is usually invoked as a support to more assured arguments around freedom of speech, religion or privacy.</Footnote> So, going back to the ongoing lawsuits against Meta and OpenAI: Would wins in those areas have anything to do with our hypothetical case, or provide grounds on which to argue about freedom of thought or cognitive liberty? Or are we still, for lack of a better term, SOL?\n\nOn this I'm not sure. Through a naive (non-lawyer) lens, when Raine vs OpenAI argues that the design of ChatGPT was intended to \"foster psychological dependency,\" that feels like a *version* of the neurorights arguments around freedom of thought, mental integrity and cognitive liberty. If those arguments fly, will future cases be able to make similar arguments even if the harm in question is not as clear-cut as what happened to Adam Raine? I plan to find out, and will update this section of the Guide when I do. Because, as I said up top, everything we fund, build and build against sits in an incentive structure, and it's important to know whether \"don't get sued\" will be part of that anytime soon.",
+   "subjects": [
+    {
+     "id": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+     "type": "concept",
+     "label": "Neurorights"
+    },
+    {
+     "id": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+     "type": "document",
+     "label": "Freedom of Thought and Digital Technologies: Operationalizing State Obligations for Social Media, Virtual Reality, and Neurotechnology"
+    },
+    {
+     "id": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+     "type": "document",
+     "label": "Mental integrity, autonomy, and fundamental interests"
+    }
+   ],
+   "links": [
+    {
+     "id": "f5f44e5f-b008-4a5c-a91b-2b1594b687ef",
+     "type": "document",
+     "label": "Meta Lawsuit - August 2026 Update"
+    },
+    {
+     "id": "64ba30ad-b5a0-4ae1-8d5b-8220ffbbf664",
+     "type": "document",
+     "label": "A New Mexico judge ordered new child safeguards for Meta. Advocates hope other courts follow"
+    },
+    {
+     "id": "1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1",
+     "type": "document",
+     "label": "K.G.M. v. Meta et al."
+    },
+    {
+     "id": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+     "type": "document",
+     "label": "Crimes Against Minds: On Mental Manipulations, Harms and a Human Right to Mental Self-Determination"
+    },
+    {
+     "id": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+     "type": "document",
+     "label": "Minding Rights: Mapping Ethical and Legal Foundations of ‘Neurorights’"
+    },
+    {
+     "id": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+     "type": "document",
+     "label": "Persuasive Technology and computational manipulation: hypernudging out of mental self-determination"
+    },
+    {
+     "id": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+     "type": "document",
+     "label": "Towards new human rights in the age of neuroscience and neurotechnology"
+    },
+    {
+     "id": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+     "type": "document",
+     "label": "Mental integrity, autonomy, and fundamental interests"
+    },
+    {
+     "id": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
+     "type": "artifact",
+     "label": "What Words Are We Using?: The \"Cognitives\""
+    },
+    {
+     "id": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+     "type": "document",
+     "label": "A Conceptual Framework to Safeguard the Neuroright to Personal Autonomy"
+    },
+    {
+     "id": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+     "type": "document",
+     "label": "Freedom of Thought and Digital Technologies: Operationalizing State Obligations for Social Media, Virtual Reality, and Neurotechnology"
+    },
+    {
+     "id": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+     "type": "document",
+     "label": "The Battle for Cognitive Liberty in the Age of Corporate AI"
+    },
+    {
+     "id": "8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8",
+     "type": "document",
+     "label": "Neurorights, Mental Privacy, and Mind Reading"
+    },
+    {
+     "id": "8af7601e-750a-4345-b320-dcc2458df1fe",
+     "type": "document",
+     "label": "Dropping Anchor in Rough Seas: Co-Reasoning with Personalized AI Advisors and the Liberalism of Fear"
+    },
+    {
+     "id": "6e34c702-1402-404b-9e99-481038f463ff",
+     "type": "document",
+     "label": "Towards a Human Right to Psychological Continuity? Reflections on the Rights to Personal Identity, Self-Determination, and Personal Integrity"
+    }
+   ],
+   "author": "curator",
+   "updated_at": "2026-08-21"
   }
  ],
  "edges": [
@@ -915,6 +2146,27 @@
    "attributes": {}
   },
   {
+   "id": "8a2401ee-267f-4bc4-a315-242e38a5008c",
+   "source": "3a36ba61-406e-41b5-aa42-460e91a4c694",
+   "target": "2514317d-8d7c-46be-b884-7ab1e245c560",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "45c58025-e490-440c-9bd7-606b2700ad26",
+   "source": "b76fe829-65a8-4908-a28d-b72d6e5d2cd0",
+   "target": "9506d10e-9ff0-46ba-b341-9600b3376c0a",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "50ee07f5-3cf3-44bc-b9da-13b32a8e5895",
+   "source": "84a831f9-4c72-4e20-8fc8-385269212e1d",
+   "target": "ede39648-adab-429d-a38f-8622d28c6bac",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
    "id": "4facef70-b3ca-4a2a-a144-bc5be25b9bb4",
    "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
    "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
@@ -1150,6 +2402,1231 @@
    "source": "32594bc2-e59a-4c3b-b02a-dbee7629e827",
    "target": "f91c46a2-2410-4719-b168-f5fbebf3824b",
    "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "1687bcbf-70ed-4666-bf02-38ebf987805b",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "8cede7ff-84cb-450f-afeb-9f6674941690",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "3876023e-61cf-4ab6-a0c0-ba1aadf561dc",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "c90f6fad-a2a0-4e45-99ff-9a9a1601228c",
+   "source": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "a32b8a8e-418c-44c7-88a5-98ea77a0f4fc",
+   "source": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "d3a4c741-b497-4219-bf83-80e76c035a5b",
+   "source": "4c5d1a2b-598a-4b4c-a565-b19e220b2088",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "9a2acd00-1f32-462b-9d49-e36ef68d1535",
+   "source": "8af6ad63-50ef-438b-ae20-0bec1f50be02",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "32497cb4-f063-41a4-8c72-c2088bbf723b",
+   "source": "8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "01ae5fdb-54d0-420e-b107-8fe9101c2a64",
+   "source": "4e7d3b30-1a93-40a6-947d-c283d64cd21a",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "74257cc8-a199-40b3-8341-458896ecac79",
+   "source": "b7313ec9-783b-4f3d-90b9-f418c6c9852a",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "db6ce102-ec53-454e-9ae9-34f8e0a3be3e",
+   "source": "be418371-25dd-42b5-972d-635855d7d6f4",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "6edee3c7-941c-41da-9faa-b41bf4ccaf30",
+   "source": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "771ac1ab-ed80-4e18-b25f-5f2348a78a37",
+   "source": "6e34c702-1402-404b-9e99-481038f463ff",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "5fb64cf1-f203-4e8b-9caf-382264de677f",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "ed4e8700-9e9d-4876-ae39-eb1fd748ed34",
+   "source": "0827f8ce-469f-4253-b84d-9143a8f1f5e2",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "0a7c52fc-6d64-41d8-88b7-792736f87b5e",
+   "source": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "80ebc441-2727-4c3c-bacc-46c2328f2650",
+   "source": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "3b360134-e4fb-4a57-aa44-471dabc982ad",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "c95fabc2-e6f7-405f-b2a1-6246be2b0a5d",
+   "source": "ee7f6808-8b4c-4da5-a8c7-d75961b5c8a5",
+   "target": "37c7768a-c46e-43fc-aa2a-d92c267bd356",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "d8077e2e-3f18-4263-9624-d4611a3e70bc",
+   "source": "4c5d1a2b-598a-4b4c-a565-b19e220b2088",
+   "target": "7c126055-00a5-4220-a54b-d4337726d5e5",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "37ab7e06-2fa0-47f1-9569-76b845cf6ad0",
+   "source": "4c5d1a2b-598a-4b4c-a565-b19e220b2088",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "602bb548-1a36-4c5c-89f9-2a8f84b088f0",
+   "source": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "target": "ae34311f-d5a0-4d7d-8e52-49200fca8800",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "b90c08ab-0797-4f16-ad12-736f54553ece",
+   "source": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "b39e94cd-37e3-4249-8210-07fe8cb09289",
+   "source": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "034bd050-da97-414b-b5de-b0450e1b0b09",
+   "source": "ee7f6808-8b4c-4da5-a8c7-d75961b5c8a5",
+   "target": "e66e8a42-dc19-4273-b15b-3f90ef3b7310",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "9a80f714-8ab6-4b09-8ea5-3b7d2e6026dc",
+   "source": "ee7f6808-8b4c-4da5-a8c7-d75961b5c8a5",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "907247c5-861e-4908-b5a7-817f550fc005",
+   "source": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "target": "7c126055-00a5-4220-a54b-d4337726d5e5",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "b4b0e365-b5d7-489c-b7d7-90b56cc971cd",
+   "source": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "target": "e73d09e4-8d3f-4a67-a7da-11a42b1ce297",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "80065abe-7e43-4ce2-882d-ba8f17d80508",
+   "source": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "target": "6e436829-bce0-4257-849c-36b0e305ece0",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "6b7510f8-365a-4cdd-b7b2-98a8f00ef4e3",
+   "source": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "99a975d4-2838-4a93-ba72-75e13c28c33e",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "27975687-8b8e-44c2-8b28-5c6d5f35b7bf",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "ba87545b-0e7b-4b0c-b807-6c7bd40a9216",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "643d0b3b-8455-4f82-8872-c9b520ec533a",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "ac1226e8-f699-4594-99df-ee7ed1a75e0a",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "a10bb803-542e-42b8-a62b-06a112b24809",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "bd61b00c-3ad9-41f3-9fc5-2463322d580b",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "1da945d5-ee33-4a4c-9989-5e8801b75fea",
+   "source": "60da85f4-8630-4076-b0cc-bc5697f785c5",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "a54d33b1-1679-4b9d-a333-67c15ad4064c",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "8d87ce56-347f-41a2-a490-48a646b2e763",
+   "source": "af3bc2ac-d3f0-43e5-aa88-d657c818c8c8",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "ad1f3208-9e0b-4425-b6b9-236e7a5ab454",
+   "source": "60da85f4-8630-4076-b0cc-bc5697f785c5",
+   "target": "da9c1fd5-55c7-48b8-8726-18b0c63406af",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e5fd5415-8f5b-426c-8eed-c60105d7d77b",
+   "source": "60da85f4-8630-4076-b0cc-bc5697f785c5",
+   "target": "526d6e42-8bc9-49ba-b0d2-974c6fef76f6",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "18b8a463-c8c1-478c-a343-a0d1c00ebccb",
+   "source": "60da85f4-8630-4076-b0cc-bc5697f785c5",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "bc03ad78-2c1f-4fc2-baa5-c18596ce44fe",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "dbdc3c5f-ad51-44d8-8872-de670c064fc8",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "3f85db4a-4c92-4a53-b67d-fc689f5f2221",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "1fb46ad0-a454-46b1-ae5a-0fa110d75496",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e2c806ce-612e-4bf7-9d54-c4357b6bbd02",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "61aaa792-a407-474f-925b-d703de9c5ebd",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "3686f11b-9474-48a4-8bad-976a22b319fe",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "ef3965ea-ead2-48cd-b6f8-97d0c58e7b4c",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "2720026d-7621-4994-b11d-558768329a43",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "da3b6100-813d-4514-bd37-d90899ad25ef",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "63d7aaa5-42e8-4718-a173-86f4deb33652",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "182cbdde-f2b4-4145-bc1a-6c91c9888488",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "ce367054-eca6-47d9-99b7-d5d8b673164c",
+   "source": "cdd59efc-5156-4be5-ae3c-d6880998e7c7",
+   "target": "b6beeb1b-12f5-4538-a893-7453cac451af",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "e1e18c00-4ea2-4ba6-8977-96d0b9e67a01",
+   "source": "af3bc2ac-d3f0-43e5-aa88-d657c818c8c8",
+   "target": "35a576b2-0439-4f64-8e0a-f3219c8d87f6",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "5e09f1b0-80fd-493d-8918-5ad0b76f6110",
+   "source": "af3bc2ac-d3f0-43e5-aa88-d657c818c8c8",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "7c8bfd5c-b35b-4cc5-a2f1-7b8d7f49c6ef",
+   "source": "af3bc2ac-d3f0-43e5-aa88-d657c818c8c8",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "e93d6fb8-d386-4e3f-8e5e-0d52555de09c",
+   "source": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "target": "a1fdcead-ee18-45df-81ef-743800219935",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e5cbfdf7-c8d8-46c6-b009-8d2e116bac4a",
+   "source": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "target": "63e06dea-966a-40af-af5b-436f362c4126",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "8b5c8db0-d491-4250-b78c-354a8d56130f",
+   "source": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "target": "0544151e-9776-4b76-b611-fccb41755275",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "841c8ba0-dacc-43f7-8775-81e2a4418c5b",
+   "source": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "target": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "ce62a520-0849-49f8-af75-5c1f28265870",
+   "source": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "target": "ac5354c7-ff15-47e3-b3ae-9717a96ea377",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "95a6e53c-a167-4f92-bfca-3eb724a59848",
+   "source": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "target": "79f43504-6802-489b-9d93-5dc6e943aa61",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "6ebfd1b1-a688-4cd2-83ec-6da4973d2348",
+   "source": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "f9c48343-1dc8-48cc-a8d1-d80ef3ab6832",
+   "source": "0827f8ce-469f-4253-b84d-9143a8f1f5e2",
+   "target": "53d8deb4-dea7-4523-b9df-fa67a19af8ac",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "b1c0af6f-d396-4a68-8dc2-9836719da1f7",
+   "source": "0827f8ce-469f-4253-b84d-9143a8f1f5e2",
+   "target": "ccbfac20-f477-4ffe-a030-7e91b8bbdfbf",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "87461637-8b35-4639-910b-60586783fdcf",
+   "source": "0827f8ce-469f-4253-b84d-9143a8f1f5e2",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "59f8882a-6575-458a-a1d1-2bd99c7db9cd",
+   "source": "be418371-25dd-42b5-972d-635855d7d6f4",
+   "target": "7c126055-00a5-4220-a54b-d4337726d5e5",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "1e9740f0-cf1d-4a76-9c0d-baba59f1f42d",
+   "source": "be418371-25dd-42b5-972d-635855d7d6f4",
+   "target": "9c538a8e-397c-48f1-8e61-056d58d05b47",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "c0423bed-3871-4edd-8e90-376be235e2d6",
+   "source": "be418371-25dd-42b5-972d-635855d7d6f4",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "a453a13e-e270-401b-ad02-b5d56f9dc8f6",
+   "source": "b7313ec9-783b-4f3d-90b9-f418c6c9852a",
+   "target": "8aedfac7-8288-4bc7-9e6f-fb925622d4ea",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "f27c4cce-76e2-4c37-b131-36ea3fdb5924",
+   "source": "b7313ec9-783b-4f3d-90b9-f418c6c9852a",
+   "target": "a7451b70-23c5-461b-a5dc-2d3302f6416c",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "795cd417-d8ab-49db-8848-ed7daa3a2c42",
+   "source": "b7313ec9-783b-4f3d-90b9-f418c6c9852a",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "81302707-b226-47d7-886a-c6b9ee955954",
+   "source": "4e7d3b30-1a93-40a6-947d-c283d64cd21a",
+   "target": "d3d67eb3-65d9-43d2-a78c-4b9678bcc5cd",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "0a1ac9fb-7607-4aad-842b-a7c6e2e4bfa7",
+   "source": "4e7d3b30-1a93-40a6-947d-c283d64cd21a",
+   "target": "a9dc5f33-eec8-424d-b536-784358f03a8b",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "58fbe50a-2954-4f8b-a4e8-b845a1c6fb6f",
+   "source": "4e7d3b30-1a93-40a6-947d-c283d64cd21a",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "b183838e-5ff6-4eaa-89a2-d73234120e83",
+   "source": "8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8",
+   "target": "6ac77a61-8848-4569-a3ef-14c305f195d1",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "fd941a25-0142-4525-aebe-b86e3d9ab337",
+   "source": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "daa13710-4569-49c8-aded-7445e6fcc4b1",
+   "source": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "6458affd-6848-48bb-afd9-df55a87c936f",
+   "source": "cde7ffab-09eb-4a46-920a-95e4709ddb97",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "subtopic_of",
+   "attributes": {}
+  },
+  {
+   "id": "900b415c-52e3-4fa7-b91f-10a7e456aa3b",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "a9dc5f33-eec8-424d-b536-784358f03a8b",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "1ec06dff-824b-4a4d-b28d-76f30b8d89e6",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "ac5354c7-ff15-47e3-b3ae-9717a96ea377",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "ba069c9f-3dd0-45a9-9f9b-b7df3a8840e6",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "6adf75a9-bd2b-4106-8cca-753a8460ee8a",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e6fccf4a-f8ac-430b-9048-45d00885cf50",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "f722b5a5-5fc4-4240-b55f-0d6a002d51c7",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "35cef63b-b5e6-425f-ac30-e38b442fac31",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "768115ea-a036-43c4-92d6-f03cef406bad",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "a30e5a65-0f72-4994-8d41-e327c2d8184d",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "df576137-8ceb-4eab-8680-4aab4e805aba",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "46f52dda-e833-4e98-93c4-f3966d948843",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "e2d9d00a-3a80-46a9-b3af-9ef100151126",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "48487e62-97cd-4931-8d2b-49c6f038db86",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "15cea7d2-9ddd-466b-9d04-a4e61fbf4eb5",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "dcff5fe3-803b-4ffa-925d-d6ab1988bb4d",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "7e41b0f4-b4c4-4e7d-858a-92f1b87e9916",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "6ce0c499-3c97-40f5-a1ae-69d1088c52be",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "838421e1-903c-4438-bdf0-bde991a84d3f",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "30f26156-69e4-41b3-8757-d6a32236ed80",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "c6962a81-39a4-4c4a-9593-48f5b39de637",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "0989b8d2-c83d-4076-902c-07eaf26f4cfd",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "4fb1b4f4-4e37-4e17-862c-f9c9c8e74c25",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "38cd4bc2-333e-47e0-b622-2fafdad9240c",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "1ab5e594-16fd-48b0-a505-c48f9aedd8e8",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e270fd05-4e0d-4e5f-999c-62ebe25beef8",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "b9bd33e2-48ac-4a38-b9a7-a0573d55b5e0",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "f9a36c9a-7f96-481a-9dc9-d584058fdc85",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "946ac892-b5ec-427c-b976-8183a7aea4ec",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "10118327-4d49-4c26-aaaa-21fa669724a9",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "95ef918a-fcd9-4f59-b8ad-62d4dc434119",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "ae229894-646f-49f7-825f-c7940787c36b",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "3207cfaf-50c4-4d2c-9e1f-2de6c79b354d",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "bb52358c-ba15-4350-b967-d878d837284f",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "c895223a-61d0-497e-8fdc-ab7c0294c90a",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "f35a88cf-afe2-4dbc-b5a2-3a4d1e01ec7f",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "7aeb23b6-b984-4160-aa0e-097c02af8275",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "68cbf36e-b6c5-42ea-8024-9cd4bb6df53f",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "61d72fac-db59-4022-bed7-8cc9e36eb4e3",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "dfca894f-6a5e-4f21-913e-b2f3e28ac0bf",
+   "source": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "521ce7a5-821e-4bf1-9994-ea0d14d86cb4",
+   "source": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "5a508b09-23e7-46bf-9be1-c9300dd98866",
+   "source": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "target": "cde7ffab-09eb-4a46-920a-95e4709ddb97",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "070ddd7c-f702-4b70-beb0-701d5cda13e5",
+   "source": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "895e8d1f-4865-4f35-b662-1b2bc9fab170",
+   "source": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "66f281b2-3227-44b5-807a-3501e21027dc",
+   "source": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "ce7e38eb-8f54-47d2-8416-9b7556b1bee8",
+   "source": "be418371-25dd-42b5-972d-635855d7d6f4",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "a6ac8455-8e13-4aa9-be58-9d4a166c917d",
+   "source": "4e7d3b30-1a93-40a6-947d-c283d64cd21a",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "6a970630-30da-418e-9d1f-0965f8318721",
+   "source": "8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "09e856ac-30f7-455d-8cab-04004652cc0f",
+   "source": "8af6ad63-50ef-438b-ae20-0bec1f50be02",
+   "target": "d3d67eb3-65d9-43d2-a78c-4b9678bcc5cd",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "0859693d-977d-4b6f-bce8-5394c54cdabb",
+   "source": "8af6ad63-50ef-438b-ae20-0bec1f50be02",
+   "target": "cde7ffab-09eb-4a46-920a-95e4709ddb97",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "0c3b4100-4357-40e4-9154-65a48e5954b4",
+   "source": "8af6ad63-50ef-438b-ae20-0bec1f50be02",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "154fd4ce-605c-4866-a8e4-4541b19f70d3",
+   "source": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+   "target": "0ae23e2d-22b1-4c28-b646-f0c06df6813b",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e4b04b30-9fdf-49f2-b534-01f220fb33ff",
+   "source": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+   "target": "cde7ffab-09eb-4a46-920a-95e4709ddb97",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "e7487930-cccd-4a01-8042-27c502533b19",
+   "source": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+   "target": "cb89131b-8bfe-4f69-bcf6-15f8e54ff88f",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "85469907-7a22-4a0b-a46f-733cb51aff97",
+   "source": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "f01cf626-5cc5-4090-a1cc-66984d3cb368",
+   "source": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+   "target": "a9dc5f33-eec8-424d-b536-784358f03a8b",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "37320a72-2654-4847-acfd-81262c3f534b",
+   "source": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+   "target": "df576137-8ceb-4eab-8680-4aab4e805aba",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "05ea240e-4104-4f48-b59b-54885341c96a",
+   "source": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "ac3dddbf-2197-40e3-b14f-2be8a22e40e1",
+   "source": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "85ae5eae-a4ef-4456-9239-2bc27a9fb879",
+   "source": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+   "target": "ac5354c7-ff15-47e3-b3ae-9717a96ea377",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "b222715f-73c8-4c4d-9bbd-a4b91233ebc5",
+   "source": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+   "target": "84fe021e-be0e-4466-b496-cfed48fad381",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "56b7cc22-dcf6-443d-babd-b3b5a38c88dd",
+   "source": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "2fc9df3f-5283-49c5-b60b-48e757546de6",
+   "source": "84a831f9-4c72-4e20-8fc8-385269212e1d",
+   "target": "765d660a-484b-430f-a668-b08fb0e58666",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "426733ec-18a7-4d5b-88c4-bc0fe3b72218",
+   "source": "84a831f9-4c72-4e20-8fc8-385269212e1d",
+   "target": "45d95229-82a2-4ab9-b611-8df969e066c1",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "83cb91a2-59bf-4394-9ab1-69d39be652e8",
+   "source": "84a831f9-4c72-4e20-8fc8-385269212e1d",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "3a7c5233-8be6-4815-9419-4344e6377b84",
+   "source": "84a831f9-4c72-4e20-8fc8-385269212e1d",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "edf156d3-b0a4-44bf-9942-3c041475bee0",
+   "source": "3a36ba61-406e-41b5-aa42-460e91a4c694",
+   "target": "e9ae8daa-f885-46c8-a824-1170ab0caf6f",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "8f5baa63-b53b-4996-98ac-c9e2df47d481",
+   "source": "3a36ba61-406e-41b5-aa42-460e91a4c694",
+   "target": "2dcc0b50-6083-46f8-aa79-60e1e64bdcb2",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "b58618fd-baac-4bb5-b786-0fb2ed6c6b05",
+   "source": "3a36ba61-406e-41b5-aa42-460e91a4c694",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "bb0969c8-f99f-4b8c-be22-7c19b565d8c8",
+   "source": "3a36ba61-406e-41b5-aa42-460e91a4c694",
+   "target": "5e159bca-4bd9-4d59-9c20-f14330863563",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "54c8d711-ac7f-4139-9303-39bb95553ec2",
+   "source": "b76fe829-65a8-4908-a28d-b72d6e5d2cd0",
+   "target": "2001725d-efc1-4f97-9f40-b6b2277f3232",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "87381e28-7f3a-4175-bca6-1df8693bdb59",
+   "source": "b76fe829-65a8-4908-a28d-b72d6e5d2cd0",
+   "target": "f51a0c2d-71f5-48f7-9129-784b0fb0f0fa",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "3c6b53f4-4c8d-4f67-bec0-8650115612fb",
+   "source": "b76fe829-65a8-4908-a28d-b72d6e5d2cd0",
+   "target": "5bb1bd8f-935d-4458-917c-1ff780825a93",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "a8113534-2591-433c-b301-fa70b6e3eb2b",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "ac5354c7-ff15-47e3-b3ae-9717a96ea377",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "8822d4e8-7f47-4d3e-ac3a-5ecfccb26fdf",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "feffbe92-72cf-4345-a1c3-f121de7d6ee7",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "d01e2a7d-0409-4e9e-a048-21e587708e17",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "0c927554-e2e9-4547-a0b6-1f60347b6f6f",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "dde2844b-e2fa-4697-b1f8-5924eb4e2829",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "4e011037-61d3-405e-a0f8-fa69f5f70cde",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "e6e1d369-c8e8-4e57-9a6d-a5424fe95834",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "bbebd0bf-3935-497a-91b0-06731ede0bbe",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "d9393dab-0da9-47bd-9552-26704c442254",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "d9c3da47-1d01-496e-b872-e57c986ef2a7",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "906c95dd-6bc2-4fb3-b2e6-bbfb44011108",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "4c901d5e-10ff-47a4-9b1f-9c8b98bed4ee",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "3ea45e3d-d7f2-493c-a250-cca059adb87e",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "9d45376f-370c-4e97-beda-ef046821f202",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "ca05c486-2b21-4af5-86da-511934fd28f8",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "34c1d998-d060-46eb-8cdd-308f13c8198d",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "58ac8cf3-d9f6-4f17-ada3-5c934dbfbb3b",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "6ecf7302-a5f0-4ee4-8289-2604ed8ee2e4",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "91a4acea-60ba-4f89-b847-1fa225cf850a",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "3c31ab3c-3944-462d-8069-daa02a421901",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "870fc276-b872-4c12-a19d-1e3b91239cf4",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "3704b541-fc13-4fc6-889d-cbcf653bd5d6",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "83573c0b-33a0-4498-9ace-fcd1a7414591",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "8de7aaee-9ce9-410d-9721-33a821439bdf",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "0cf56a65-23e2-49d8-b582-6cd0f86e3f2e",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "ce463f16-85df-4a96-aa04-3f4312a4bb0f",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "094395fc-6008-410c-bc6c-0db8be5e7839",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "22e572f5-fc03-437e-8ae9-d261b84b90fb",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "2e647826-e917-4e40-aedf-c6974771ad26",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "f5fbe680-0f65-4c08-8a64-a95228650422",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "28c04c66-5c4b-4e62-8b0f-7cf56bc28d6e",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "ca8a87c0-e305-413c-872d-3cfed041b080",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "7ffef323-6035-4e37-b22d-bd345ed7a11b",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "4394535c-8ca4-426e-94ad-a76211eefab2",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "3e49b75d-7acd-43f5-a6f7-cb13eb26d348",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "c83d1112-c230-4850-96ab-711361a33b6a",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "73d645df-9aca-4377-85ba-622895b0db0e",
+   "source": "397b1420-6113-461b-9ea7-6ed48b59a586",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "ac7f04a0-1b09-4fcd-9fb6-a40148de66e5",
+   "source": "6e34c702-1402-404b-9e99-481038f463ff",
+   "target": "6adf75a9-bd2b-4106-8cca-753a8460ee8a",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "381c2111-d1ce-469f-9e51-101e23cfde99",
+   "source": "6e34c702-1402-404b-9e99-481038f463ff",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "1dd99a3b-6458-4baa-8e54-10054a25fbbf",
+   "source": "f5f44e5f-b008-4a5c-a91b-2b1594b687ef",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "475a8c9b-cd40-4843-8a38-9eab99250e4d",
+   "source": "f5f44e5f-b008-4a5c-a91b-2b1594b687ef",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "deda78b0-ae4d-4d7a-a826-c2eaa6d99068",
+   "source": "64ba30ad-b5a0-4ae1-8d5b-8220ffbbf664",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "d65c407b-b076-4444-b426-ceec899eca56",
+   "source": "64ba30ad-b5a0-4ae1-8d5b-8220ffbbf664",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "4d6a0e84-cf3e-4f14-911c-5712422e0346",
+   "source": "1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1",
+   "target": "d69a242a-d472-4773-bcd9-fc4f60d4d795",
+   "type": "sourced_from",
+   "attributes": {}
+  },
+  {
+   "id": "a0158a77-0ed1-4059-bd6c-fdd3da5e0582",
+   "source": "1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1",
+   "target": "dadea3af-9849-4b2f-9cfd-7d0ca08f7ff6",
+   "type": "authored_by",
+   "attributes": {}
+  },
+  {
+   "id": "355529d7-4170-43dd-9a54-efe67f7a6ffe",
+   "source": "1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
+   "attributes": {}
+  },
+  {
+   "id": "0523af47-ccb7-402b-bb61-184e6097069e",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "55678793-da13-4d2e-a2ef-842b3d9a734d",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "91936d7f-c7b6-4666-bf16-47ab42a546d7",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "c833838b-13fd-4805-b19f-39beab393386",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "d775d0e6-c382-4ec1-b37f-b774bfcb0fe8",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "f5f44e5f-b008-4a5c-a91b-2b1594b687ef",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "c7d7c406-7595-43bf-a3de-87904a279637",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "64ba30ad-b5a0-4ae1-8d5b-8220ffbbf664",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "e54a6af2-6e31-47e8-b9e8-ff4f7c72b059",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "1b0b1059-03b8-4bd0-a9b2-ab6d7fb24fe1",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "03415ebb-5acc-49e3-876c-7203f3771c30",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "4c839fef-a196-490b-beb9-9a677d4b8c24",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "9858f9d1-7f8b-4dfa-88e7-e2e2cbcd809f",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "a99ed12c-1a88-4e7e-b642-d67172cdf600",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "fa1749c6-fe6b-4e86-85d8-e479c8954c24",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "f94cdc05-398a-4f7d-b787-49cf8d8f8a26",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "2fe215a5-f8e6-4c02-8132-62494741dd21",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "ae5c4d45-692e-4d8a-b383-4baa36b2d9c1",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "25a6afec-80d8-4382-92c8-de0df32b9628",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "3b95960d-5c36-4b6f-8959-c7e8e2abcbb4",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "bd812bf9-3d9e-405e-b881-07e06bd282e9",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "12c2e3cd-1920-4640-a627-e06a8f7425d3",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "a9e67394-13b7-4473-b36d-69b0220553a0",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "c2f0e8a8-3a42-478c-a30c-e479adb75176",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "44a08b84-d2f6-454d-b155-816b4f99e6b0",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "c70af410-3c1e-4eb2-93c0-d8d385b4c3af",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "fa06acf4-e30a-469b-b699-50af1c6445d8",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "8caa5cb3-4bd9-4abb-ab95-19b33b7e02e8",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "e679ecf2-03ec-49e7-96fc-3675c860972c",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "8af7601e-750a-4345-b320-dcc2458df1fe",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "3365b50e-87a2-43b7-bb26-4c69c43e4af7",
+   "source": "513523bd-2f86-4b73-90f2-5b72542e8cc7",
+   "target": "6e34c702-1402-404b-9e99-481038f463ff",
+   "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "68c69e80-203f-4eb9-be14-bce01db666fc",
+   "source": "c3e2f4b7-39f3-4dab-bd22-40d10498d0cc",
+   "target": "6acc7dde-cf9f-44fb-a16c-fcefff57821b",
+   "type": "about",
    "attributes": {}
   }
  ]
