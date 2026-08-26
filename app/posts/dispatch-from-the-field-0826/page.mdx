@@ -1,0 +1,114 @@
+---
+title: "Dispatch from the Field, 8/26/26"
+date: "2026-08-26"
+summary: "Queues are bad. Well, queues are sometimes bad. Queues are bad with caveats. Queues are good with caveats?"
+---
+
+# Dispatch from the Field, 8/26/26
+
+<PostDate date="2026-08-26" />
+
+<Summary note = "Things are going pretty well">
+Hi folks! As some of you might know, I have been funded to build the Field Guide to Thinking for Ourselves, which is not only an exercise in scholarship but a gauntlet of product design. You can see my most recent update on the fascinating world of neurorights [here](/field-guides/fgttfo/?open=513523bd-2f86-4b73-90f2-5b72542e8cc7). I've been using-slash-building the Guide for about two weeks now; today is an update on how it's going.
+
+## A good start
+As you might recall from <a href = "https://www.seewhatuthink.com/posts/introducing-the-field-guide-to-thinking-for-ourselves">my previous post</a>, the curator view for the Guide looks like this:
+
+![](/dispatch-0826/curator_view.png)
+
+The very leftmost column is the review queue: Documents that came in through the search and need to be added to the Field Guide or dismissed. The left two panels are about the document: The top has its abstract and fetched text, the bottom has its node attributes (summary, authors, etc.) and a place to assign ontological concepts. As the curator, I read the document,<Footnote>Or dismiss it from the queue and future searches; in that case, the summary textbox records the dismissal reason, e.g., "Out of scope"</Footnote> write the summary, and either assign existing concepts or create new ones using the *right* two panels. The top right panel is the ontology organizer: Create, delete and rearrange ontological concepts. The bottom right panel holds data about a concept: Its name, description, and the information used to run searches about it.
+
+Pretty easy, right? The goal is to get through the queue. Then, you can write curator remarks – the things that people actually read in the Guide – by clicking "Artifacts" at the top.
+
+Now, I went into this knowing that I would need to offload more work onto machines. But I really did enjoy the curation progress for the neurorights remark. I found that, of course, reading papers is slow...but figuring out the structure present across papers (e.g., mental integrity's relationship to cognitive liberty) was surprisingly fast. The ontology organizer was nice to use – I felt much less anxiety about creating and assigning new concepts than I expected.<Footnote>Part of this is how easy it is to reorder; part of it is the color scheme I defined. Not joking at all. Feeling anxious about defining a new concept? Treat yourself to a relaxing, creamy ultramarine.</Footnote> And the process of writing summaries and labeling documents with concepts felt natural and mildly rewarding.
+
+But, of course, the neurorights literature as it pertains to AI is actually pretty tiny. Once I'd reviewed everything that the "cognitive sovereignty" and "cognitive liberty" searches brought back, it was time to loose the scouts on the big words: Cognitive agency, cognitive atrophy, and a few others sitting under the "effects of AI on human cognition."
+
+</Summary>
+<Summary note = "But queues are a terrible way to do triage">
+## Oh! No!
+
+My review queue stands at around 250 documents today. Yesterday I got through about thirty of them, mostly by discarding ones that were out of scope – I estimate I actually read four or five papers. Maybe this isn't a bad pace; two months to build a Field Guide sounds pretty reasonable. But recall that these are only partial searches, and while I'm sorting through the queue I'm missing opportunities to interview people, go to workshops, expand my sources and – most terrifying of all – stay on top of more recent documents. Already I'm feeling more like a clerk than a captain.
+
+Like I said last time, we *could* speed this up with some obvious moves: Automated summaries, automated classification...automated everything, with my job simply being to approve or modify. But that's not what I want. So let's look at some of the issues I'm having,<Footnote>some of the technical Field Guide issues I'm having. for more interesting issues you'll have to bribe my therapist ;)</Footnote> in hopes that there's something in between the manual slog and the thirty-thousand-foot approval button.
+
+### The piecemeal assumption was naive
+
+I figured an ontology would help me work in tightly-scoped chunks. That's part of why I designed the property graph to support remarks on multiple concepts – I figured, well, I'll read about a set of things, and then I'll write a useful guide remark, and then I'll move on to the next set. The ontology, assembled piecemeal, would also serve as manageable search units that I could rerun, bringing back the hot new gossip on one or two things.
+
+But look, that's not actually how you learn a landscape! Sometimes you're starting with a specific term, the way you would with a <a href = "https://en.wikipedia.org/wiki/Ultramarine ">Wikipedia entry on ultramarine pigment</a>, but just as often you're starting with something really broad, like "cognitive agency." So what I found when I triggered a larger search was:
+
+- A *lot* of documents came back
+- I couldn't extract structure from the queue using only my brain
+- Without structure, I didn't know where to start. I felt adrift, overwhelmed and anxious that all the bits of what I was reading wouldn't stick together into a mental model.<Footnote>Taking physical notes didn't help, given how many documents there were and how long and unfamiliar their titles were.</Footnote>
+
+At first I thought that knowing where to start was the only problem. I had been slightly flustered by this even during the neurorights reading – for example, it took me too long to figure out that some of the papers were foundational and others were repetitive. I thought that this was the main issue in part because it didn't bother me to lean on the ontology for structure; I was adding concepts with almost nothing into them as part of the planning process, and feeling remarkably sage about it. So my first move was just to have the search process return a report with the following:
+
+- Documents in chronological order
+- Documents in order of citation (for academic papers)
+- Suggested semantic groups<Footnote>Turned embeddings of the title and abstract into a cosine matrix, then use greedy coverage to match up documents that were similar.</Footnote> with anchor papers (i.e., some combination of highly cited and/or oldest.) The idea here was to find "foundational" texts and then figure out which other documents were related or, better yet, duplicative somehow.
+
+The report is just a text file, nothing fancy – I wanted something to skim through and orient myself. Most of the groupings were bad,<Footnote>embeddings amirite? can't use em, can't...not use em</Footnote> but some were useful. For example, the "cognitive atrophy" search brought back a bunch of Alzheimer's research despite my global scope filter, and I used the corresponding group in the report to dismiss all of those pretty quickly.
+
+But pretty soon after that I hit another wall. It turns out, figuring out what to read first wasn't the only problem.
+
+### The queue is killing me
+
+That should have been obvious by nature of the task: Once you read the first paper, you have to decide what to read next. But your girl is like the North or South poles: Things dawn on me slowly.<Footnote>hAAH</Footnote><Footnote>HYEHheheh</Footnote><Footnote>HA</Footnote><Footnote>heheheheheh</Footnote>
+
+Reading the semantic groupings in the search report didn't do much for me. Hey, you try installing a mental model based on a bunch of text about two hundred-some papers. At some point, my stress rising, I asked an LLM to pull out the set of papers focused on LLM dialogue, a topic I had noticed while clicking around in the queue. Being an inexhaustible ass-kisser, it generated a report with seven groupings of relevant papers, plus a rubric for where to start and why. And I was annoyed! I've avoided looking at it! **It feels like work I should have done myself.**<Footnote>Also it was wrong, lol, but that's not my point at this juncture</Footnote>
+
+Which made me realize: Queues are the problem. If I were an automaton, I wouldn't mind – I would make my way through with no rhyme or reason, checking papers against the global scope and deciding which concepts were relevant or, if none, creating new ones. But I do mind. I am a human and I need to do things in layers:
+
+- Vibes survey. What's in here? Are the concepts I searched for represented in the literature or am I getting weird adjacent stuff? Are Substack-land and the academy saying similar things?
+- Fuzzy groupings. What kinds of papers are in here, reviews or empirical? What topics are being dealt with? 
+- Topic sets. Click around, see who the authors are, skim the abstracts, before settling down to actually read and approve documents in manageable, justifiable chunks.
+
+I like to peruse, circle around, come back to things, make notes, all of which occurs entirely outside the official Guide, all of which is done *just to figure out what order to read things in.* And this way of working is basically impossible with a queue.<Footnote>Especially a buggy one that keeps reordering pending documents after each approval but that's neither here nor there lol carry on</Footnote>
+
+As a side note, I might have figured this out faster, but I was putting quite a bit of energy into metacognition, which is a Ubiquitous and Annoying Companion for a curator working on a Guide like this. All that time monitoring whether I was paying attention, reading fast enough, taking something away from a paper, building a mental model, trying to anticipate whether I would regret dismissing Document A after becoming aware of Document W...it was *exhausting.* I also spent too much time wondering dumb things like whether dismissing ten documents was as productive as reading one. So it wasn't just that queues aren't a good way of offloading nascent structure, it was that I was wearing myself out worrying about it!<Footnote>This is absolutely not typical of me, an uncommon sign of distress, not at all normal, not something I do on a regular basis</Footnote>
+</Summary>
+<Summary note = "I avoided automatic automation by asking whether my problem was, in fact, a design issue">
+## My new fun thing
+
+Fortunately, at this point I have some experience building things to cope with overwhelming and unstructured information. Also, you and I are old hats at acknowledging the benefits of spatial organization, so I'm sure you'll be thrilled. The plan is this: Keep the queue as a way of telling myself what to read next, but build an *organization mode* to put the queue in the right order.
+
+"My dude," you may be thinking, "the curator view is already pretty complicated":<Footnote>Cue that WYEEK WYEEK WYEEK violin/knife sound from scary movies</Footnote>
+
+![](/dispatch-0826/curator_view.png)
+
+...why add anything? Well, I'd argue, 
+
+1. The curator view is not *that* complicated.
+2. What I want to do with the queue can't be done in the UI as it is. Organizing the queue is not binding – it's the equivalent of the 8x11s slowly marching across my desk. It oughtn't have anything to do with the real ontology, not beyond the structure that coalesces in my brain. So we need something outside the main workflow.<Footnote>Any real UI/UX designers, please jump in</Footnote>
+
+I ended up with something like a clustering scratchpad. "Organization mode," reachable via a little bubble icon at the top of the review queue, lets you drag documents into circles on a canvas:
+
+![](/dispatch-0826/organization_mode_1.png)
+
+Those circles are segments, or categories, or whatever you want to call them – just some kind of organization that says, "These documents are related somehow and so should be read together." Dragging a document into a circle adds a tint to that document in the queue, so you can see what you've organized. You can label the circles with titles and explanations, just to keep yourself straight,<Footnote>or not ;)</Footnote> and you can move the circles around if you like.
+
+Then, when you exit organization mode, the review queue *re-sorts*, first by organization (e.g., all documents you've grouped as blue at the top), and then by the usual journal/preprint/other sorting:
+
+![](/dispatch-0826/organization_mode_2.png)
+
+So you can see now, where before it was a long queue with no rhyme or reason, now I have tinted chunks containing documents that I've decided should be read together. I don't commit to that decision long-term – I don't even have indicators of why I made it in the main queue, and nothing from organization mode reaches the actual Guide except what's ferried across in my brain – but I use it to organize the queue, almost like assigning myself modules in a curriculum.
+
+Is this really solving the problem? Maybe! We could back the hypothesis up with some things we know about attention, memory and learning – the usefulness of chunking work, for example, against cognitive fatigue, or how spatial organization helps offload cognitive models.<Footnote>Another word about this: I don't want to have to verbalize or formalize what I'm thinking at this stage. I don't want to commit to it, I don't want it to infect my official ontology, and I don't want to have to lay down text about why documents should go together. Spatial organization is for vibes.</Footnote> It *is* a hypothesis, though, so I'll report back on this and on any further tweaks.<Footnote>For example, the obvious thing is to seed the organization using the semantic groupings from the automated queue report...but again, the rule of thumb that seems to be evolving here is "don't automate something unless you think it will solve your actual problem."</Footnote>
+</Summary>
+
+<Summary note = "The Guide is still an exercise in falling behind">
+
+## Obvious problems barreling towards us at warp speed
+
+Ok, so, if organization mode helps me triage the queue a little better, I expect that I'll both get through documents faster *and* have an easier time of deciding what remarks to make. But even with that boost, we still have some obvious problems coming towards us.<Footnote>On the docket for "soon" is the Guide visualization which is crumbling as we speak. Ought to have a neat update there shortly.</Footnote> The main one is that there's simply going to be too much stuff to get through on any given day. My thought – which I *knew* was naive going in! – was that, as cognitive agency *et al.* are still pretty nascent areas, I could get a handle on them with a lot of work and *stay* on top of them with less work. That seems unlikely.
+
+Here are some partial answers to the deluge problem:
+
+- My filters are weak. I have a global scope meant to automatically dismiss papers that don't have anything to do with thinking for ourselves in the age of AI, but as evidenced by my recent round of Alzheimer's papers, it doesn't hold. Unfortunately I have a recall kink and can convince myself I might need *any* paper, so I probably ought to implement more stringent per-concept filters.<Footnote>Otherwise all the rabbitholes might run into each other and suck the entire Guide down into a gigantic sinkhole.</Footnote>
+- We have no duplication detection. Not for literal duplication like "this is the same paper" but for documents that say the same things and don't further the discourse. This feels like a dangerous line to walk and I haven't made my mind up about how to do it, but I think we *do* need some form of detection. Even if the Guide isn't intended to be comprehensive, this is part of deciding what should be in it.
+- The Guide has bones for multiple curators but I haven't done anything about that yet. Still, I've started thinking about field guides as an opportunity for science communication, and beyond that, an opportunity for field-building. How cool would it be to have ten or twelve Guide developers out in the world, talking to people, building networks and getting a handle on this wild area? Honestly, I think ten or twelve of us could keep up.<Footnote>Hey is anyone tracking naive statements? just wondering</Footnote>
+</Summary>
+## End of dispatch
+
+At this point I still agree with my earlier decision to start with minimal automation. I'd even encourage other people to try it. It's a fun alternative to automatic automation. I'm under no illusions that I won't bring machines in, but I feel that I'm getting a better sense for what *I* want to do in this pipeline and what is a design problem versus a true scale problem. For example, if I had reached for automation earlier, I wouldn't be trying out organization mode; I would be futzing around with clustering,<Footnote>Hot take: CLUSTERING GOLD STANDARDS DON'T EXIST, EVERYTHING IS DETERMINED BY YOUR MENTAL MODEL.</Footnote> giving in to automated summaries along the way...when really maybe all I need is space to think.<Footnote><a href = "https://www.seewhatuthink.com/posts/see-what-you-think">THROWBACK</a> ok see you guys next time</Footnote>
