@@ -14,14 +14,195 @@
      rather than children of it. Margin notes used to be `w-[25%]`, which was
      correct only for as long as the third column was `1fr` of `1fr 2fr 1fr` —
      when it stopped being 25% of the window, the notes started landing on the
-     prose. Change it here and all three follow. */
-  --right-col: 20rem;
+     prose. Change it here and all three follow.
+
+     FLOOR, PROPORTION, CAP — the same shape as the guide's own reading margin
+     (`--tp-margin: clamp(18rem, 24vw, 30rem)` in ui/src/styles.css). It used to be a
+     flat 20rem, which is a very different share of the window depending on the
+     window: 320px is 17% of a 1920 monitor but 22% of a 1440 laptop, so the laptop
+     was giving up proportionally more of its width to a column whose contents don't
+     need it. The cap is the old value, so nothing moves from ~1900px up; below that
+     the column narrows with the window and the prose takes back what it gives up.
+     The 13rem floor is for the 1024–1224 band, since below 1024 the grid collapses
+     to a single column and this track isn't used at all. */
+  --right-col: clamp(13rem, 17vw, 20rem);
+
+  /* The type inside the right column: the margin notes, and the subscribe form.
+     Separate variables from --right-col because they shrink on a DIFFERENT
+     schedule — the column is proportional all the way down, the type is not allowed
+     below a legible floor.
+
+     Both were `clamp(12pt, 1vw, …)`, and `1vw` only reaches 12pt at a 1600px
+     window — so on every laptop the FLOOR was setting the size, not the proportion,
+     and the notes stayed at 12pt in a column that was relatively wider than it
+     needed to be. The laptop floor is 10pt.
+
+     WHY THE MEDIA QUERY: a clamp floor applies at every width, phones included,
+     where `1vw` is 3.75px and the floor is the only thing holding this text up. The
+     right column only exists from 1024px, so the lower floor is scoped to where the
+     column is. Below that these are exactly the values they have always been. */
+  --note-text: clamp(12pt, 1vw, 15pt);
+  --form-text: clamp(12pt, 1vw, 16pt);
 
   /* One drawing-composition unit, as a length. The collage is tuned at 1440×900
      and everything in it is sized in `calc(N * var(--u))`, so the whole picture
      scales together. Lives on :root because the drivable gumdrop needs it too and
      it sits outside the stage. Full reasoning at .left-stage below. */
   --u: min(100vw / 1440, 100vh / 900);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --note-text: clamp(10pt, 1vw, 15pt);
+    --form-text: clamp(10pt, 1vw, 16pt);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   The landing page (app/page.tsx) — masthead, then three drawings in a rough
+   triangle, and nothing else. One screen, no scroll.
+
+   EVERY TUNABLE NUMBER IS A VARIABLE HERE. They are the sizes and gaps of a
+   composition nobody can judge from arithmetic, so they are gathered in one block
+   rather than scattered through the rules that use them.
+
+   Each size is a `min()` of a viewport-HEIGHT share and a viewport-WIDTH share, so
+   the composition is limited by whichever dimension is scarcer: on a wide short
+   laptop the heights bind and the picture doesn't overflow the fold; on a phone the
+   widths bind and the drawings don't grow taller than the screen. This is the same
+   instinct as the collage's `--u`, but loose rather than rigid — nothing here has to
+   stay in register with anything else, so these are ordinary flexbox rules with
+   fluid sizes rather than one locked coordinate system.
+
+   The drawings are at full strength, unlike the collage's 50% — here they are the
+   content, not the background.
+   --------------------------------------------------------------------------- */
+.landing {
+  --lp-title: clamp(1.75rem, 7vw, 5.5rem);
+  --lp-eye: calc(var(--lp-title) * 1.35);
+  /* Apex (the rubber plant) and feet (statue, string), as heights. Sized by height
+     rather than width because the three files have very different proportions — the
+     plant is twice as tall as it is wide — and a row of equal WIDTHS would make it
+     tower over the other two. */
+  --lp-apex-h: min(30vh, 40vw);
+  --lp-foot-h: min(24vh, 32vw);
+  /* The gap between the two feet, which is what makes the arrangement read as a
+     triangle rather than a row. */
+  --lp-spread: min(10vw, 16rem);
+  --lp-label: clamp(0.9rem, 1.3vw, 1.35rem);
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: min(5vh, 3rem);
+  /* dvh so the phone's disappearing address bar doesn't leave a scrollbar behind. */
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 2rem 1.5rem;
+}
+
+.landing-masthead {
+  display: flex;
+  align-items: center;
+  gap: min(2vw, 1.25rem);
+}
+
+/* Small, and to the LEFT of the words — on every other page it sits above "you" as
+   part of the stacked title, which this page doesn't have. */
+.landing-eye {
+  width: var(--lp-eye);
+  height: auto;
+  flex: none;
+}
+
+/* One line, never wrapped: the size is viewport-relative precisely so it can stay on
+   one line at any width, and a wrap would break the masthead in half. */
+.landing-title {
+  font-family: var(--font-lato), sans-serif;
+  font-size: var(--lp-title);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.landing-triangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: min(3vh, 1.5rem);
+}
+
+.landing-base {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--lp-spread);
+}
+
+/* A destination: the drawing, then its name under it. */
+.landing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35em;
+  text-decoration: none;
+}
+
+/* HoverBlob fills its parent (`w-full h-full`), so the parent needs a definite size.
+   The height comes from the variables; `aspect-ratio` is set per drawing in page.tsx
+   from the file's own dimensions, which gives the width. */
+.landing-art {
+  display: block;
+  height: var(--lp-foot-h);
+}
+.landing-apex { height: var(--lp-apex-h); }
+.landing-foot { height: var(--lp-foot-h); }
+
+/* Garamond and the drawing's own accent colour, matching the collage's labels — the
+   same words in the same voice, just moved underneath and made permanent. Colour is
+   set inline per destination, since it differs. */
+.landing-label {
+  font-family: var(--font-garamond), Garamond, "Times New Roman", serif;
+  font-size: var(--lp-label);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------------
+   /about — the one page whose text column is limited by a picture.
+
+   The headshot lives in the third column but is 25vw wide, which is wider than that
+   column, so it hangs leftward over the prose. Every other page's third column holds
+   something that fits inside it, which is why only this page needs its own rules.
+
+   THE PNG IS MOSTLY EMPTY. headshot.png is 2642px wide and the drawing inside it
+   occupies x 936–1920 — 35.4% of the file is transparent on the left, 27.3% on the
+   right. So the image's BOX is not where the picture is, and text can run some way
+   into the box before it reaches any ink. Both rules below are written against the
+   ink, not the box; the 0.354 is that left margin.
+   --------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  /* Slide the image right until its box sits 0.5rem short of the third column's
+     right edge — i.e. against the window's edge, since that column ends there. It was
+     a flat `-ml-60` (240px), correct only while the third column was a fixed 360px.
+     Now the column is fluid, so the offset is derived from it. */
+  .about-headshot {
+    margin-left: calc(var(--right-col) - 0.5rem - 25vw);
+  }
+
+  /* The prose stops 1.5rem short of the ink, which starts at
+     `75vw - 0.5rem + 25vw × 0.354` from the left of the window. Rearranged, that is
+     the padding below. The `max()` floor is 3rem, the same right padding a post has —
+     so on any ordinary window this page's text is EXACTLY as wide as a post's, and
+     the calc only takes over past ~2000px, where the headshot (25vw, always growing)
+     finally outruns the third column (capped at 20rem) and starts reaching into the
+     text. Without it the prose would slide under her chin on a very large monitor. */
+  .about-main {
+    padding-right: max(3rem, calc(16.15vw - var(--right-col) + 2rem));
+  }
 }
 
 @theme inline {
@@ -221,102 +402,207 @@ blockquote {
 }
 
 /* ---------------------------------------------------------------------------
-   /field-guides — the section index and its running list of entries.
+   /field-guide — the section index: an intro, then THE GUIDE'S OWN LIST of
+   remarks, reproduced.
 
-   THE MOSS. The card is the "home" hover green, made opaque. HoverBlob paints
-   #4b830d (--accent-primary) at fillOpacity .25 over the page's #fff8ed, so the
-   colour you actually see when you hover the rubber plant is that composite:
+   THE MOSS IS GONE. Each entry used to be an opaque green card (the "home" hover
+   green, itself a port of the viewer's .doc-detail-summary) carrying a title, a
+   date and a note. All three of those went with the redesign: the page now mirrors
+   the viewer's front door, RemarkList.tsx, where a remark is a title and nothing
+   else — oldest at the top, no dates, the order carrying the chronology. What the
+   blog adds is the note underneath. A card drew a box around each remark; a rule
+   down its left edge separates them without enclosing them.
 
-     .25 x #4b830d over #fff8ed  =  #d2dbb5   (the fill)
-     .50 x #4b830d over #fff8ed  =  #a5be7d   (the border, one step stronger)
-
-   Flattened rather than reproduced with opacity, because a translucent card would
-   pick up whatever background drawing scrolled behind it.
-
-   (This replaces the viewer's jade #daede5/#74BD9F. The card started as a port of
-   .doc-detail-summary from the guide's own styles.css, but jade is the guide's
-   colour inside the guide; on the blog the section reads better in the blog's own
-   green. The viewer is untouched — it keeps its jade.)
-
-   The uppercase ALLEGRA chip from the viewer is deliberately absent: it exists
-   there to separate her voice from the paper's abstract below it, and on this page
-   every word is already hers.
+   EVERYTHING HERE IS SIZED IN `em`, NEVER `rem`. Body text is fluid — see
+   `clamp(14pt, 1.2vw, 20pt)` on `body` above — so a `rem` size does not grow with
+   it. The old cards' 1.65rem title and 0.95rem date stayed put while the prose
+   around them moved with the window. `em` keeps the list in proportion at any width.
    --------------------------------------------------------------------------- */
 
-/* globals.css sets a bare, UNLAYERED `ul { list-style-type: disc }` above, which
-   beats Tailwind's `list-none` (utilities are @layer'd, and unlayered CSS wins over
-   any layer). So the card list has to turn markers off explicitly. */
-.fg-entries {
-  list-style: none;
-  padding-left: 0;
-}
+/* The intro prose, from app/field-guide/intro.md. */
+.fg-intro { margin-bottom: 2.25em; }
+.fg-intro > :first-child { margin-top: 0; }
+.fg-intro > :last-child { margin-bottom: 0; }
+.fg-intro p { margin: 0.9em 0; line-height: 1.55; }
+.fg-intro em { font-style: italic; }
+.fg-intro strong { font-weight: 700; }
 
-.fg-entry {
-  background: #d2dbb5;
-  border: 1px solid #a5be7d;
-  border-radius: 8px;
-  padding: 1.15rem 1.35rem 1.25rem;
-}
-
-.fg-entry-head {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-  margin-bottom: 0.6rem;
-}
-/* Matches the Writing list on the home page, which is the blog's established idiom
-   for "an item in a list of things to read": the title in the body serif, the date
-   beside it in Lato. (It was Lato/Lato before, which made the card read as chrome.) */
-.fg-entry-title {
-  font-family: var(--font-garamond), Garamond, "Times New Roman", serif;
-  font-size: 1.65rem;
-  font-weight: 600;
-  line-height: 1.2;
-}
-.fg-entry-date {
-  font-family: var(--font-lato), sans-serif;
-  font-size: 0.95rem;
-  /* The blob's own label colour. Home's Writing list dates are --accent-secondary
-     purple, which fights the moss; #4b830d is what the "home" label is painted in
-     over this exact fill, so it is the precedent for text on this card. */
-  color: #4b830d;
-}
-
-/* Rendered Markdown: Tailwind's preflight zeroes margins, so the block elements
-   remark emits need them restated here. */
-.fg-entry-body > :first-child { margin-top: 0; }
-.fg-entry-body > :last-child { margin-bottom: 0; }
-.fg-entry-body p { margin: 0.6rem 0; line-height: 1.55; }
-.fg-entry-body ul,
-.fg-entry-body ol { margin: 0.6rem 0; padding-left: 1.4rem; }
-.fg-entry-body ul { list-style: disc; }
-.fg-entry-body ol { list-style: decimal; }
-.fg-entry-body li { margin: 0.2rem 0; }
-.fg-entry-body em { font-style: italic; }
-.fg-entry-body strong { font-weight: 700; }
-
-/* Same specificity problem the .post-content rules solve: preflight's
-   `a { color: inherit }` wins otherwise. Ink rather than the posts' blue, which
-   reads as a foreign element on the moss. */
-.fg-entry-body a,
-.fg-entry-body a:link,
-.fg-entry-body a:visited {
-  color: #0f172a;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-.fg-entry-body a:hover { text-decoration-thickness: 2px; }
-
-/* The way into the viewer, now an inline link in the intro sentence rather than a
-   button. Same blue as post-content links, so it reads as the blog's ordinary link. */
-.fg-explore,
-.fg-explore:link,
-.fg-explore:visited {
+/* Preflight's `a { color: inherit }` wins otherwise — the same specificity problem
+   the .post-content rules solve. The blog's ordinary link blue, so "here" reads as a
+   link in her prose rather than as part of the purple list below it. */
+.fg-intro a,
+.fg-intro a:link,
+.fg-intro a:visited {
   color: #4287f5;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
-.fg-explore:hover { text-decoration-thickness: 2px; }
+.fg-intro a:hover { text-decoration-thickness: 2px; }
+
+/* globals.css sets a bare, UNLAYERED `ul { list-style-type: disc }` above, which
+   beats Tailwind's `list-none` (utilities are @layer'd, and unlayered CSS wins over
+   any layer). So the list has to turn markers off explicitly. */
+/* SHARED WITH THE WRITING LIST. `/writing` is the same shape — a list of titles, each
+   with a line of prose under it explaining what it is — so it is the same rules rather
+   than a second copy of them. The `.post-*` names are that page's; see app/writing.
+   Both lists lose their bullets here: globals.css's own unlayered `ul { list-style-type:
+   disc }` beats Tailwind's `list-none` (utilities are @layer'd, unlayered CSS wins over
+   any layer), so turning markers off has to be explicit. */
+.fg-remark-list,
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Tighter than the field guide's list, which keeps the 2em above. Its notes run to a
+   paragraph or more, so the rows need the air to stay separable; a post's summary is a
+   single line, and at 2em the rows read as unrelated rather than as one list. */
+.post-list {
+  gap: 1.35em;
+}
+
+/* The rule down the left edge, in place of the old card's four borders. The width
+   and style are declared once here so the three rules below vary only the hue. */
+.fg-remark,
+.post-row {
+  border-left: 2px solid;
+  padding-left: 0.9em;
+}
+
+/* The site's three accents, cycling in list order: green, purple, terra cotta,
+   repeat. BY POSITION, not by remark — `nth-child` means a new remark picks up the
+   next colour by existing, with nothing to assign in frontmatter and nothing to keep
+   in sync. The cost is that inserting one mid-list recolours everything after it,
+   which is acceptable precisely because this list only ever grows at the end: it is
+   ordered oldest first. The first remark is green for that same reason. */
+.fg-remark:nth-child(3n + 1),
+.post-row:nth-child(3n + 1) { border-left-color: var(--accent-primary); }
+.fg-remark:nth-child(3n + 2),
+.post-row:nth-child(3n + 2) { border-left-color: var(--accent-secondary); }
+.fg-remark:nth-child(3n + 3),
+.post-row:nth-child(3n + 3) { border-left-color: var(--accent-tertiary); }
+
+/* The bare `h2` rule above already sets 1.5em, which is the blog's own heading scale
+   and the right size here — so only family, weight and margins are restated. 600
+   rather than 700 because the extra weight was holding up a card that no longer
+   exists, and the top margin goes because the title has to start level with its rule.
+
+   LATO, NOT THE BODY SERIF: the same face as the page's own <h1> (set inline in
+   page.tsx). A remark title is a heading of the same kind as the one above it, so it
+   is set in the same font — which is also what separates it from the note beneath,
+   now that the note is ink rather than purple and the two are no longer told apart
+   by colour. */
+.fg-remark-title {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.3em;
+}
+
+/* Ink, no underline, purple on hover — exactly what the viewer's own list does
+   (`.tp-remark-row:hover .tp-remark-title`, in the guide's styles.css). The titles
+   read as a list of things rather than a stack of links, and the hover is what says
+   they are clickable. */
+.fg-remark-link,
+.fg-remark-link:link,
+.fg-remark-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.fg-remark-link:hover {
+  color: var(--accent-secondary);
+  transition: color 0.15s ease;
+}
+
+/* The note under a title: prose that exists only on the blog, about the remark
+   rather than part of it. Ink, and smaller than the intro above it, so the page reads
+   as titles first and notes second. Size alone carries that now — the note was purple
+   at first, which collided with the purple left rule on every third remark and made
+   one item in three look like a mistake. Colour belongs to the rules; the notes are
+   prose like any other prose on the site. */
+.fg-remark-note,
+.post-summary {
+  font-size: 0.85em;
+  color: var(--foreground);
+}
+
+/* On /writing the note is the post's own `summary:` frontmatter — the text that used to
+   live behind the TL;DR button in the right margin, and only appeared if you switched
+   the lens on and then hovered the right title. It is prose about the post, which is the
+   same job the field guide notes do, so it is shown the same way and always.
+   A post with no `summary:` keeps its rule and simply has nothing underneath. */
+.post-summary {
+  /* Zero, exactly as `.fg-remark-note > :first-child` is zero. The title's own
+     margin-bottom is the whole gap; see `.post-row h2`. */
+  margin-top: 0;
+  /* Flush at the bottom too, so the rule ends level with the last line rather than
+     hanging below it on the `p { margin-bottom: 0.5em }` above. `.fg-remark-note`'s
+     `> :last-child { margin-bottom: 0 }` is the same rule for the same reason. */
+  margin-bottom: 0;
+  line-height: 1.55;
+}
+
+/* The title has to start level with the top of its rule. The bare `h2` rule near the top
+   of this file sets `margin-top: 1em` and is UNLAYERED, so it beats Tailwind's layered
+   reset — the gap it opened pushed the title down while the rule stayed put, leaving two
+   lines' worth of colour standing above the words. `.fg-remark-title` zeroes the same
+   margin for the same reason; this is the Tailwind-styled twin, so it does it by
+   descent rather than with a class of its own. */
+.post-row h2 {
+  /* LATO, the same as `.fg-remark-title` and as the "Writing" heading above this list.
+     A post title and a remark title are headings of the same kind in two lists of the
+     same shape, so they are set in the same face; they used to differ only because this
+     one inherited the body serif and nobody had said otherwise.
+
+     Weight 600 for the same reason — and note the markup already asks for it
+     (`font-semibold`). It was never taking effect: the bare `h2 { font-weight: 700 }`
+     near the top of this file is unlayered and beats any Tailwind utility. Lato at 700
+     is a good deal heavier than Garamond at 700, so keeping 700 here would have made
+     the change louder than it looks. */
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 600;
+  /* Two points below the `h2` size everything else on the site uses. Written as a
+     subtraction rather than a smaller multiple so it stays exactly two points at every
+     window width — `1.5em` is 19.4pt on a 1440 laptop and 30pt on a wide monitor, and a
+     fraction that removed 2pt from the first would remove 3pt from the second. */
+  font-size: calc(1.5em - 2pt);
+  line-height: 1.2;
+  margin-top: 0;
+  /* 0.3em, measured in the TITLE's size — the identical declaration to
+     `.fg-remark-title`'s `margin: 0 0 0.3em`, so the two lists have the same gap by
+     construction rather than by two numbers that happen to land close. It was the sum of
+     this margin and the summary's own top margin, in two different ems; the summary's is
+     now zero and this is the only thing setting the gap. */
+  margin-bottom: 0.3em;
+}
+/* Rendered Markdown: Tailwind's preflight zeroes margins, so the block elements
+   remark emits need them restated. */
+.fg-remark-note > :first-child { margin-top: 0; }
+.fg-remark-note > :last-child { margin-bottom: 0; }
+.fg-remark-note p { margin: 0.6em 0; line-height: 1.55; }
+.fg-remark-note ul,
+.fg-remark-note ol { margin: 0.6em 0; padding-left: 1.4em; }
+.fg-remark-note ul { list-style: disc; }
+.fg-remark-note ol { list-style: decimal; }
+.fg-remark-note li { margin: 0.2em 0; }
+.fg-remark-note em { font-style: italic; }
+.fg-remark-note strong { font-weight: 700; }
+
+/* A SAFETY NET, NOT AN INVITATION. The notes deliberately contain no links — the
+   title is the way in, and the hand-written "check it out here" links were removed
+   when it became one. But preflight would render a future link as plain purple text
+   indistinguishable from the prose around it, which is a silent failure rather than
+   an obvious one. If a link does appear here, it should at least look like a link. */
+.fg-remark-note a,
+.fg-remark-note a:link,
+.fg-remark-note a:visited {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.fg-remark-note a:hover { text-decoration-thickness: 2px; }

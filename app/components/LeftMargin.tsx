@@ -17,10 +17,12 @@ export function LeftMargin() {
       {/* Mobile: horizontal title with eye drawing and nav */}
       <div className="flex lg:hidden items-center gap-3 px-4 pt-4 pb-2 pointer-events-auto">
         {/* eslint-disable-next-line @next/next/no-img-element */}
+        {/* Full strength, like every other drawing on the site. This is a separate
+            component from the collage, so it kept its old 50% when those went to full
+            and left the phone with a faded eye that no desktop screen had. */}
         <img
           src={img("/drawings/eye.png")}
           alt=""
-          className="opacity-50"
           style={{ width: "3rem", height: "3rem", objectFit: "contain" }}
         />
         <h1
@@ -29,14 +31,19 @@ export function LeftMargin() {
         >
           see what<br />you think
         </h1>
-        {/* The only route to /field-guides on a phone: Collage — which carries
+        {/* The only route to /field-guide on a phone: Collage — which carries
             the red string into it on desktop — is `hidden lg:block`. Wraps rather than
-            overflowing, since three labels plus the eye and the title don't fit on one
-            line at 375px. */}
+            overflowing, since four labels plus the eye and the title don't fit on one
+            line at 375px.
+
+            "writing" joined the list when the post list moved off `/` and onto its own
+            URL. On desktop that link is the rubber plant; this is a phone's only way
+            to it. "home" now means the landing page rather than the post list. */}
         <div className="ml-auto flex flex-wrap justify-end gap-x-4 gap-y-1" style={{ fontFamily: "var(--font-lato)", fontSize: "0.85rem", fontWeight: 700 }}>
           <Link href="/" className="hover:text-accent transition-colors">home</Link>
+          <Link href="/writing" className="hover:text-accent transition-colors">writing</Link>
           <Link href="/about" className="hover:text-accent transition-colors">about me</Link>
-          <Link href="/field-guides" className="hover:text-accent transition-colors">field guides</Link>
+          <Link href="/field-guide" className="hover:text-accent transition-colors">field guide</Link>
         </div>
       </div>
     </div>

@@ -50,11 +50,21 @@ export function HoverBlob({
         <path d={path} fill={color} fillOpacity={0.25} />
       </svg>
       {children}
-      {/* The label is ALWAYS visible, not a hover reveal. These labels are the
-          site's navigation, and a nav you have to find by sweeping the mouse over
-          a background collage is one readers told us they could not find at all.
-          The blob still belongs to hover — it is the affordance that says "this
-          particular drawing is the thing you are about to click". */}
+      {/* The label appears on hover, with the blob.
+
+          It used to be always visible, because a nav you have to find by sweeping the
+          mouse over a background collage is one readers could not find at all. That
+          reason is gone: the landing page at / now carries the same three destinations
+          as named, permanent links, so the collage no longer has to be the only way in
+          and can go back to being a background.
+
+          SNAP, NOT FADE — no transition on the label, deliberately, while the blob
+          keeps its 200ms fade. The blob is a wash of colour arriving under the cursor;
+          the word is either legible or it isn't, and easing it in just makes it look
+          out of focus on the way.
+
+          It stays in the DOM at zero opacity rather than being unmounted, so a screen
+          reader still finds the word next to the link. */}
       {label && (
         <span
           className="hover-blob-label"
@@ -67,6 +77,7 @@ export function HoverBlob({
             fontWeight: 400,
             color,
             pointerEvents: "none",
+            opacity: hovered ? 1 : 0,
             ...labelStyle,
           }}
         >

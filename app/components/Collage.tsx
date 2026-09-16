@@ -80,9 +80,9 @@ type Drawing = {
  */
 const DRAWINGS: Drawing[] = [
   // ── Hangs from the bottom, with the ground ────────────────────────────────
-  { src: "/drawings/rubber_plant.png", size: 187.2, left: -14.4, y: { bottom: 403.2 }, blob: { color: "#4b830d", index: 0, label: "home", labelStyle: { transform: `translate(${u(-8)}, -50%)` } }, href: "/" },
+  { src: "/drawings/rubber_plant.png", size: 187.2, left: -14.4, y: { bottom: 403.2 }, blob: { color: "#4b830d", index: 0, label: "writing", labelStyle: { transform: `translate(${u(-5)}, -50%)` } }, href: "/writing" },
   { src: "/drawings/gumdrop_purple.png", size: 50.4, left: 144, y: { bottom: 388.8 }, blob: null, href: null },
-  { src: "/drawings/string.png", size: 216, left: 144, y: { bottom: 135.36 }, blob: { color: "#a53f2a", index: 0, label: "field guides", labelStyle: { transform: `translate(${u(20)}, calc(-50% - ${u(20)}))` } }, href: "/field-guides" },
+  { src: "/drawings/string.png", size: 216, left: 144, y: { bottom: 135.36 }, blob: { color: "#a53f2a", index: 0, label: "field guide", labelStyle: { transform: `translate(${u(20)}, calc(-50% - ${u(20)}))` } }, href: "/field-guide" },
   { src: "/drawings/bush.png", size: 115.2, left: 259.2, y: { bottom: 32.4 }, blob: null, href: null },
   { src: "/drawings/oracle.png", size: 216, left: 0, y: { bottom: 8.64 }, blob: null, href: null },
   { src: "/drawings/statue.png", size: 172.8, left: 14.4, y: { bottom: 210.24 }, blob: { color: "#7346cf", index: 0, label: "about", labelStyle: { transform: `translate(${u(6)}, -50%)` } }, href: "/about" },
@@ -92,7 +92,24 @@ const DRAWINGS: Drawing[] = [
   // Above "you" and centred on it (its midpoint is x 298.8), sitting in the white
   // gap between the "See" and "what" lines. It used to sit *behind* "you". It is
   // part of the title, so it anchors with the title.
-  { src: "/drawings/eye.png", size: 122.4, left: 237.6, y: { top: 19.6 }, blob: null, href: null },
+  //
+  // IT IS THE WAY HOME. The rubber plant used to be, back when `/` was the list of
+  // posts; `/` is the landing page now and the plant points at `/writing`, so the
+  // link to the masthead moved onto the masthead's own drawing. Sky blue — the site's
+  // link colour, the TL;DR blue — rather than one of the three accents, because it
+  // goes somewhere different in kind from the three sections.
+  //
+  // THE LABEL PLACEMENT IS TIGHT, on purpose and with nowhere to go:
+  //   - BELOW, not beside. The eye's right edge is at x 360, which is exactly where
+  //     the text column starts, so there is no clear space to its right at all.
+  //   - `right: 13%` rather than `right: 0`, because the file is 13% transparent
+  //     down its right side; that lines the word up with the drawing's ink instead
+  //     of with its bounding box.
+  //   - The -8 lift puts the word in the gap between the eye's ink (which ends
+  //     around y 131) and the cap-height of the "you" line below it (around y 158).
+  //     Roughly 10 units of clearance. Moving the eye, the title's size or its
+  //     line-height closes that gap.
+  { src: "/drawings/eye.png", size: 122.4, left: 237.6, y: { top: 19.6 }, blob: { color: "#4287f5", index: 1, label: "home", labelStyle: { top: "100%", right: "13%", transform: `translateY(${u(-8)})` } }, href: "/" },
 ];
 
 /**
@@ -162,7 +179,7 @@ export function Collage() {
         {DRAWINGS.map(({ src, size, left, y, blob, href }) => {
           const image = (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={img(src)} alt="" className="w-full h-full object-contain opacity-50" />
+            <img src={img(src)} alt="" className="w-full h-full object-contain opacity-100" />
           );
 
           let content = image;

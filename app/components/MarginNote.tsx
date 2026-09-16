@@ -263,7 +263,7 @@ export function MarginNote({
 
       {open && (
         <span
-          style={{ color, backgroundColor: bg, fontSize: "clamp(12pt, 1vw, 15pt)", fontFamily: "var(--font-lato)", fontWeight: 400 }}
+          style={{ color, backgroundColor: bg, fontSize: "var(--note-text)", fontFamily: "var(--font-lato)", fontWeight: 400 }}
           className={`block lg:hidden rounded px-3 py-2 mt-1 mb-1 ${isFootnote ? "" : "reference-note"}`}
         >
           {children}
@@ -280,7 +280,9 @@ export function MarginNote({
         style={{
           color,
           opacity: visible ? 0.8 : 0,
-          fontSize: "clamp(12pt, 1vw, 15pt)",
+          // --note-text in globals.css. Smaller on a laptop than it used to be,
+          // because the column it hangs in is narrower there now.
+          fontSize: "var(--note-text)",
           fontFamily: "var(--font-lato)",
           fontWeight: 400,
           transition: "opacity 0.15s ease",

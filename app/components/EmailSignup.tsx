@@ -8,7 +8,7 @@ const EMAIL_FIELD = "entry.1193661868";
 const NAME_FIELD = "entry.493226534";
 
 // `label` is the ONLY thing that varies between the places this appears — home says
-// "new posts", /field-guides says "new entries". It defaults to home's wording so that
+// "new posts", /field-guide says "new entries". It defaults to home's wording so that
 // call site stays exactly as it was. Note both submit to the SAME Google Form, so
 // there is one mailing list, not one per section.
 export function EmailSignup({
@@ -32,7 +32,7 @@ export function EmailSignup({
         className="drivable-target"
         style={{
           fontFamily: "var(--font-lato)",
-          fontSize: "clamp(12pt, 1vw, 16pt)",
+          fontSize: "var(--form-text)",
           color: "var(--accent-primary)",
         }}
       >
@@ -60,7 +60,7 @@ export function EmailSignup({
           htmlFor="email"
           style={{
             fontFamily: "var(--font-lato)",
-            fontSize: "clamp(12pt, 1vw, 16pt)",
+            fontSize: "var(--form-text)",
             fontWeight: 700,
           }}
           className="block mb-3"
@@ -77,7 +77,7 @@ export function EmailSignup({
             placeholder="Your name"
             style={{
               fontFamily: "var(--font-garamond), Garamond, serif",
-              fontSize: "clamp(12pt, 1vw, 16pt)",
+              fontSize: "var(--form-text)",
               backgroundColor: "transparent",
               borderBottom: "1.5px solid var(--foreground)",
               outline: "none",
@@ -94,7 +94,7 @@ export function EmailSignup({
             placeholder="you@example.com"
             style={{
               fontFamily: "var(--font-garamond), Garamond, serif",
-              fontSize: "clamp(12pt, 1vw, 16pt)",
+              fontSize: "var(--form-text)",
               backgroundColor: "transparent",
               borderBottom: "1.5px solid var(--foreground)",
               outline: "none",

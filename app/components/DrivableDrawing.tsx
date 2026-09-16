@@ -232,7 +232,7 @@ export function DrivableDrawing({
         <img
           src={img(src)}
           alt=""
-          className="w-full h-full object-contain opacity-50"
+          className="w-full h-full object-contain opacity-100"
         />
         {label && <DrawingLabel label={label} color={labelColor} />}
       </div>
@@ -261,7 +261,7 @@ export function DrivableDrawing({
       <img
         src={img(src)}
         alt=""
-        className={`w-full h-full object-contain ${active ? "opacity-80" : "opacity-50"}`}
+        className="w-full h-full object-contain opacity-100"
       />
       {/* Gone while it is being driven — same as the arrow-key hint above it. */}
       {label && !active && <DrawingLabel label={label} color={labelColor} />}

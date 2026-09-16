@@ -7,11 +7,17 @@ export default function AboutPage() {
     <>
       <Collage />
       <div
-        className="relative grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] min-h-screen pointer-events-none"
+        // The same three columns as a post and the Writing list — see the note in
+        // app/page.tsx. This page was left behind on the old `1fr 2fr 1fr` when the
+        // others moved, which is why its text was narrower than a post's.
+        className="relative grid grid-cols-1 lg:grid-cols-[25%_minmax(0,1fr)_var(--right-col)] min-h-screen pointer-events-none"
         style={{ zIndex: 1 }}
       >
         <LeftMargin />
-        <main className="py-8 px-6 lg:py-16 pointer-events-auto lg:pr-40">
+        {/* `.about-main` (globals.css) sets the right padding, because on this page it
+            has to clear the headshot rather than be a flat 3rem. It was `lg:pr-40` —
+            160px, which is what held the text 227px short of a post's width. */}
+        <main className="about-main py-8 px-6 lg:py-16 pointer-events-auto">
           <h1
             style={{
               fontFamily: "var(--font-lato)",
@@ -35,7 +41,9 @@ export default function AboutPage() {
           <div style={{ height: "10vw" }} />
         </main>
         <div className="px-6 pb-8 -mt-6 lg:mt-0 lg:py-8 lg:pr-2">
-          <div className="flex justify-center lg:block lg:mt-24 lg:-ml-60 pointer-events-auto w-fit">
+          {/* `.about-headshot` (globals.css) is the leftward overhang into the prose
+              column, derived from --right-col instead of the old fixed `-ml-60`. */}
+          <div className="about-headshot flex justify-center lg:block lg:mt-24 pointer-events-auto w-fit">
             <Headshot />
           </div>
         </div>

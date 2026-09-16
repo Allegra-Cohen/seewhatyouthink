@@ -120,7 +120,9 @@ function SummaryBox({ text }: { text: string }) {
         top: 0,
         width: "var(--right-col)",
         transform: "translateY(-50%)",
-        fontSize: "clamp(12pt, 1vw, 15pt)",
+        // --note-text, the same size as the margin notes this sits among — it shares
+        // their column, so it has to shrink on a laptop exactly when they do.
+        fontSize: "var(--note-text)",
         fontFamily: "var(--font-lato)",
         fontWeight: 400,
         color: "#1a3a6b",
