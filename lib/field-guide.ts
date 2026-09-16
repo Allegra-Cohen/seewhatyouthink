@@ -139,7 +139,13 @@ export function getFieldGuideEntries(): FieldGuideEntry[] {
           ? data.date.toISOString().slice(0, 10)
           : String(data.date ?? ""),
         remark,
-        href: remark ? `${VIEWER}?open=${remarkNames[remark]}` : null,
+        // THE FOLDER FORM, not `?open=`. Each named remark has its own directory in the
+        // published viewer, written by export_guide.py, carrying that remark's own `og:`
+        // tags — and a link preview can only vary per FILE, since a crawler never runs
+        // the JavaScript that would resolve a query string. `?open=` still works and the
+        // viewer rewrites it to this form on arrival, but what this page hands out should
+        // already be the address that previews.
+        href: remark ? `${VIEWER}${remarkNames[remark]}/` : null,
         html: renderMarkdown(content),
       };
     });
