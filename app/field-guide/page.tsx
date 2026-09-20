@@ -2,6 +2,7 @@ import { getFieldGuideEntries, getFieldGuideIntro } from "@/lib/field-guide";
 import { LeftMargin } from "@/app/components/LeftMargin";
 import { Collage } from "@/app/components/Collage";
 import { EmailSignup } from "@/app/components/EmailSignup";
+import { AnalyticsNotice } from "@/app/components/AnalyticsNotice";
 
 export const metadata = {
   title: "Field guides",
@@ -113,6 +114,7 @@ export default function FieldGuidesPage() {
         </div>
         <div style={{ height: "10vw" }} />
       </div>
+      <AnalyticsNotice />
     </>
   );
 }

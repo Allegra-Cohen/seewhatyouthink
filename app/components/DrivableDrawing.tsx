@@ -26,27 +26,16 @@ function applyFall(el: HTMLElement) {
   el.style.transform = `translateY(${fallDistance}px) rotate(${rotation}deg)`;
 }
 
-function ArrowKeysHint({ visible }: { visible: boolean }) {
-  const key = (label: string) => (
-    <span
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: 36,
-        height: 36,
-        border: "1px solid #4b830d",
-        borderRadius: 5,
-        fontSize: 20,
-        lineHeight: 1,
-        color: "#4b830d",
-        background: "rgba(255,248,237,0.9)",
-      }}
-    >
-      {label}
-    </span>
-  );
-
+/**
+ * What the gumdrop is for, in words. It used to be a drawing of the four arrow keys,
+ * which showed which keys without saying that clicking is what hands them over — people
+ * read it as decoration. The sentence says both.
+ *
+ * Green (`--accent-primary`) and Lato, so it reads as the site's own voice rather than
+ * as part of the drawing, and sized in stage units like DrawingLabel below so the two
+ * track the gumdrop together. Sits above the gumdrop; the label sits below it.
+ */
+function DriveHint({ visible }: { visible: boolean }) {
   return (
     <div
       style={{
@@ -57,18 +46,14 @@ function ArrowKeysHint({ visible }: { visible: boolean }) {
         opacity: visible ? 1 : 0,
         transition: "opacity 0.3s",
         pointerEvents: "none",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 2,
+        fontFamily: "var(--font-lato), sans-serif",
+        fontSize: "calc(11 * var(--u))",
+        lineHeight: 1,
+        whiteSpace: "nowrap",
+        color: "var(--accent-primary)",
       }}
     >
-      {key("\u2191")}
-      <div style={{ display: "flex", gap: 2 }}>
-        {key("\u2190")}
-        {key("\u2193")}
-        {key("\u2192")}
-      </div>
+      click to drive with arrow keys
     </div>
   );
 }
@@ -122,7 +107,10 @@ export function DrivableDrawing({
 }) {
   const [active, setActive] = useState(false);
   const [hovered, setHovered] = useState(false);
+  // The hint's own visibility, which outlives the hover: see the linger effect below.
+  const [hintVisible, setHintVisible] = useState(false);
   const [pos, setPos] = useState<{ x: number; y: number } | null>(null);
+  const hintTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const keysDown = useRef<Set<string>>(new Set());
   const fallenEls = useRef<Set<Element>>(new Set());
   const frameRef = useRef<number>(0);
@@ -139,6 +127,22 @@ export function DrivableDrawing({
   }, [active, pos]);
 
   // Key listeners
+  // LINGER FOR 5s AFTER THE CURSOR LEAVES, the same as a footnote's margin note
+  // (MarginNote.tsx). The hint is a sentence now rather than a picture of four keys, and
+  // a sentence that vanishes the instant you move toward the gumdrop is one you have to
+  // hover twice to finish reading.
+  useEffect(() => {
+    if (hovered) {
+      if (hintTimer.current) clearTimeout(hintTimer.current);
+      setHintVisible(true);
+    } else if (hintVisible) {
+      hintTimer.current = setTimeout(() => setHintVisible(false), 5000);
+    }
+    return () => {
+      if (hintTimer.current) clearTimeout(hintTimer.current);
+    };
+  }, [hovered, hintVisible]);
+
   useEffect(() => {
     if (!active) return;
 
@@ -228,7 +232,7 @@ export function DrivableDrawing({
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <ArrowKeysHint visible={hovered} />
+        <DriveHint visible={hintVisible} />
         <img
           src={img(src)}
           alt=""
@@ -257,7 +261,7 @@ export function DrivableDrawing({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {!active && <ArrowKeysHint visible={hovered} />}
+      {!active && <DriveHint visible={hintVisible} />}
       <img
         src={img(src)}
         alt=""

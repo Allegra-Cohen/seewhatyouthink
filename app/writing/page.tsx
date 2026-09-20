@@ -3,6 +3,7 @@ import { getAllPosts, formatDate } from "@/lib/posts";
 import { LeftMargin } from "@/app/components/LeftMargin";
 import { Collage } from "@/app/components/Collage";
 import { EmailSignup } from "@/app/components/EmailSignup";
+import { AnalyticsNotice } from "@/app/components/AnalyticsNotice";
 
 /**
  * The list of posts. THIS USED TO BE `/`.
@@ -100,6 +101,7 @@ export default function Writing() {
           <div style={{ height: "10vw" }} />
         <div />
       </div>
+      <AnalyticsNotice />
     </>
   );
 }

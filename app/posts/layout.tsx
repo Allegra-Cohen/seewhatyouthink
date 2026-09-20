@@ -2,6 +2,7 @@ import { LeftMargin } from "@/app/components/LeftMargin";
 import { Collage } from "@/app/components/Collage";
 import { SummaryLensProvider } from "@/app/components/SummaryLensProvider";
 import { EmailSignup } from "@/app/components/EmailSignup";
+import { VisitCounter } from "@/app/components/VisitCounter";
 
 export default function PostLayout({
   children,
@@ -10,6 +11,7 @@ export default function PostLayout({
 }) {
   return (
     <SummaryLensProvider>
+      <VisitCounter />
       <Collage />
       {/* Grid rationale — see the note in app/page.tsx; all three columns are the same
           here. The subscribe module is the third column now rather than a block at the
