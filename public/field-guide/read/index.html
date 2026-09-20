@@ -4,17 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Field Guide to Thinking For Ourselves</title>
-    <!-- TextPrioritized's reading type — the blog's own faces (EB Garamond body,
-         Lato chrome), loaded only for the reader build. The curator's ui/index.html
-         is untouched; its UI stays --font-sans throughout. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin src="/field-guide/read/assets/index-BkgfqT_R.js"></script>
-    <link rel="stylesheet" crossorigin href="/field-guide/read/assets/index-C-zHqt21.css">
+    <!-- TextPrioritized's reading type — the blog's own faces (EB Garamond body, Lato
+         chrome) — is imported by src/viewer-main.tsx and bundled into assets/, so this
+         page fetches nothing from anybody. It used to <link> fonts.googleapis.com, which
+         handed every reader's IP address to Google before the guide rendered. The
+         curator's ui/index.html is untouched; its UI stays --font-sans throughout. -->
+
+    <!-- Counting visits, the same way the blog's posts do (app/components/VisitCounter.tsx
+         over there). GoatCounter sets no cookie and stores neither IP nor User-Agent: it
+         hashes them in memory for 8 hours to tell a reload from a new visit, and keeps
+         only the total. What it records here is which remark someone LANDED on, because
+         each has its own folder; moving between remarks inside the viewer changes no URL
+         and is not counted.
+
+         Written by the page rather than pasted as a <script src> tag so the two checks in
+         front of it can run first: a reader asking not to be counted (Do Not Track,
+         Global Privacy Control), and localhost, which would otherwise file every
+         `serve out` as a real visit. Kept in this file rather than in the React tree so
+         it is plainly visible to anyone reading the published shell — including the copy
+         of it in each remark folder. -->
+    <script>
+      (function () {
+        var dnt = navigator.doNotTrack || window.doNotTrack
+        if (dnt === '1' || dnt === 'yes' || navigator.globalPrivacyControl) return
+        if (['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) !== -1) return
+        var s = document.createElement('script')
+        s.async = true
+        s.src = 'https://gc.zgo.at/count.js'
+        s.setAttribute('data-goatcounter', 'https://seewhatuthink.goatcounter.com/count')
+        document.head.appendChild(s)
+      })()
+    </script>
+    <script type="module" crossorigin src="/field-guide/read/assets/index-Cz6Vq0J8.js"></script>
+    <link rel="stylesheet" crossorigin href="/field-guide/read/assets/index-CDvfL4NL.css">
   </head>
   <body>
     <div id="root"></div>
