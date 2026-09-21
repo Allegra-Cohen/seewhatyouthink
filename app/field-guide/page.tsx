@@ -3,11 +3,25 @@ import { LeftMargin } from "@/app/components/LeftMargin";
 import { Collage } from "@/app/components/Collage";
 import { EmailSignup } from "@/app/components/EmailSignup";
 import { AnalyticsNotice } from "@/app/components/AnalyticsNotice";
+import { SITE_NAME, SITE_OG_IMAGE } from "@/lib/site";
+
+const TITLE = "Field Guide to Thinking for Ourselves in the Age of AI";
+const DESCRIPTION =
+  "Underneath fears about rogue AI, labor market collapse and gradual disempowerment, there's a deeper worry: As machines become more capable, will humans be able to keep thinking for ourselves? It's a complicated question, but the Field Guide to Thinking for Ourselves has answers. 100% human-written, on topics from education to collective intelligence.";
 
 export const metadata = {
-  title: "Field guides",
-  description:
-    "The Field Guide to Thinking For Ourselves in the Age of AI.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/field-guide" },
+  // Replaces the root layout's card entirely (Next merges shallowly), so the image is repeated.
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/field-guide",
+    images: [SITE_OG_IMAGE],
+  },
 };
 
 export default function FieldGuidesPage() {

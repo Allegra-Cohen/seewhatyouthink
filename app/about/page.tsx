@@ -2,6 +2,8 @@ import { LeftMargin } from "@/app/components/LeftMargin";
 import { Collage } from "@/app/components/Collage";
 import { Headshot } from "@/app/components/Headshot";
 
+export const metadata = { title: "About", alternates: { canonical: "/about" } };
+
 export default function AboutPage() {
   return (
     <>

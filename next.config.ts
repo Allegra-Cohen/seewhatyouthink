@@ -7,6 +7,11 @@ const externalJsxLinksPlugin = path.resolve(
   "lib/remark-external-jsx-links.mjs",
 );
 
+const postMetadataPlugin = path.resolve(
+  process.cwd(),
+  "lib/remark-post-metadata.mjs",
+);
+
 const withMDX = createMDX({
   options: {
     // Plugins must be string module paths so Turbopack can serialize them.
@@ -17,6 +22,8 @@ const withMDX = createMDX({
       ["remark-gfm"],
       ["remark-frontmatter"],
       [externalJsxLinksPlugin],
+      // Injects each post's <title>/description/preview card from its frontmatter.
+      [postMetadataPlugin],
     ],
     rehypePlugins: [
       [

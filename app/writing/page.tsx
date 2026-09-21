@@ -5,6 +5,8 @@ import { Collage } from "@/app/components/Collage";
 import { EmailSignup } from "@/app/components/EmailSignup";
 import { AnalyticsNotice } from "@/app/components/AnalyticsNotice";
 
+export const metadata = { title: "Writing", alternates: { canonical: "/writing" } };
+
 /**
  * The list of posts. THIS USED TO BE `/`.
  *

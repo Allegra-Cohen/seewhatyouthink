@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lato, EB_Garamond } from "next/font/google";
 import "./globals.css";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_OG_IMAGE } from "@/lib/site";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -15,18 +16,26 @@ const garamond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "See what you think",
-  description: "Allegra A. Beal Cohen's blog about knowledge curation, new interfaces, and large-scale qualitative data.",
+  // Lets pages use relative URLs for canonical links and preview images.
+  metadataBase: new URL(SITE_URL),
+  // Pages that set a title get " · See what you think" after it; the rest show the bare name.
+  title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
+  description: SITE_DESCRIPTION,
   icons: {
     icon: "/favicon.png",
   },
   authors: [{ name: "Allegra A. Beal Cohen" }],
+  // Posts replace this with their own card — see lib/post-metadata.ts.
   openGraph: {
-    title: "See what you think",
-    description: "Allegra A. Beal Cohen's blog about knowledge curation, new interfaces, and large-scale qualitative data.",
-    type: "article",
-    authors: ["Allegra A. Beal Cohen"],
-    images: [{ url: "https://www.seewhatuthink.com/dispatch-0826/organization_mode_2.png", width: 2500, height: 1208 }],
+    type: "website",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: [SITE_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [SITE_OG_IMAGE.url],
   },
 };
 
