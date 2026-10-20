@@ -5253,16 +5253,6 @@
    }
   },
   {
-   "id": "c732eb54-3317-45a0-9044-dc542d2d8794",
-   "type": "person",
-   "label": "Siddharth Swaroop",
-   "attributes": {
-    "orcid": null,
-    "homepage": null,
-    "full_name": "Siddharth Swaroop"
-   }
-  },
-  {
    "id": "59d0f35f-66c8-45f2-9027-330359942419",
    "type": "person",
    "label": "Merlin Stein",
@@ -5270,6 +5260,16 @@
     "orcid": null,
     "homepage": null,
     "full_name": "Merlin Stein"
+   }
+  },
+  {
+   "id": "c732eb54-3317-45a0-9044-dc542d2d8794",
+   "type": "person",
+   "label": "Siddharth Swaroop",
+   "attributes": {
+    "orcid": null,
+    "homepage": null,
+    "full_name": "Siddharth Swaroop"
    }
   },
   {
@@ -6308,6 +6308,11 @@
      "label": "Frameworks and models"
     },
     {
+     "id": "05856e71-f73b-4d08-bdf1-a9674bb658ad",
+     "type": "concept",
+     "label": "Metrics and tests"
+    },
+    {
      "id": "e4e1b0ed-63cf-4532-b708-55b9239acacd",
      "type": "concept",
      "label": "Psychology and cognitive science"
@@ -6316,16 +6321,6 @@
      "id": "6590790d-7fc9-40e7-9d66-827b9fc6af79",
      "type": "concept",
      "label": "Human-computer interaction"
-    },
-    {
-     "id": "05856e71-f73b-4d08-bdf1-a9674bb658ad",
-     "type": "concept",
-     "label": "Metrics and tests"
-    },
-    {
-     "id": "8dfd2ebb-4a8b-450a-aa4f-4bf588ca5fc1",
-     "type": "concept",
-     "label": "Effects of AI use on human cognition"
     }
    ],
    "links": [
@@ -12824,30 +12819,9 @@
    "attributes": {}
   },
   {
-   "id": "e7bf60a2-8c05-46fa-bd9a-7c519f42aebc",
-   "source": "b369f0c3-2799-414d-a18f-360669e26f5f",
-   "target": "e4e1b0ed-63cf-4532-b708-55b9239acacd",
-   "type": "remarks_on",
-   "attributes": {}
-  },
-  {
-   "id": "1aec0e58-9393-48db-963e-e115e10aa673",
-   "source": "b369f0c3-2799-414d-a18f-360669e26f5f",
-   "target": "6590790d-7fc9-40e7-9d66-827b9fc6af79",
-   "type": "remarks_on",
-   "attributes": {}
-  },
-  {
    "id": "08eac8a0-9a5e-4710-ace4-e0cae7311de0",
    "source": "b369f0c3-2799-414d-a18f-360669e26f5f",
    "target": "05856e71-f73b-4d08-bdf1-a9674bb658ad",
-   "type": "remarks_on",
-   "attributes": {}
-  },
-  {
-   "id": "58c999cc-980c-4aa5-b50e-ed1a631035b2",
-   "source": "b369f0c3-2799-414d-a18f-360669e26f5f",
-   "target": "8dfd2ebb-4a8b-450a-aa4f-4bf588ca5fc1",
    "type": "remarks_on",
    "attributes": {}
   },
@@ -13189,6 +13163,20 @@
    "source": "6d146f83-30e4-4113-b20f-888465734c64",
    "target": "b316d61c-4778-4657-b783-6834598afad1",
    "type": "cites",
+   "attributes": {}
+  },
+  {
+   "id": "8eb86488-657a-472d-80ec-d48b01f256a2",
+   "source": "b369f0c3-2799-414d-a18f-360669e26f5f",
+   "target": "e4e1b0ed-63cf-4532-b708-55b9239acacd",
+   "type": "remarks_on",
+   "attributes": {}
+  },
+  {
+   "id": "aa78f1a4-6d70-434d-bf0c-8e12d3807b8a",
+   "source": "b369f0c3-2799-414d-a18f-360669e26f5f",
+   "target": "6590790d-7fc9-40e7-9d66-827b9fc6af79",
+   "type": "remarks_on",
    "attributes": {}
   }
  ]
