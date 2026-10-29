@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designing for Attention — Field Guide to Thinking for Ourselves</title>
+    <!-- TextPrioritized's reading type — the blog's own faces (EB Garamond body, Lato
+         chrome) — is imported by src/viewer-main.tsx and bundled into assets/, so this
+         page fetches nothing from anybody. It used to <link> fonts.googleapis.com, which
+         handed every reader's IP address to Google before the guide rendered. The
+         curator's ui/index.html is untouched; its UI stays --font-sans throughout. -->
+
+    <!-- Counting visits, the same way the blog's posts do (app/components/VisitCounter.tsx
+         over there). GoatCounter sets no cookie and stores neither IP nor User-Agent: it
+         hashes them in memory for 8 hours to tell a reload from a new visit, and keeps
+         only the total. What it records here is which remark someone LANDED on, because
+         each has its own folder; moving between remarks inside the viewer changes no URL
+         and is not counted.
+
+         Written by the page rather than pasted as a <script src> tag so the two checks in
+         front of it can run first: a reader asking not to be counted (Do Not Track,
+         Global Privacy Control), and localhost, which would otherwise file every
+         `serve out` as a real visit. Kept in this file rather than in the React tree so
+         it is plainly visible to anyone reading the published shell — including the copy
+         of it in each remark folder. -->
+    <script>
+      (function () {
+        var dnt = navigator.doNotTrack || window.doNotTrack
+        if (dnt === '1' || dnt === 'yes' || navigator.globalPrivacyControl) return
+        if (['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) !== -1) return
+        var s = document.createElement('script')
+        s.async = true
+        s.src = 'https://gc.zgo.at/count.js'
+        s.setAttribute('data-goatcounter', 'https://seewhatuthink.goatcounter.com/count')
+        document.head.appendChild(s)
+      })()
+    </script>
+    <script type="module" crossorigin src="/field-guide/read/assets/index-Z7YvOS_3.js"></script>
+    <link rel="stylesheet" crossorigin href="/field-guide/read/assets/index-D4bNo9e-.css">
+  <meta name="description" content="You can probably predict how much of this text you&#x27;ll retain. Maybe you&#x27;ve settled down with a cup of tea to read this post, having bookmarked it for a time when your focus will be…" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="See what you think" />
+<meta property="og:url" content="https://www.seewhatuthink.com/field-guide/read/designing-for-attention/" />
+<meta property="og:title" content="Designing for Attention" />
+<meta property="og:description" content="You can probably predict how much of this text you&#x27;ll retain. Maybe you&#x27;ve settled down with a cup of tea to read this post, having bookmarked it for a time when your focus will be…" />
+<meta property="og:image" content="https://www.seewhatuthink.com/field-guide/read/designing-for-attention/preview-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The concepts, documents and people this remark draws on." />
+<meta name="twitter:image" content="https://www.seewhatuthink.com/field-guide/read/designing-for-attention/preview-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Designing for Attention" />
+<meta name="twitter:description" content="You can probably predict how much of this text you&#x27;ll retain. Maybe you&#x27;ve settled down with a cup of tea to read this post, having bookmarked it for a time when your focus will be…" />
+<link rel="canonical" href="https://www.seewhatuthink.com/field-guide/read/designing-for-attention/" />
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
