@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 
 const FORM_ACTION =
-  "https://docs.google.com/forms/d/e/1FAIpQLSc3tmRYgDub5J7p122cyh2ptVdm1QeKfj2W7ezZ_cXiUHIn2w/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLScxUSLf62PzDs24u30WPmKwrTuRAf1_WDlGSmeJzZu5dNIQZA/formResponse";
 const EMAIL_FIELD = "entry.1193661868";
 const NAME_FIELD = "entry.493226534";
 
@@ -18,10 +18,20 @@ export function EmailSignup({
 } = {}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
+  const mountedAtRef = useRef(Date.now());
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Honeypot caught a bot, or the form was filled out implausibly fast —
+    // silently fake success instead of submitting, so bots get no signal they were caught
+    const tooFast = Date.now() - mountedAtRef.current < 1500;
+    if (website !== "" || tooFast) {
+      e.preventDefault();
+      setSubmitted(true);
+      return;
+    }
     // Small delay to let the form submit into the iframe before showing thanks
     setTimeout(() => setSubmitted(true), 500);
   };
@@ -68,6 +78,27 @@ export function EmailSignup({
           {label}
         </label>
         <div className="flex flex-col gap-3 max-w-full lg:max-w-[15rem]">
+          <div
+            aria-hidden="true"
+            style={{
+              position: "absolute",
+              left: "-9999px",
+              width: 0,
+              height: 0,
+              overflow: "hidden",
+            }}
+          >
+            <label htmlFor="website">Website</label>
+            <input
+              id="website"
+              name="website"
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+              value={website}
+              onChange={(e) => setWebsite(e.target.value)}
+            />
+          </div>
           <input
             id="name"
             name={NAME_FIELD}
